@@ -1,4 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="tile_label">Налагодження USB</string>
+    <string name="subtitle_on">Увімкнено</string>
+    <string name="subtitle_off">Вимкнено</string>
+    <string name="subtitle_no_dev_options">Параметри розробника · Вимкнено</string>
+    <string name="subtitle_no_permission">Потрібен дозвіл через ADB</string>
+    <string name="subtitle_write_refused">Заблоковано системою</string>
 </resources>

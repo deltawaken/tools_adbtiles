@@ -1,4 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="tile_label">USB atkļūdošana</string>
+    <string name="subtitle_on">Ieslēgts</string>
+    <string name="subtitle_off">Izslēgta</string>
+    <string name="subtitle_no_dev_options">Izstrādātāju opcijas · Izslēgta</string>
+    <string name="subtitle_no_permission">Nepieciešama ADB atļauja</string>
+    <string name="subtitle_write_refused">Bloķējusi sistēma</string>
 </resources>

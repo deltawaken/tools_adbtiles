@@ -1,4 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="tile_label">USB 调试</string>
+    <string name="subtitle_on">已开启</string>
+    <string name="subtitle_off">已关闭</string>
+    <string name="subtitle_no_dev_options">开发者选项 · 已关闭</string>
+    <string name="subtitle_no_permission">需要 ADB 授权</string>
+    <string name="subtitle_write_refused">被系统阻止</string>
 </resources>

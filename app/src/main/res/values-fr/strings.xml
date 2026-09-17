@@ -3,7 +3,7 @@
     <string name="tile_label">Débogage USB</string>
     <string name="subtitle_on">Activé</string>
     <string name="subtitle_off">Désactivé</string>
-    <string name="subtitle_no_dev_options">Options dév. désactivées</string>
+    <string name="subtitle_no_dev_options">Options pour les développeurs · Désactivé</string>
     <string name="subtitle_no_permission">Autorisation adb requise</string>
     <string name="subtitle_write_refused">Refusé par le système</string>
 </resources>

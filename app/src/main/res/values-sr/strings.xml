@@ -1,4 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="tile_label">Отклањање USB грешака</string>
+    <string name="subtitle_on">Укључено</string>
+    <string name="subtitle_off">Искључено</string>
+    <string name="subtitle_no_dev_options">Опције за програмере · Искључено</string>
+    <string name="subtitle_no_permission">Потребна ADB дозвола</string>
+    <string name="subtitle_write_refused">Систем је блокирао</string>
 </resources>

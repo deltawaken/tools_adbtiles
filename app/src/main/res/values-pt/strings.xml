@@ -1,4 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="tile_label">Depuração USB</string>
+    <string name="subtitle_on">Ativado</string>
+    <string name="subtitle_off">Desativado</string>
+    <string name="subtitle_no_dev_options">Opções do desenvolvedor · Desativado</string>
+    <string name="subtitle_no_permission">Permissão ADB necessária</string>
+    <string name="subtitle_write_refused">Bloqueado pelo sistema</string>
 </resources>

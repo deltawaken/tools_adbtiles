@@ -1,4 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="tile_label">‏اشکال‌زدایی USB</string>
+    <string name="subtitle_on">روشن</string>
+    <string name="subtitle_off">خاموش</string>
+    <string name="subtitle_no_dev_options">گزینه‌های برنامه‌نویسان · خاموش</string>
+    <string name="subtitle_no_permission">مجوز ADB لازم است</string>
+    <string name="subtitle_write_refused">سیستم مسدود کرد</string>
 </resources>

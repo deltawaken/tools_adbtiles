@@ -1,4 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="tile_label">USB ডিবাগিং</string>
+    <string name="subtitle_on">চালু আছে</string>
+    <string name="subtitle_off">বন্ধ আছে</string>
+    <string name="subtitle_no_dev_options">ডেভেলপার বিকল্প · বন্ধ আছে</string>
+    <string name="subtitle_no_permission">ADB অনুমতি প্রয়োজন</string>
+    <string name="subtitle_write_refused">সিস্টেম ব্লক করেছে</string>
 </resources>

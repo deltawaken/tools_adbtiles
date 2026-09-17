@@ -1,4 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="tile_label">USB デバッグ</string>
+    <string name="subtitle_on">ON</string>
+    <string name="subtitle_off">OFF</string>
+    <string name="subtitle_no_dev_options">開発者向けオプション · OFF</string>
+    <string name="subtitle_no_permission">ADB 権限が必要</string>
+    <string name="subtitle_write_refused">システムによりブロック</string>
 </resources>

@@ -1,4 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="tile_label">USB-ով վրիպազերծում</string>
+    <string name="subtitle_on">Միացված է</string>
+    <string name="subtitle_off">Անջատված է</string>
+    <string name="subtitle_no_dev_options">Մշակողի ընտրանքներ · Անջատված է</string>
+    <string name="subtitle_no_permission">Պահանջվում է ADB թույլտվություն</string>
+    <string name="subtitle_write_refused">Արգելափակվել է համակարգի կողմից</string>
 </resources>

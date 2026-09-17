@@ -1,4 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="tile_label">การแก้ไขข้อบกพร่อง USB</string>
+    <string name="subtitle_on">เปิด</string>
+    <string name="subtitle_off">ปิด</string>
+    <string name="subtitle_no_dev_options">ตัวเลือกสำหรับนักพัฒนาแอป · ปิด</string>
+    <string name="subtitle_no_permission">ต้องให้สิทธิ์ผ่าน ADB</string>
+    <string name="subtitle_write_refused">ระบบบล็อกไว้</string>
 </resources>

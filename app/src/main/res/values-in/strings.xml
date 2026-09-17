@@ -1,4 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="tile_label">Proses debug USB</string>
+    <string name="subtitle_on">Aktif</string>
+    <string name="subtitle_off">Nonaktif</string>
+    <string name="subtitle_no_dev_options">Opsi developer · Nonaktif</string>
+    <string name="subtitle_no_permission">Perlu izin lewat ADB</string>
+    <string name="subtitle_write_refused">Diblokir sistem</string>
 </resources>

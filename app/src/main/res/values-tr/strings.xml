@@ -1,4 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="tile_label">USB hata ayıklaması</string>
+    <string name="subtitle_on">Açık</string>
+    <string name="subtitle_off">Kapalı</string>
+    <string name="subtitle_no_dev_options">Geliştirici seçenekleri · Kapalı</string>
+    <string name="subtitle_no_permission">ADB izni gerekli</string>
+    <string name="subtitle_write_refused">Sistem engelledi</string>
 </resources>

@@ -1,4 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="tile_label">यूएसबी डीबग करना</string>
+    <string name="subtitle_on">चालू</string>
+    <string name="subtitle_off">बंद</string>
+    <string name="subtitle_no_dev_options">डेवलपर के लिए सेटिंग और टूल · बंद</string>
+    <string name="subtitle_no_permission">ADB अनुमति ज़रूरी</string>
+    <string name="subtitle_write_refused">सिस्टम ने रोका</string>
 </resources>

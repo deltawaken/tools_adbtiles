@@ -1,4 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="tile_label">‏USB ڈیبگنگ</string>
+    <string name="subtitle_on">آن</string>
+    <string name="subtitle_off">آف</string>
+    <string name="subtitle_no_dev_options">ڈویلپر کے اختیارات · آف</string>
+    <string name="subtitle_no_permission">ADB اجازت درکار</string>
+    <string name="subtitle_write_refused">سسٹم نے روک دیا</string>
 </resources>

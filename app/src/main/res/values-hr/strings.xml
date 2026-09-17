@@ -1,4 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="tile_label">Otklanjanje pogrešaka putem USB-a</string>
+    <string name="subtitle_on">Uključeno</string>
+    <string name="subtitle_off">Isključeno</string>
+    <string name="subtitle_no_dev_options">Opcije za razvojne programere · Isključeno</string>
+    <string name="subtitle_no_permission">Potrebno ADB dopuštenje</string>
+    <string name="subtitle_write_refused">Blokirao sustav</string>
 </resources>

@@ -1,4 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="tile_label">През USB</string>
+    <string name="subtitle_on">Вкл.</string>
+    <string name="subtitle_off">Изкл.</string>
+    <string name="subtitle_no_dev_options">Опции за програмисти · Изкл.</string>
+    <string name="subtitle_no_permission">Нужно е разрешение чрез ADB</string>
+    <string name="subtitle_write_refused">Блокирано от системата</string>
 </resources>

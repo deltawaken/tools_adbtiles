@@ -1,4 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="tile_label">Εντοπισμός σφαλμάτων USB</string>
+    <string name="subtitle_on">Ενεργό</string>
+    <string name="subtitle_off">Ανενεργό</string>
+    <string name="subtitle_no_dev_options">Επιλογές για προγραμματιστές · Ανενεργό</string>
+    <string name="subtitle_no_permission">Απαιτείται άδεια ADB</string>
+    <string name="subtitle_write_refused">Αποκλείστηκε από το σύστημα</string>
 </resources>

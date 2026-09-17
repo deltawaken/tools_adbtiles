@@ -1,4 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="tile_label">Gỡ lỗi qua USB</string>
+    <string name="subtitle_on">Đang bật</string>
+    <string name="subtitle_off">Đang tắt</string>
+    <string name="subtitle_no_dev_options">Tùy chọn cho nhà phát triển · Đang tắt</string>
+    <string name="subtitle_no_permission">Cần quyền ADB</string>
+    <string name="subtitle_write_refused">Bị hệ thống chặn</string>
 </resources>

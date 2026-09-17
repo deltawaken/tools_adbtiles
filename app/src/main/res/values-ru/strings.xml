@@ -1,4 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="tile_label">Отладка по USB</string>
+    <string name="subtitle_on">Включено</string>
+    <string name="subtitle_off">Отключено</string>
+    <string name="subtitle_no_dev_options">Для разработчиков · Отключено</string>
+    <string name="subtitle_no_permission">Нужно разрешение через ADB</string>
+    <string name="subtitle_write_refused">Заблокировано системой</string>
 </resources>

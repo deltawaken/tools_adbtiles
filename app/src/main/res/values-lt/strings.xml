@@ -1,4 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="tile_label">USB derinimas</string>
+    <string name="subtitle_on">Įjungta</string>
+    <string name="subtitle_off">Išjungta</string>
+    <string name="subtitle_no_dev_options">Kūrėjo parinktys · Išjungta</string>
+    <string name="subtitle_no_permission">Reikia ADB leidimo</string>
+    <string name="subtitle_write_refused">Užblokavo sistema</string>
 </resources>

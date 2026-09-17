@@ -1,4 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="tile_label">USB hibakeresés</string>
+    <string name="subtitle_on">Be</string>
+    <string name="subtitle_off">Ki</string>
+    <string name="subtitle_no_dev_options">Fejlesztői beállítások · Ki</string>
+    <string name="subtitle_no_permission">ADB-engedély szükséges</string>
+    <string name="subtitle_write_refused">A rendszer letiltotta</string>
 </resources>

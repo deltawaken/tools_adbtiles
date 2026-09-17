@@ -1,4 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="tile_label">‏تصحيح أخطاء USB</string>
+    <string name="subtitle_on">مفعّل</string>
+    <string name="subtitle_off">غير مفعّل</string>
+    <string name="subtitle_no_dev_options">خيارات المطورين · غير مفعّل</string>
+    <string name="subtitle_no_permission">إذن ADB مطلوب</string>
+    <string name="subtitle_write_refused">مرفوض من النظام</string>
 </resources>

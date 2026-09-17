@@ -1,4 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="tile_label">Remedierea erorilor prin USB</string>
+    <string name="subtitle_on">Activat(ă)</string>
+    <string name="subtitle_off">Dezactivat(ă)</string>
+    <string name="subtitle_no_dev_options">Opțiuni pentru dezvoltatori · Dezactivat(ă)</string>
+    <string name="subtitle_no_permission">Necesită permisiune ADB</string>
+    <string name="subtitle_write_refused">Blocat de sistem</string>
 </resources>

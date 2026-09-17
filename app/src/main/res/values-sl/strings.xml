@@ -1,4 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="tile_label">Odpravljanje napak prek USB-ja</string>
+    <string name="subtitle_on">Vklopljeno</string>
+    <string name="subtitle_off">Izklopljeno</string>
+    <string name="subtitle_no_dev_options">Možnosti za razvijalce · Izklopljeno</string>
+    <string name="subtitle_no_permission">Potrebno dovoljenje ADB</string>
+    <string name="subtitle_write_refused">Sistem je blokiral</string>
 </resources>

@@ -1,4 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="tile_label">Debug USB</string>
+    <string name="subtitle_on">On</string>
+    <string name="subtitle_off">Off</string>
+    <string name="subtitle_no_dev_options">Opzioni sviluppatore · Off</string>
+    <string name="subtitle_no_permission">Autorizzazione ADB richiesta</string>
+    <string name="subtitle_write_refused">Bloccato dal sistema</string>
 </resources>

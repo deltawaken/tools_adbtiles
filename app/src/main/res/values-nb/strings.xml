@@ -1,4 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="tile_label">USB-feilsøking</string>
+    <string name="subtitle_on">På</string>
+    <string name="subtitle_off">Av</string>
+    <string name="subtitle_no_dev_options">Utvikleralternativer · Av</string>
+    <string name="subtitle_no_permission">Krever ADB-tillatelse</string>
+    <string name="subtitle_write_refused">Blokkert av systemet</string>
 </resources>

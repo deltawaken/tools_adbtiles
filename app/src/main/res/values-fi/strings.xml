@@ -1,4 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="tile_label">USB-vianetsintä</string>
+    <string name="subtitle_on">Päällä</string>
+    <string name="subtitle_off">Ei päällä</string>
+    <string name="subtitle_no_dev_options">Kehittäjäasetukset · Ei päällä</string>
+    <string name="subtitle_no_permission">ADB-lupa vaaditaan</string>
+    <string name="subtitle_write_refused">Järjestelmä esti</string>
 </resources>

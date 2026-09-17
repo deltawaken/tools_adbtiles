@@ -1,4 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="tile_label">USB-Debugging</string>
+    <string name="subtitle_on">An</string>
+    <string name="subtitle_off">Aus</string>
+    <string name="subtitle_no_dev_options">Entwickleroptionen · Aus</string>
+    <string name="subtitle_no_permission">ADB-Berechtigung nötig</string>
+    <string name="subtitle_write_refused">Vom System blockiert</string>
 </resources>

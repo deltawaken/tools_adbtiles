@@ -1,4 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="tile_label">USB အမှားရှာခြင်း</string>
+    <string name="subtitle_on">ဖွင့်</string>
+    <string name="subtitle_off">ပိတ်</string>
+    <string name="subtitle_no_dev_options">ဆော့ဝဲလ်ရေးသူ ရွေးစရာများ · ပိတ်</string>
+    <string name="subtitle_no_permission">ADB ခွင့်ပြုချက် လိုသည်</string>
+    <string name="subtitle_write_refused">စနစ်က ပိတ်ထားသည်</string>
 </resources>

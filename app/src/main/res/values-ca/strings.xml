@@ -1,4 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="tile_label">Depuració per USB</string>
+    <string name="subtitle_on">Activat</string>
+    <string name="subtitle_off">Desactivat</string>
+    <string name="subtitle_no_dev_options">Opcions per a desenvolupadors · Desactivat</string>
+    <string name="subtitle_no_permission">Cal permís per ADB</string>
+    <string name="subtitle_write_refused">Bloquejat pel sistema</string>
 </resources>

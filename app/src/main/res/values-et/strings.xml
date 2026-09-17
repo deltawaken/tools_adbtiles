@@ -1,4 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="tile_label">USB silumine</string>
+    <string name="subtitle_on">Sees</string>
+    <string name="subtitle_off">Väljas</string>
+    <string name="subtitle_no_dev_options">Arendaja valikud · Väljas</string>
+    <string name="subtitle_no_permission">Vajalik ADB luba</string>
+    <string name="subtitle_write_refused">Süsteem blokeeris</string>
 </resources>

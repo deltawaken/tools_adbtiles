@@ -1,4 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="tile_label">Pag-debug ng USB</string>
+    <string name="subtitle_on">Naka-on</string>
+    <string name="subtitle_off">Naka-off</string>
+    <string name="subtitle_no_dev_options">Mga opsyon ng developer · Naka-off</string>
+    <string name="subtitle_no_permission">Kailangan ng ADB permission</string>
+    <string name="subtitle_write_refused">Na-block ng system</string>
 </resources>

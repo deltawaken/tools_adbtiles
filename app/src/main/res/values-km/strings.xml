@@ -1,4 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="tile_label">ការ​ជួសជុលតាម USB</string>
+    <string name="subtitle_on">បើក</string>
+    <string name="subtitle_off">បិទ</string>
+    <string name="subtitle_no_dev_options">ជម្រើសសម្រាប់អ្នកអភិវឌ្ឍន៍ · បិទ</string>
+    <string name="subtitle_no_permission">តម្រូវឱ្យមានសិទ្ធិ ADB</string>
+    <string name="subtitle_write_refused">ប្រព័ន្ធបានទប់ស្កាត់</string>
 </resources>

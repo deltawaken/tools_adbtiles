@@ -1,4 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="tile_label">USB арқылы түзету</string>
+    <string name="subtitle_on">Қосулы</string>
+    <string name="subtitle_off">Өшірулі</string>
+    <string name="subtitle_no_dev_options">Әзірлеуші опциялары · Өшірулі</string>
+    <string name="subtitle_no_permission">ADB рұқсаты қажет</string>
+    <string name="subtitle_write_refused">Жүйе бөгеді</string>
 </resources>

@@ -1,4 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="tile_label">Ladenie cez USB</string>
+    <string name="subtitle_on">Zapnuté</string>
+    <string name="subtitle_off">Vypnuté</string>
+    <string name="subtitle_no_dev_options">Pre vývojárov · Vypnuté</string>
+    <string name="subtitle_no_permission">Vyžaduje povolenie cez ADB</string>
+    <string name="subtitle_write_refused">Blokované systémom</string>
 </resources>
