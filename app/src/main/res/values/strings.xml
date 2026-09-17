@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- Nom de l'app installée ; le libellé de la tuile est tile_label. -->
     <string name="app_name">ADB Tile</string>
-    <string name="tile_label">ADB Tile</string>
-    <string name="subtitle_on">Activé</string>
-    <string name="subtitle_off">Désactivé</string>
-    <string name="subtitle_no_dev_options">Options dév. désactivées</string>
-    <string name="subtitle_no_permission">Autorisation adb requise</string>
-    <string name="subtitle_write_refused">Refusé par le système</string>
+    <string name="tile_label">USB debugging</string>
+    <string name="subtitle_on">On</string>
+    <string name="subtitle_off">Off</string>
+    <string name="subtitle_no_dev_options">Dev options off</string>
+    <string name="subtitle_no_permission">ADB grant needed</string>
+    <string name="subtitle_write_refused">Blocked by system</string>
 </resources>
