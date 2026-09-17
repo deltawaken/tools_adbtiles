@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">adbTile</string>
-    <string name="tile_label">Débogage USB</string>
+    <string name="app_name">ADB Tile</string>
+    <string name="tile_label">ADB Tile</string>
     <string name="subtitle_on">Activé</string>
     <string name="subtitle_off">Désactivé</string>
     <string name="subtitle_no_dev_options">Options dév. désactivées</string>
