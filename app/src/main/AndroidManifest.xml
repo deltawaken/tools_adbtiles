@@ -14,7 +14,7 @@
 
     <application
         android:label="@string/app_name"
-        android:icon="@drawable/ic_usb_debug"
+        android:icon="@mipmap/ic_launcher"
         android:allowBackup="false">
 
         <service

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Icône de l'app : les deux tuiles en figure de carte à jouer. USB en haut à gauche, réseau en bas
+  à droite, séparés par une diagonale. Canevas adaptatif de 108 unités, tout tient dans le cercle
+  de sécurité de 66 (rayon 33 autour de 54,54).
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Diagonale : x + y = 108, qui passe entre les deux symboles. -->
+    <path
+        android:pathData="M76,32 L32,76"
+        android:strokeWidth="2.5"
+        android:strokeLineCap="round"
+        android:strokeColor="#FFFFFFFF" />
+
+    <!-- Symbole USB (Material « usb »), ×1,15, centré sur son emprise réelle en (42,42). -->
+    <group
+        android:translateX="29.47"
+        android:translateY="28.66"
+        android:scaleX="1.15"
+        android:scaleY="1.15">
+        <path
+            android:fillColor="#FFFFFFFF"
+            android:pathData="M15,7v4h1v2h-3V5h2l-3,-4l-3,4h2v8H8v-2.07c0.7,-0.37 1.2,-1.08 1.2,-1.93c0,-1.21 -0.99,-2.2 -2.2,-2.2S4.8,7.79 4.8,9c0,0.85 0.5,1.56 1.2,1.93V13c0,1.11 0.89,2 2,2h3v3.05c-0.71,0.37 -1.2,1.1 -1.2,1.95c0,1.22 0.99,2.2 2.2,2.2s2.2,-0.98 2.2,-2.2c0,-0.85 -0.49,-1.58 -1.2,-1.95V15h3c1.11,0 2,-0.89 2,-2v-2h1V7H15z" />
+    </group>
+
+    <!-- Symbole réseau (Material « lan »), ×1,15, centré sur son emprise réelle en (66,66). -->
+    <group
+        android:translateX="52.2"
+        android:translateY="52.2"
+        android:scaleX="1.15"
+        android:scaleY="1.15">
+        <path
+            android:fillColor="#FFFFFFFF"
+            android:pathData="M13,22h8v-7h-3v-4h-5V9h3V2H8v7h3v2H6v4H3v7h8v-7H8v-2h8v2h-3V22zM10,7V4h4v3H10zM9,17v3H5v-3H9zM19,17v3h-4v-3H19z" />
+    </group>
+</vector>
