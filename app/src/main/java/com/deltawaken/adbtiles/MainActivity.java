@@ -9,11 +9,15 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
 import android.provider.Settings;
+import android.text.Editable;
+import android.text.InputType;
+import android.text.TextWatcher;
 import android.text.method.LinkMovementMethod;
 import android.util.TypedValue;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.ScrollView;
 import android.widget.TextView;
@@ -58,6 +62,8 @@ public class MainActivity extends Activity {
     private TextView permissionStatus;
     private TextView keyStatus;
     private TextView hint;
+    private EditText portField;
+    private TextView portNote;
     private TextView result;
     private Button authorize;
 
@@ -73,6 +79,28 @@ public class MainActivity extends Activity {
         TextView title = text(getString(R.string.app_name), 24);
         usbStatus = text("", 18);
         tcpipStatus = text("", 18);
+        TextView portLabel = text(getString(R.string.main_port_label), 14);
+        portLabel.setPadding(0, 0, 0, 0);
+        portField = new EditText(this);
+        portField.setInputType(InputType.TYPE_CLASS_NUMBER);
+        portField.setSingleLine(true);
+        Tcpip.loadPort(this);
+        portField.setText(String.valueOf(Tcpip.port));
+        portField.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+                onPortEdited(s.toString());
+            }
+        });
+        portNote = text("", 14);
         permissionStatus = text("", 16);
         permissionStatus.setTextIsSelectable(true);
         keyStatus = text("", 16);
@@ -86,6 +114,9 @@ public class MainActivity extends Activity {
         column.addView(title);
         column.addView(usbStatus);
         column.addView(tcpipStatus);
+        column.addView(portLabel);
+        column.addView(portField);
+        column.addView(portNote);
         column.addView(permissionStatus);
         column.addView(keyStatus);
         column.addView(hint);
@@ -102,6 +133,7 @@ public class MainActivity extends Activity {
     @Override
     protected void onResume() {
         super.onResume();
+        Tcpip.loadPort(this);
         getContentResolver().registerContentObserver(
                 Settings.Global.getUriFor(Settings.Global.ADB_ENABLED), false, observer);
         getContentResolver().registerContentObserver(
@@ -123,7 +155,8 @@ public class MainActivity extends Activity {
         usbStatus.setText(getString(R.string.status_line, getString(R.string.tile_label),
                 getString(adbEnabled ? R.string.subtitle_on : R.string.subtitle_off)));
         String tcpip = portOpen == null ? getString(R.string.subtitle_working)
-                : getString(portOpen ? R.string.subtitle_port_open : R.string.subtitle_off);
+                : portOpen ? getString(R.string.subtitle_port_open, Tcpip.port)
+                : getString(R.string.subtitle_off);
         tcpipStatus.setText(getString(R.string.status_line, getString(R.string.tcpip_tile_label), tcpip));
 
         boolean granted = checkSelfPermission(Manifest.permission.WRITE_SECURE_SETTINGS)
@@ -131,10 +164,39 @@ public class MainActivity extends Activity {
         permissionStatus.setText(granted ? R.string.main_perm_ok : R.string.main_perm_missing);
         boolean authorized = Tcpip.isAuthorized(this);
         keyStatus.setText(authorized ? R.string.main_key_ok : R.string.main_key_missing);
+        // Le port ne se change que TCP/IP éteint : adbd écoute sur l'ancien tant qu'il est ouvert.
+        boolean portEditable = Boolean.FALSE.equals(portOpen);
+        portField.setEnabled(portEditable);
+        if (!portEditable) {
+            portNote.setText(R.string.main_port_locked);
+        } else if (!isValidPortText(portField.getText().toString())) {
+            portNote.setText(R.string.main_port_invalid);
+        } else {
+            portNote.setText("");
+        }
         // Une fois la clé autorisée, le bouton n'a plus d'usage : on le masque.
         int setupVisibility = authorized ? View.GONE : View.VISIBLE;
         hint.setVisibility(setupVisibility);
         authorize.setVisibility(setupVisibility);
+    }
+
+    private void onPortEdited(String value) {
+        if (Boolean.FALSE.equals(portOpen) && isValidPortText(value)) {
+            int port = Integer.parseInt(value);
+            if (port != Tcpip.port) {
+                Tcpip.setPort(this, port);
+                portOpen = false; // setPort a oublié l'état : le nouveau port n'a pas encore été sondé
+            }
+        }
+        updateStatus();
+    }
+
+    private static boolean isValidPortText(String value) {
+        try {
+            return Tcpip.isValidPort(Integer.parseInt(value.trim()));
+        } catch (NumberFormatException e) {
+            return false;
+        }
     }
 
     private void startAuthorization() {

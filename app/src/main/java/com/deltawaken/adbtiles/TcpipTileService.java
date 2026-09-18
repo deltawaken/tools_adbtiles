@@ -8,7 +8,7 @@ import android.service.quicksettings.TileService;
 import android.util.Log;
 
 /**
- * Tuile « Débogage TCP/IP » : ouvre et ferme le port 5555 d'adbd, comme {@code adb tcpip 5555} et
+ * Tuile « Débogage TCP/IP » : ouvre et ferme le port TCP d'adbd, comme {@code adb tcpip <port>} et
  * {@code adb usb}. Dépend entièrement du débogage USB : sans lui, adbd est arrêté.
  *
  * <p>Tout l'état vit dans {@link Tcpip} : SystemUI recrée cette tuile toutes les cinq secondes.
@@ -22,6 +22,7 @@ public class TcpipTileService extends TileService {
     @Override
     public void onStartListening() {
         super.onStartListening();
+        Tcpip.loadPort(this);
         Tcpip.addListener(refresher);
         refresh();
         if (!Tcpip.tcpipBusy) {
@@ -98,7 +99,8 @@ public class TcpipTileService extends TileService {
             subtitle = getString(R.string.subtitle_working);
         } else if (portOpen) {
             state = Tile.STATE_ACTIVE;
-            subtitle = getString(Tcpip.tcpipFailed ? R.string.subtitle_failed : R.string.subtitle_port_open);
+            subtitle = Tcpip.tcpipFailed ? getString(R.string.subtitle_failed)
+                    : getString(R.string.subtitle_port_open, Tcpip.port);
         } else if (!Tcpip.isWifiConnected(this)) {
             state = Tile.STATE_UNAVAILABLE;
             subtitle = getString(R.string.subtitle_wifi_needed);

@@ -15,10 +15,13 @@
     <string name="main_key_ok">Cette app est autorisée pour adb.</string>
     <string name="main_key_missing">Cette app n\'est pas encore autorisée pour adb.</string>
     <string name="main_authorize">Autoriser cette app</string>
-    <string name="main_authorize_hint">Le port 5555 doit être ouvert (adb tcpip 5555). Une boîte demandera d\'autoriser le débogage : cochez « Toujours autoriser », puis Autoriser.</string>
+    <string name="main_authorize_hint">Le port TCP/IP doit être ouvert (adb tcpip &lt;port&gt;). Une boîte demandera d\'autoriser le débogage : cochez « Toujours autoriser », puis Autoriser.</string>
     <string name="main_working">En attente de la boîte de dialogue…</string>
-    <string name="main_port_closed">Le port 5555 est fermé. Lancez d\'abord adb tcpip 5555 depuis un ordinateur.</string>
+    <string name="main_port_closed">Le port TCP/IP est fermé. Lancez d\'abord adb tcpip &lt;port&gt; depuis un ordinateur.</string>
     <string name="main_refused">Autorisation refusée.</string>
     <string name="main_error">Erreur : %1$s</string>
     <string name="status_line">%1$s : %2$s</string>
+    <string name="main_port_label">Port TCP/IP</string>
+    <string name="main_port_locked">Éteignez le débogage TCP/IP pour changer de port.</string>
+    <string name="main_port_invalid">Saisissez un port entre 1024 et 65535.</string>
 </resources>

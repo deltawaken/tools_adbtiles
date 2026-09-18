@@ -22,7 +22,7 @@ import java.util.Set;
 import java.util.concurrent.CopyOnWriteArraySet;
 
 /**
- * Ouvrir et fermer le port {@value #PORT} d'adbd, comme {@code adb tcpip} et {@code adb usb}.
+ * Ouvrir et fermer le port TCP d'adbd, comme {@code adb tcpip} et {@code adb usb}.
  *
  * <p>Fermer passe par l'adb classique sur le port ouvert, sans Wi-Fi. Ouvrir, quand le port est
  * fermé (après un redémarrage), passe par le débogage sans fil — qu'Android n'accepte qu'avec une
@@ -30,15 +30,21 @@ import java.util.concurrent.CopyOnWriteArraySet;
  */
 final class Tcpip {
 
-    static final int PORT = 5555;
+    static final int DEFAULT_PORT = 5555;
+    /** adbd ne tourne pas en root : il ne peut pas écouter sous 1024. */
+    static final int MIN_PORT = 1024;
+    static final int MAX_PORT = 65535;
     private static final String LOCALHOST = "127.0.0.1";
     private static final String PREFS = "adbtiles";
     private static final String PREF_AUTHORIZED = "authorized";
+    private static final String PREF_PORT = "port";
 
     // État partagé par les deux tuiles et l'écran. Il vit au niveau du processus parce que SystemUI
     // détache et recrée les tuiles toutes les cinq secondes environ sur cette ROM (mesuré le
     // 2026-09-18) : un état gardé dans l'instance de la tuile se perdait à chaque réveil.
 
+    /** Port choisi dans l'app ; relu des préférences par {@link #loadPort}. */
+    static volatile int port = DEFAULT_PORT;
     /** Dernier état sondé du port ; null tant qu'on ne sait pas. */
     static volatile Boolean portOpen;
     /** Une bascule TCP/IP, ou l'attente d'adbd après le rallumage du débogage USB, est en cours. */
@@ -52,6 +58,22 @@ final class Tcpip {
     private static final Handler MAIN = new Handler(Looper.getMainLooper());
 
     private Tcpip() {
+    }
+
+    static void loadPort(Context context) {
+        port = prefs(context).getInt(PREF_PORT, DEFAULT_PORT);
+    }
+
+    static boolean isValidPort(int value) {
+        return value >= MIN_PORT && value <= MAX_PORT;
+    }
+
+    /** Change le port. N'a de sens que TCP/IP éteint : l'écran ne le propose pas autrement. */
+    static void setPort(Context context, int value) {
+        prefs(context).edit().putInt(PREF_PORT, value).apply();
+        port = value;
+        portOpen = null;
+        notifyChanged();
     }
 
     static void addListener(Runnable listener) {
@@ -78,7 +100,7 @@ final class Tcpip {
     }
 
     /**
-     * Le débogage USB vient d'être rallumé : adbd redémarre, et rouvre 5555 s'il était en mode TCP.
+     * Le débogage USB vient d'être rallumé : adbd redémarre, et rouvre son port s'il était en mode TCP.
      * On attend qu'il réponde plutôt que de parier sur un délai.
      */
     static void awaitAdbd() {
@@ -98,7 +120,7 @@ final class Tcpip {
 
     static boolean isPortOpen() {
         try (Socket socket = new Socket()) {
-            socket.connect(new InetSocketAddress(LOCALHOST, PORT), 300);
+            socket.connect(new InetSocketAddress(LOCALHOST, port), 300);
             return true;
         } catch (IOException e) {
             return false;
@@ -142,14 +164,14 @@ final class Tcpip {
      */
     static void authorize(Context context) throws IOException, GeneralSecurityException {
         AdbKey key = AdbKey.loadOrCreate(context);
-        try (AdbClient ignored = AdbClient.connect(LOCALHOST, PORT, key, true, 60000)) {
+        try (AdbClient ignored = AdbClient.connect(LOCALHOST, port, key, true, 60000)) {
             setAuthorized(context, true);
         }
     }
 
     static void close(Context context) throws IOException, GeneralSecurityException {
         AdbKey key = AdbKey.loadOrCreate(context);
-        try (AdbClient client = AdbClient.connect(LOCALHOST, PORT, key, false, 0)) {
+        try (AdbClient client = AdbClient.connect(LOCALHOST, port, key, false, 0)) {
             client.run("usb:");
         } catch (AdbClient.AuthException e) {
             setAuthorized(context, false);
@@ -170,7 +192,7 @@ final class Tcpip {
             }
             try (AdbClient client = AdbClient.connect(
                     address.getAddress().getHostAddress(), address.getPort(), key, false, 0)) {
-                client.run("tcpip:" + PORT);
+                client.run("tcpip:" + port);
             } catch (AdbClient.AuthException e) {
                 setAuthorized(context, false);
                 throw e;

@@ -9,7 +9,7 @@
     <string name="subtitle_no_permission">ADB grant needed</string>
     <string name="subtitle_write_refused">Blocked by system</string>
     <string name="tcpip_tile_label">TCP/IP debugging</string>
-    <string name="subtitle_port_open">Port 5555</string>
+    <string name="subtitle_port_open">Port %1$d</string>
     <string name="subtitle_setup_needed">Set up in app</string>
     <string name="subtitle_wifi_needed">Wi-Fi needed</string>
     <string name="subtitle_working">…</string>
@@ -19,10 +19,13 @@
     <string name="main_key_ok">This app is authorized for adb.</string>
     <string name="main_key_missing">This app is not authorized for adb yet.</string>
     <string name="main_authorize">Authorize this app</string>
-    <string name="main_authorize_hint">Port 5555 must be open (adb tcpip 5555). A dialog will ask to allow debugging: tick “Always allow”, then Allow.</string>
+    <string name="main_authorize_hint">The TCP/IP port must be open (adb tcpip &lt;port&gt;). A dialog will ask to allow debugging: tick “Always allow”, then Allow.</string>
     <string name="main_working">Waiting for the dialog…</string>
-    <string name="main_port_closed">Port 5555 is closed. Run adb tcpip 5555 from a computer first.</string>
+    <string name="main_port_closed">The TCP/IP port is closed. Run adb tcpip &lt;port&gt; from a computer first.</string>
     <string name="main_refused">Authorization refused.</string>
     <string name="main_error">Error: %1$s</string>
     <string name="status_line">%1$s: %2$s</string>
+    <string name="main_port_label">TCP/IP port</string>
+    <string name="main_port_locked">Turn TCP/IP debugging off to change the port.</string>
+    <string name="main_port_invalid">Enter a port between 1024 and 65535.</string>
 </resources>

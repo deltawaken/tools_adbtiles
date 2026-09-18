@@ -9,7 +9,7 @@ import android.service.quicksettings.TileService;
 /**
  * Tuile « Débogage USB » : bascule {@code Settings.Global.ADB_ENABLED}.
  *
- * <p>Sert d'interrupteur du port ouvert par {@code adb tcpip 5555} : couper le débogage USB arrête
+ * <p>Sert d'interrupteur du port ouvert par {@code adb tcpip} : couper le débogage USB arrête
  * adbd et ferme le port, le rallumer le rouvre tant que le téléphone n'a pas redémarré.
  */
 public class UsbDebuggingTileService extends TileService {
@@ -28,6 +28,7 @@ public class UsbDebuggingTileService extends TileService {
     @Override
     public void onStartListening() {
         super.onStartListening();
+        Tcpip.loadPort(this);
         Tcpip.addListener(refresher);
         refresh();
     }
@@ -53,7 +54,7 @@ public class UsbDebuggingTileService extends TileService {
         }
         Tcpip.usbBusyUntil = System.currentTimeMillis() + SETTLE_MS;
         if (target) {
-            // adbd redémarre et rouvre 5555 s'il était en mode TCP : la tuile TCP/IP attend.
+            // adbd redémarre et rouvre son port s'il était en mode TCP : la tuile TCP/IP attend.
             Tcpip.awaitAdbd();
         } else {
             Tcpip.portOpen = false;
