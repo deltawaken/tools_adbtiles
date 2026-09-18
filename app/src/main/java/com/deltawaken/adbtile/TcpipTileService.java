@@ -34,6 +34,9 @@ public class TcpipTileService extends TileService {
             observer = new ContentObserver(handler) {
                 @Override
                 public void onChange(boolean selfChange, Uri uri) {
+                    // Débogage USB ou options dév. coupés : l'état se déduit du réglage, sans
+                    // attendre la sonde du port, qui tombe pendant l'arrêt d'adbd.
+                    refresh();
                     probe();
                 }
             };
