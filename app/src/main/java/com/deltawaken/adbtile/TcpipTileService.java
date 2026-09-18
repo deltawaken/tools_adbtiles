@@ -2,126 +2,70 @@ package com.deltawaken.adbtile;
 
 import android.Manifest;
 import android.content.pm.PackageManager;
-import android.database.ContentObserver;
-import android.net.Uri;
-import android.os.Handler;
-import android.os.Looper;
 import android.provider.Settings;
 import android.service.quicksettings.Tile;
 import android.service.quicksettings.TileService;
 import android.util.Log;
 
-import java.util.concurrent.atomic.AtomicInteger;
-
 /**
  * Tuile « Débogage TCP/IP » : ouvre et ferme le port 5555 d'adbd, comme {@code adb tcpip 5555} et
  * {@code adb usb}. Dépend entièrement du débogage USB : sans lui, adbd est arrêté.
+ *
+ * <p>Tout l'état vit dans {@link Tcpip} : SystemUI recrée cette tuile toutes les cinq secondes.
  */
 public class TcpipTileService extends TileService {
 
     private static final String TAG = "AdbTile";
 
-    private final Handler handler = new Handler(Looper.getMainLooper());
-    private ContentObserver observer;
-
-    /** État du port, sondé hors du fil principal ; null tant qu'on ne sait pas. */
-    private volatile Boolean portOpen;
-    private volatile boolean busy;
-    private volatile boolean failed;
-    /** Seule la dernière attente d'adbd a le droit de conclure. */
-    private final AtomicInteger awaitGeneration = new AtomicInteger();
+    private final Runnable refresher = this::refresh;
 
     @Override
     public void onStartListening() {
         super.onStartListening();
-        if (observer == null) {
-            observer = new ContentObserver(handler) {
-                @Override
-                public void onChange(boolean selfChange, Uri uri) {
-                    // Débogage USB ou options dév. coupés : l'état se déduit du réglage, sans
-                    // attendre la sonde du port, qui tombe pendant l'arrêt d'adbd.
-                    refresh();
-                    if (isAdbEnabled()) {
-                        awaitAdbd();
-                    } else {
-                        probe();
-                    }
-                }
-            };
-            getContentResolver().registerContentObserver(
-                    Settings.Global.getUriFor(Settings.Global.ADB_ENABLED), false, observer);
-            getContentResolver().registerContentObserver(
-                    Settings.Global.getUriFor(Settings.Global.DEVELOPMENT_SETTINGS_ENABLED), false, observer);
-        }
+        Tcpip.addListener(refresher);
         refresh();
-        probe();
+        if (!Tcpip.tcpipBusy) {
+            Tcpip.probeAsync();
+        }
     }
 
     @Override
     public void onStopListening() {
-        if (observer != null) {
-            getContentResolver().unregisterContentObserver(observer);
-            observer = null;
-        }
+        Tcpip.removeListener(refresher);
         super.onStopListening();
     }
 
     @Override
     public void onClick() {
-        if (busy || portOpen == null || !isUsable()) {
+        // Une opération en cours, ou le débogage USB qui vient de changer : l'appui est ignoré.
+        if (Tcpip.tcpipBusy || System.currentTimeMillis() < Tcpip.usbBusyUntil || !isUsable()) {
             return;
         }
-        boolean open = portOpen;
-        if (!open && !Tcpip.isWifiConnected(this)) {
-            return;
-        }
-        busy = true;
-        failed = false;
-        refresh();
+        Tcpip.tcpipBusy = true;
+        Tcpip.tcpipFailed = false;
+        Tcpip.notifyChanged();
         new Thread(() -> {
-            boolean ok;
+            boolean ok = true;
             try {
+                // Sonder d'abord : l'état en mémoire peut dater d'avant un redémarrage d'adbd.
+                boolean open = Tcpip.isPortOpen();
                 if (open) {
                     Tcpip.close(this);
-                } else {
+                    ok = Tcpip.waitForPort(false, 8000);
+                } else if (Tcpip.isWifiConnected(this)) {
                     Tcpip.open(this);
+                    ok = Tcpip.waitForPort(true, 8000);
                 }
-                ok = Tcpip.waitForPort(!open, 8000);
             } catch (Exception e) {
                 Log.w(TAG, "Bascule TCP/IP échouée", e);
                 ok = false;
+            } finally {
+                Tcpip.portOpen = Tcpip.isPortOpen();
+                Tcpip.tcpipFailed = !ok;
+                Tcpip.tcpipBusy = false;
+                Tcpip.notifyChanged();
             }
-            portOpen = Tcpip.isPortOpen();
-            failed = !ok;
-            busy = false;
-            handler.post(this::refresh);
         }, "adbtile-tcpip").start();
-    }
-
-    /**
-     * Le débogage USB vient d'être rallumé : adbd redémarre, et rouvre 5555 s'il était en mode TCP.
-     * Il met plusieurs secondes à écouter ; on attend qu'il réponde plutôt que de parier sur un délai.
-     */
-    private void awaitAdbd() {
-        int generation = awaitGeneration.incrementAndGet();
-        new Thread(() -> {
-            try {
-                boolean open = Tcpip.waitForPort(true, 15000);
-                if (generation == awaitGeneration.get()) {
-                    portOpen = open;
-                    handler.post(this::refresh);
-                }
-            } catch (InterruptedException ignored) {
-                Thread.currentThread().interrupt();
-            }
-        }, "adbtile-await").start();
-    }
-
-    private void probe() {
-        new Thread(() -> {
-            portOpen = Tcpip.isPortOpen();
-            handler.post(this::refresh);
-        }, "adbtile-probe").start();
     }
 
     private boolean isUsable() {
@@ -134,6 +78,7 @@ public class TcpipTileService extends TileService {
         if (tile == null) {
             return;
         }
+        Boolean portOpen = Tcpip.portOpen;
         String subtitle;
         int state;
         if (!isDeveloperOptionsEnabled()) {
@@ -148,18 +93,18 @@ public class TcpipTileService extends TileService {
         } else if (!Tcpip.isAuthorized(this)) {
             state = Tile.STATE_UNAVAILABLE;
             subtitle = getString(R.string.subtitle_setup_needed);
-        } else if (busy || portOpen == null) {
-            state = tile.getState() == Tile.STATE_ACTIVE ? Tile.STATE_ACTIVE : Tile.STATE_INACTIVE;
+        } else if (Tcpip.tcpipBusy || portOpen == null) {
+            state = Boolean.TRUE.equals(portOpen) ? Tile.STATE_ACTIVE : Tile.STATE_INACTIVE;
             subtitle = getString(R.string.subtitle_working);
         } else if (portOpen) {
             state = Tile.STATE_ACTIVE;
-            subtitle = failed ? getString(R.string.subtitle_failed) : getString(R.string.subtitle_port_open);
+            subtitle = getString(Tcpip.tcpipFailed ? R.string.subtitle_failed : R.string.subtitle_port_open);
         } else if (!Tcpip.isWifiConnected(this)) {
             state = Tile.STATE_UNAVAILABLE;
             subtitle = getString(R.string.subtitle_wifi_needed);
         } else {
             state = Tile.STATE_INACTIVE;
-            subtitle = failed ? getString(R.string.subtitle_failed) : getString(R.string.subtitle_off);
+            subtitle = getString(Tcpip.tcpipFailed ? R.string.subtitle_failed : R.string.subtitle_off);
         }
         tile.setState(state);
         tile.setLabel(getString(R.string.tcpip_tile_label));

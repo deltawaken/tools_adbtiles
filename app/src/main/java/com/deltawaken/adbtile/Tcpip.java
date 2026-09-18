@@ -6,6 +6,8 @@ import android.content.SharedPreferences;
 import android.net.ConnectivityManager;
 import android.net.Network;
 import android.net.NetworkCapabilities;
+import android.os.Handler;
+import android.os.Looper;
 import android.provider.Settings;
 
 import com.deltawaken.adbtile.adb.AdbClient;
@@ -16,6 +18,8 @@ import java.io.IOException;
 import java.net.InetSocketAddress;
 import java.net.Socket;
 import java.security.GeneralSecurityException;
+import java.util.Set;
+import java.util.concurrent.CopyOnWriteArraySet;
 
 /**
  * Ouvrir et fermer le port {@value #PORT} d'adbd, comme {@code adb tcpip} et {@code adb usb}.
@@ -31,7 +35,65 @@ final class Tcpip {
     private static final String PREFS = "adbtile";
     private static final String PREF_AUTHORIZED = "authorized";
 
+    // État partagé par les deux tuiles et l'écran. Il vit au niveau du processus parce que SystemUI
+    // détache et recrée les tuiles toutes les cinq secondes environ sur cette ROM (mesuré le
+    // 2026-09-18) : un état gardé dans l'instance de la tuile se perdait à chaque réveil.
+
+    /** Dernier état sondé du port ; null tant qu'on ne sait pas. */
+    static volatile Boolean portOpen;
+    /** Une bascule TCP/IP, ou l'attente d'adbd après le rallumage du débogage USB, est en cours. */
+    static volatile boolean tcpipBusy;
+    /** La dernière bascule TCP/IP a échoué. */
+    static volatile boolean tcpipFailed;
+    /** Jusqu'à quand ignorer les appuis sur la tuile USB, le temps qu'adbd s'arrête ou démarre. */
+    static volatile long usbBusyUntil;
+
+    private static final Set<Runnable> LISTENERS = new CopyOnWriteArraySet<>();
+    private static final Handler MAIN = new Handler(Looper.getMainLooper());
+
     private Tcpip() {
+    }
+
+    static void addListener(Runnable listener) {
+        LISTENERS.add(listener);
+    }
+
+    static void removeListener(Runnable listener) {
+        LISTENERS.remove(listener);
+    }
+
+    /** Prévient les tuiles et l'écran vivants qu'il faut se redessiner. */
+    static void notifyChanged() {
+        for (Runnable listener : LISTENERS) {
+            MAIN.post(listener);
+        }
+    }
+
+    /** Sonde le port hors du fil principal, puis prévient. */
+    static void probeAsync() {
+        new Thread(() -> {
+            portOpen = isPortOpen();
+            notifyChanged();
+        }, "adbtile-probe").start();
+    }
+
+    /**
+     * Le débogage USB vient d'être rallumé : adbd redémarre, et rouvre 5555 s'il était en mode TCP.
+     * On attend qu'il réponde plutôt que de parier sur un délai.
+     */
+    static void awaitAdbd() {
+        tcpipBusy = true;
+        notifyChanged();
+        new Thread(() -> {
+            try {
+                portOpen = waitForPort(true, 6000);
+            } catch (InterruptedException e) {
+                Thread.currentThread().interrupt();
+            } finally {
+                tcpipBusy = false;
+                notifyChanged();
+            }
+        }, "adbtile-await").start();
     }
 
     static boolean isPortOpen() {

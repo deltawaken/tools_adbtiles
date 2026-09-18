@@ -2,10 +2,6 @@ package com.deltawaken.adbtile;
 
 import android.Manifest;
 import android.content.pm.PackageManager;
-import android.database.ContentObserver;
-import android.net.Uri;
-import android.os.Handler;
-import android.os.Looper;
 import android.provider.Settings;
 import android.service.quicksettings.Tile;
 import android.service.quicksettings.TileService;
@@ -21,8 +17,10 @@ public class UsbDebuggingTileService extends TileService {
     private static final String ADB_ENABLED = Settings.Global.ADB_ENABLED;
     private static final String DEV_ENABLED = Settings.Global.DEVELOPMENT_SETTINGS_ENABLED;
 
-    private final Handler handler = new Handler(Looper.getMainLooper());
-    private ContentObserver observer;
+    /** Temps laissé à adbd pour s'arrêter ou démarrer ; les appuis sont ignorés pendant ce temps. */
+    private static final long SETTLE_MS = 2000;
+
+    private final Runnable refresher = this::refresh;
 
     /** Vrai tant que le système a refusé la dernière écriture, malgré la permission. */
     private boolean writeRefused;
@@ -30,33 +28,20 @@ public class UsbDebuggingTileService extends TileService {
     @Override
     public void onStartListening() {
         super.onStartListening();
-        if (observer == null) {
-            observer = new ContentObserver(handler) {
-                @Override
-                public void onChange(boolean selfChange, Uri uri) {
-                    refresh();
-                }
-            };
-            getContentResolver().registerContentObserver(
-                    Settings.Global.getUriFor(ADB_ENABLED), false, observer);
-            getContentResolver().registerContentObserver(
-                    Settings.Global.getUriFor(DEV_ENABLED), false, observer);
-        }
+        Tcpip.addListener(refresher);
         refresh();
     }
 
     @Override
     public void onStopListening() {
-        if (observer != null) {
-            getContentResolver().unregisterContentObserver(observer);
-            observer = null;
-        }
+        Tcpip.removeListener(refresher);
         super.onStopListening();
     }
 
     @Override
     public void onClick() {
-        if (!isDeveloperOptionsEnabled() || !hasWriteSecureSettings() || writeRefused) {
+        if (!isDeveloperOptionsEnabled() || !hasWriteSecureSettings() || writeRefused
+                || System.currentTimeMillis() < Tcpip.usbBusyUntil || Tcpip.tcpipBusy) {
             return;
         }
         boolean target = !isAdbEnabled();
@@ -65,6 +50,14 @@ public class UsbDebuggingTileService extends TileService {
         } catch (SecurityException | IllegalArgumentException e) {
             // Politique d'entreprise (DISALLOW_DEBUGGING_FEATURES) ou restriction de la ROM.
             writeRefused = true;
+        }
+        Tcpip.usbBusyUntil = System.currentTimeMillis() + SETTLE_MS;
+        if (target) {
+            // adbd redémarre et rouvre 5555 s'il était en mode TCP : la tuile TCP/IP attend.
+            Tcpip.awaitAdbd();
+        } else {
+            Tcpip.portOpen = false;
+            Tcpip.notifyChanged();
         }
         refresh();
     }
