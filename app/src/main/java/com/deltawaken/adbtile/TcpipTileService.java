@@ -11,6 +11,8 @@ import android.service.quicksettings.Tile;
 import android.service.quicksettings.TileService;
 import android.util.Log;
 
+import java.util.concurrent.atomic.AtomicInteger;
+
 /**
  * Tuile « Débogage TCP/IP » : ouvre et ferme le port 5555 d'adbd, comme {@code adb tcpip 5555} et
  * {@code adb usb}. Dépend entièrement du débogage USB : sans lui, adbd est arrêté.
@@ -26,6 +28,8 @@ public class TcpipTileService extends TileService {
     private volatile Boolean portOpen;
     private volatile boolean busy;
     private volatile boolean failed;
+    /** Seule la dernière attente d'adbd a le droit de conclure. */
+    private final AtomicInteger awaitGeneration = new AtomicInteger();
 
     @Override
     public void onStartListening() {
@@ -37,10 +41,11 @@ public class TcpipTileService extends TileService {
                     // Débogage USB ou options dév. coupés : l'état se déduit du réglage, sans
                     // attendre la sonde du port, qui tombe pendant l'arrêt d'adbd.
                     refresh();
-                    probe();
-                    // adbd met une à deux secondes à (re)démarrer : sonder de nouveau ensuite.
-                    handler.postDelayed(TcpipTileService.this::probe, 1500);
-                    handler.postDelayed(TcpipTileService.this::probe, 4000);
+                    if (isAdbEnabled()) {
+                        awaitAdbd();
+                    } else {
+                        probe();
+                    }
                 }
             };
             getContentResolver().registerContentObserver(
@@ -58,7 +63,6 @@ public class TcpipTileService extends TileService {
             getContentResolver().unregisterContentObserver(observer);
             observer = null;
         }
-        handler.removeCallbacksAndMessages(null);
         super.onStopListening();
     }
 
@@ -92,6 +96,25 @@ public class TcpipTileService extends TileService {
             busy = false;
             handler.post(this::refresh);
         }, "adbtile-tcpip").start();
+    }
+
+    /**
+     * Le débogage USB vient d'être rallumé : adbd redémarre, et rouvre 5555 s'il était en mode TCP.
+     * Il met plusieurs secondes à écouter ; on attend qu'il réponde plutôt que de parier sur un délai.
+     */
+    private void awaitAdbd() {
+        int generation = awaitGeneration.incrementAndGet();
+        new Thread(() -> {
+            try {
+                boolean open = Tcpip.waitForPort(true, 15000);
+                if (generation == awaitGeneration.get()) {
+                    portOpen = open;
+                    handler.post(this::refresh);
+                }
+            } catch (InterruptedException ignored) {
+                Thread.currentThread().interrupt();
+            }
+        }, "adbtile-await").start();
     }
 
     private void probe() {
