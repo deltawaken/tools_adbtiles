@@ -6,4 +6,8 @@
     <string name="subtitle_no_dev_options">開發人員選項 · 關閉</string>
     <string name="subtitle_no_permission">需要 ADB 授權</string>
     <string name="subtitle_write_refused">被系統封鎖</string>
+    <string name="tcpip_tile_label">TCP/IP 偵錯</string>
+    <string name="subtitle_setup_needed">請在應用程式中設定</string>
+    <string name="subtitle_wifi_needed">需要 Wi-Fi</string>
+    <string name="subtitle_failed">失敗</string>
 </resources>

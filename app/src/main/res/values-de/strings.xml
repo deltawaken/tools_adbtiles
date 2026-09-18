@@ -6,4 +6,8 @@
     <string name="subtitle_no_dev_options">Entwickleroptionen · Aus</string>
     <string name="subtitle_no_permission">ADB-Berechtigung nötig</string>
     <string name="subtitle_write_refused">Vom System blockiert</string>
+    <string name="tcpip_tile_label">TCP/IP-Debugging</string>
+    <string name="subtitle_setup_needed">In der App einrichten</string>
+    <string name="subtitle_wifi_needed">WLAN erforderlich</string>
+    <string name="subtitle_failed">Fehlgeschlagen</string>
 </resources>

@@ -6,4 +6,8 @@
     <string name="subtitle_no_dev_options">ตัวเลือกสำหรับนักพัฒนาแอป · ปิด</string>
     <string name="subtitle_no_permission">ต้องให้สิทธิ์ผ่าน ADB</string>
     <string name="subtitle_write_refused">ระบบบล็อกไว้</string>
+    <string name="tcpip_tile_label">การแก้ไขข้อบกพร่อง TCP/IP</string>
+    <string name="subtitle_setup_needed">ตั้งค่าในแอป</string>
+    <string name="subtitle_wifi_needed">ต้องใช้ Wi-Fi</string>
+    <string name="subtitle_failed">ไม่สำเร็จ</string>
 </resources>

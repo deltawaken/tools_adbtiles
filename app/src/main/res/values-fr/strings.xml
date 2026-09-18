@@ -6,4 +6,18 @@
     <string name="subtitle_no_dev_options">Options pour les développeurs · Désactivé</string>
     <string name="subtitle_no_permission">Autorisation adb requise</string>
     <string name="subtitle_write_refused">Refusé par le système</string>
+    <string name="tcpip_tile_label">Débogage TCP/IP</string>
+    <string name="subtitle_setup_needed">Configurer dans l\'app</string>
+    <string name="subtitle_wifi_needed">Wi-Fi requis</string>
+    <string name="subtitle_failed">Échec</string>
+    <string name="main_perm_ok">WRITE_SECURE_SETTINGS : accordée.</string>
+    <string name="main_perm_missing">WRITE_SECURE_SETTINGS manque. Depuis un ordinateur, lancez :\nadb shell pm grant com.deltawaken.adbtile android.permission.WRITE_SECURE_SETTINGS</string>
+    <string name="main_key_ok">Cette app est autorisée pour adb.</string>
+    <string name="main_key_missing">Cette app n\'est pas encore autorisée pour adb.</string>
+    <string name="main_authorize">Autoriser cette app</string>
+    <string name="main_authorize_hint">Le port 5555 doit être ouvert (adb tcpip 5555). Une boîte demandera d\'autoriser le débogage : cochez « Toujours autoriser », puis Autoriser.</string>
+    <string name="main_working">En attente de la boîte de dialogue…</string>
+    <string name="main_port_closed">Le port 5555 est fermé. Lancez d\'abord adb tcpip 5555 depuis un ordinateur.</string>
+    <string name="main_refused">Autorisation refusée.</string>
+    <string name="main_error">Erreur : %1$s</string>
 </resources>

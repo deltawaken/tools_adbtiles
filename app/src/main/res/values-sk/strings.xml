@@ -6,4 +6,8 @@
     <string name="subtitle_no_dev_options">Pre vývojárov · Vypnuté</string>
     <string name="subtitle_no_permission">Vyžaduje povolenie cez ADB</string>
     <string name="subtitle_write_refused">Blokované systémom</string>
+    <string name="tcpip_tile_label">Ladenie cez TCP/IP</string>
+    <string name="subtitle_setup_needed">Nastavte v aplikácii</string>
+    <string name="subtitle_wifi_needed">Vyžaduje Wi-Fi</string>
+    <string name="subtitle_failed">Zlyhalo</string>
 </resources>

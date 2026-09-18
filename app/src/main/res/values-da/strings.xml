@@ -6,4 +6,8 @@
     <string name="subtitle_no_dev_options">Indstillinger for udviklere · Fra</string>
     <string name="subtitle_no_permission">Kræver ADB-tilladelse</string>
     <string name="subtitle_write_refused">Blokeret af systemet</string>
+    <string name="tcpip_tile_label">TCP/IP-fejlretning</string>
+    <string name="subtitle_setup_needed">Konfigurer i appen</string>
+    <string name="subtitle_wifi_needed">Kræver Wi-Fi</string>
+    <string name="subtitle_failed">Mislykkedes</string>
 </resources>

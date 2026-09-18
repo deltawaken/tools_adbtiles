@@ -6,4 +6,8 @@
     <string name="subtitle_no_dev_options">Opzioni sviluppatore · Off</string>
     <string name="subtitle_no_permission">Autorizzazione ADB richiesta</string>
     <string name="subtitle_write_refused">Bloccato dal sistema</string>
+    <string name="tcpip_tile_label">Debug TCP/IP</string>
+    <string name="subtitle_setup_needed">Configura nell\'app</string>
+    <string name="subtitle_wifi_needed">Wi-Fi necessario</string>
+    <string name="subtitle_failed">Operazione non riuscita</string>
 </resources>

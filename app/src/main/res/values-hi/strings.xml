@@ -6,4 +6,8 @@
     <string name="subtitle_no_dev_options">डेवलपर के लिए सेटिंग और टूल · बंद</string>
     <string name="subtitle_no_permission">ADB अनुमति ज़रूरी</string>
     <string name="subtitle_write_refused">सिस्टम ने रोका</string>
+    <string name="tcpip_tile_label">TCP/IP डीबग करना</string>
+    <string name="subtitle_setup_needed">ऐप में सेट अप करें</string>
+    <string name="subtitle_wifi_needed">वाई-फ़ाई ज़रूरी है</string>
+    <string name="subtitle_failed">विफल</string>
 </resources>

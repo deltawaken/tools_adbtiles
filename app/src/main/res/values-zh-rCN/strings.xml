@@ -6,4 +6,8 @@
     <string name="subtitle_no_dev_options">开发者选项 · 已关闭</string>
     <string name="subtitle_no_permission">需要 ADB 授权</string>
     <string name="subtitle_write_refused">被系统阻止</string>
+    <string name="tcpip_tile_label">TCP/IP 调试</string>
+    <string name="subtitle_setup_needed">请在应用中设置</string>
+    <string name="subtitle_wifi_needed">需要 WLAN</string>
+    <string name="subtitle_failed">失败</string>
 </resources>

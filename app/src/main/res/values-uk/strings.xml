@@ -6,4 +6,8 @@
     <string name="subtitle_no_dev_options">Параметри розробника · Вимкнено</string>
     <string name="subtitle_no_permission">Потрібен дозвіл через ADB</string>
     <string name="subtitle_write_refused">Заблоковано системою</string>
+    <string name="tcpip_tile_label">Налагодження TCP/IP</string>
+    <string name="subtitle_setup_needed">Налаштуйте в додатку</string>
+    <string name="subtitle_wifi_needed">Потрібен Wi-Fi</string>
+    <string name="subtitle_failed">Помилка</string>
 </resources>

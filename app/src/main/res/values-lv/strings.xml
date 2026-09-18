@@ -6,4 +6,8 @@
     <string name="subtitle_no_dev_options">Izstrādātāju opcijas · Izslēgta</string>
     <string name="subtitle_no_permission">Nepieciešama ADB atļauja</string>
     <string name="subtitle_write_refused">Bloķējusi sistēma</string>
+    <string name="tcpip_tile_label">TCP/IP atkļūdošana</string>
+    <string name="subtitle_setup_needed">Iestatiet lietotnē</string>
+    <string name="subtitle_wifi_needed">Nepieciešams Wi-Fi</string>
+    <string name="subtitle_failed">Neizdevās</string>
 </resources>

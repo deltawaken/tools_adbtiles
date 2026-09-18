@@ -6,4 +6,8 @@
     <string name="subtitle_no_dev_options">Opcions per a desenvolupadors · Desactivat</string>
     <string name="subtitle_no_permission">Cal permís per ADB</string>
     <string name="subtitle_write_refused">Bloquejat pel sistema</string>
+    <string name="tcpip_tile_label">Depuració per TCP/IP</string>
+    <string name="subtitle_setup_needed">Configura-ho a l\'app</string>
+    <string name="subtitle_wifi_needed">Cal Wi-Fi</string>
+    <string name="subtitle_failed">Error</string>
 </resources>

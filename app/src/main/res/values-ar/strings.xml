@@ -6,4 +6,8 @@
     <string name="subtitle_no_dev_options">خيارات المطورين · غير مفعّل</string>
     <string name="subtitle_no_permission">إذن ADB مطلوب</string>
     <string name="subtitle_write_refused">مرفوض من النظام</string>
+    <string name="tcpip_tile_label">تصحيح الأخطاء عبر TCP/IP</string>
+    <string name="subtitle_setup_needed">الإعداد في التطبيق</string>
+    <string name="subtitle_wifi_needed">يلزم اتصال Wi-Fi</string>
+    <string name="subtitle_failed">تعذّر ذلك</string>
 </resources>

@@ -6,4 +6,8 @@
     <string name="subtitle_no_dev_options">Մշակողի ընտրանքներ · Անջատված է</string>
     <string name="subtitle_no_permission">Պահանջվում է ADB թույլտվություն</string>
     <string name="subtitle_write_refused">Արգելափակվել է համակարգի կողմից</string>
+    <string name="tcpip_tile_label">TCP/IP-ով վրիպազերծում</string>
+    <string name="subtitle_setup_needed">Կարգավորեք հավելվածում</string>
+    <string name="subtitle_wifi_needed">Անհրաժեշտ է Wi-Fi</string>
+    <string name="subtitle_failed">Չհաջողվեց</string>
 </resources>

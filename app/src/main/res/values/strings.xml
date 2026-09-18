@@ -8,4 +8,20 @@
     <string name="subtitle_no_dev_options">Dev options off</string>
     <string name="subtitle_no_permission">ADB grant needed</string>
     <string name="subtitle_write_refused">Blocked by system</string>
+    <string name="tcpip_tile_label">TCP/IP debugging</string>
+    <string name="subtitle_port_open">Port 5555</string>
+    <string name="subtitle_setup_needed">Set up in app</string>
+    <string name="subtitle_wifi_needed">Wi-Fi needed</string>
+    <string name="subtitle_working">…</string>
+    <string name="subtitle_failed">Failed</string>
+    <string name="main_perm_ok">WRITE_SECURE_SETTINGS: granted.</string>
+    <string name="main_perm_missing">WRITE_SECURE_SETTINGS is missing. From a computer, run:\nadb shell pm grant com.deltawaken.adbtile android.permission.WRITE_SECURE_SETTINGS</string>
+    <string name="main_key_ok">This app is authorized for adb.</string>
+    <string name="main_key_missing">This app is not authorized for adb yet.</string>
+    <string name="main_authorize">Authorize this app</string>
+    <string name="main_authorize_hint">Port 5555 must be open (adb tcpip 5555). A dialog will ask to allow debugging: tick “Always allow”, then Allow.</string>
+    <string name="main_working">Waiting for the dialog…</string>
+    <string name="main_port_closed">Port 5555 is closed. Run adb tcpip 5555 from a computer first.</string>
+    <string name="main_refused">Authorization refused.</string>
+    <string name="main_error">Error: %1$s</string>
 </resources>

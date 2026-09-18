@@ -6,4 +6,8 @@
     <string name="subtitle_no_dev_options">ডেভেলপার বিকল্প · বন্ধ আছে</string>
     <string name="subtitle_no_permission">ADB অনুমতি প্রয়োজন</string>
     <string name="subtitle_write_refused">সিস্টেম ব্লক করেছে</string>
+    <string name="tcpip_tile_label">TCP/IP ডিবাগিং</string>
+    <string name="subtitle_setup_needed">অ্যাপে সেট আপ করুন</string>
+    <string name="subtitle_wifi_needed">Wi-Fi প্রয়োজন</string>
+    <string name="subtitle_failed">ব্যর্থ হয়েছে</string>
 </resources>

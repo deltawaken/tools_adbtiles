@@ -6,4 +6,8 @@
     <string name="subtitle_no_dev_options">Опции за програмисти · Изкл.</string>
     <string name="subtitle_no_permission">Нужно е разрешение чрез ADB</string>
     <string name="subtitle_write_refused">Блокирано от системата</string>
+    <string name="tcpip_tile_label">Отстраняване на грешки през TCP/IP</string>
+    <string name="subtitle_setup_needed">Настройте в приложението</string>
+    <string name="subtitle_wifi_needed">Нужен е Wi-Fi</string>
+    <string name="subtitle_failed">Неуспешно</string>
 </resources>

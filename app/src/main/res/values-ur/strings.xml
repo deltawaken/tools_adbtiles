@@ -6,4 +6,8 @@
     <string name="subtitle_no_dev_options">ڈویلپر کے اختیارات · آف</string>
     <string name="subtitle_no_permission">ADB اجازت درکار</string>
     <string name="subtitle_write_refused">سسٹم نے روک دیا</string>
+    <string name="tcpip_tile_label">TCP/IP ڈیبگنگ</string>
+    <string name="subtitle_setup_needed">ایپ میں سیٹ اپ کریں</string>
+    <string name="subtitle_wifi_needed">Wi-Fi درکار ہے</string>
+    <string name="subtitle_failed">ناکام</string>
 </resources>

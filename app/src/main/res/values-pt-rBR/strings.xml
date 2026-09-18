@@ -6,4 +6,8 @@
     <string name="subtitle_no_dev_options">Opções do desenvolvedor · Desativado</string>
     <string name="subtitle_no_permission">Permissão ADB necessária</string>
     <string name="subtitle_write_refused">Bloqueado pelo sistema</string>
+    <string name="tcpip_tile_label">Depuração TCP/IP</string>
+    <string name="subtitle_setup_needed">Configure no app</string>
+    <string name="subtitle_wifi_needed">Wi-Fi necessário</string>
+    <string name="subtitle_failed">Falha</string>
 </resources>

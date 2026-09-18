@@ -6,4 +6,8 @@
     <string name="subtitle_no_dev_options">Επιλογές για προγραμματιστές · Ανενεργό</string>
     <string name="subtitle_no_permission">Απαιτείται άδεια ADB</string>
     <string name="subtitle_write_refused">Αποκλείστηκε από το σύστημα</string>
+    <string name="tcpip_tile_label">Εντοπισμός σφαλμάτων TCP/IP</string>
+    <string name="subtitle_setup_needed">Ρύθμιση στην εφαρμογή</string>
+    <string name="subtitle_wifi_needed">Απαιτείται Wi-Fi</string>
+    <string name="subtitle_failed">Απέτυχε</string>
 </resources>

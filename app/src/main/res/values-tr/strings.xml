@@ -6,4 +6,8 @@
     <string name="subtitle_no_dev_options">Geliştirici seçenekleri · Kapalı</string>
     <string name="subtitle_no_permission">ADB izni gerekli</string>
     <string name="subtitle_write_refused">Sistem engelledi</string>
+    <string name="tcpip_tile_label">TCP/IP hata ayıklaması</string>
+    <string name="subtitle_setup_needed">Uygulamada ayarlayın</string>
+    <string name="subtitle_wifi_needed">Kablosuz ağ gerekli</string>
+    <string name="subtitle_failed">Başarısız</string>
 </resources>

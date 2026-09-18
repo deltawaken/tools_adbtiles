@@ -6,4 +6,8 @@
     <string name="subtitle_no_dev_options">Kehittäjäasetukset · Ei päällä</string>
     <string name="subtitle_no_permission">ADB-lupa vaaditaan</string>
     <string name="subtitle_write_refused">Järjestelmä esti</string>
+    <string name="tcpip_tile_label">TCP/IP-vianetsintä</string>
+    <string name="subtitle_setup_needed">Määritä sovelluksessa</string>
+    <string name="subtitle_wifi_needed">Wi-Fi vaaditaan</string>
+    <string name="subtitle_failed">Epäonnistui</string>
 </resources>

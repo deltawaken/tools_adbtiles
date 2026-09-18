@@ -6,4 +6,8 @@
     <string name="subtitle_no_dev_options">ဆော့ဝဲလ်ရေးသူ ရွေးစရာများ · ပိတ်</string>
     <string name="subtitle_no_permission">ADB ခွင့်ပြုချက် လိုသည်</string>
     <string name="subtitle_write_refused">စနစ်က ပိတ်ထားသည်</string>
+    <string name="tcpip_tile_label">TCP/IP အမှားရှာခြင်း</string>
+    <string name="subtitle_setup_needed">အက်ပ်တွင် စနစ်ထည့်ပါ</string>
+    <string name="subtitle_wifi_needed">Wi-Fi လိုသည်</string>
+    <string name="subtitle_failed">မအောင်မြင်ပါ</string>
 </resources>

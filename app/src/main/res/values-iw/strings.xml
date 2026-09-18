@@ -6,4 +6,8 @@
     <string name="subtitle_no_dev_options">אפשרויות למפתחים · מצב כבוי</string>
     <string name="subtitle_no_permission">נדרשת הרשאת ADB</string>
     <string name="subtitle_write_refused">נחסם על ידי המערכת</string>
+    <string name="tcpip_tile_label">ניפוי באגים ב-TCP/IP</string>
+    <string name="subtitle_setup_needed">יש להגדיר באפליקציה</string>
+    <string name="subtitle_wifi_needed">נדרש Wi-Fi</string>
+    <string name="subtitle_failed">הפעולה נכשלה</string>
 </resources>

@@ -6,4 +6,8 @@
     <string name="subtitle_no_dev_options">Для разработчиков · Отключено</string>
     <string name="subtitle_no_permission">Нужно разрешение через ADB</string>
     <string name="subtitle_write_refused">Заблокировано системой</string>
+    <string name="tcpip_tile_label">Отладка по TCP/IP</string>
+    <string name="subtitle_setup_needed">Настройте в приложении</string>
+    <string name="subtitle_wifi_needed">Нужен Wi-Fi</string>
+    <string name="subtitle_failed">Ошибка</string>
 </resources>

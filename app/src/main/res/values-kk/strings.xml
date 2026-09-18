@@ -6,4 +6,8 @@
     <string name="subtitle_no_dev_options">Әзірлеуші опциялары · Өшірулі</string>
     <string name="subtitle_no_permission">ADB рұқсаты қажет</string>
     <string name="subtitle_write_refused">Жүйе бөгеді</string>
+    <string name="tcpip_tile_label">TCP/IP арқылы түзету</string>
+    <string name="subtitle_setup_needed">Қолданбада реттеңіз</string>
+    <string name="subtitle_wifi_needed">Wi-Fi қажет</string>
+    <string name="subtitle_failed">Сәтсіз аяқталды</string>
 </resources>

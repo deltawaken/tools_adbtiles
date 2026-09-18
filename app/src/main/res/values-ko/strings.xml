@@ -6,4 +6,8 @@
     <string name="subtitle_no_dev_options">개발자 옵션 · 사용 안함</string>
     <string name="subtitle_no_permission">ADB 권한 필요</string>
     <string name="subtitle_write_refused">시스템에서 차단됨</string>
+    <string name="tcpip_tile_label">TCP/IP 디버깅</string>
+    <string name="subtitle_setup_needed">앱에서 설정</string>
+    <string name="subtitle_wifi_needed">Wi-Fi 필요</string>
+    <string name="subtitle_failed">실패</string>
 </resources>

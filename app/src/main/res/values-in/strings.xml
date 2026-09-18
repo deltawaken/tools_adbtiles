@@ -6,4 +6,8 @@
     <string name="subtitle_no_dev_options">Opsi developer · Nonaktif</string>
     <string name="subtitle_no_permission">Perlu izin lewat ADB</string>
     <string name="subtitle_write_refused">Diblokir sistem</string>
+    <string name="tcpip_tile_label">Proses debug TCP/IP</string>
+    <string name="subtitle_setup_needed">Siapkan di aplikasi</string>
+    <string name="subtitle_wifi_needed">Perlu Wi-Fi</string>
+    <string name="subtitle_failed">Gagal</string>
 </resources>

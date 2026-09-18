@@ -6,4 +6,8 @@
     <string name="subtitle_no_dev_options">ជម្រើសសម្រាប់អ្នកអភិវឌ្ឍន៍ · បិទ</string>
     <string name="subtitle_no_permission">តម្រូវឱ្យមានសិទ្ធិ ADB</string>
     <string name="subtitle_write_refused">ប្រព័ន្ធបានទប់ស្កាត់</string>
+    <string name="tcpip_tile_label">ការជួសជុលតាម TCP/IP</string>
+    <string name="subtitle_setup_needed">រៀបចំក្នុងកម្មវិធី</string>
+    <string name="subtitle_wifi_needed">ត្រូវការ Wi-Fi</string>
+    <string name="subtitle_failed">បរាជ័យ</string>
 </resources>

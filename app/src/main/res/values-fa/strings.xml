@@ -6,4 +6,8 @@
     <string name="subtitle_no_dev_options">گزینه‌های برنامه‌نویسان · خاموش</string>
     <string name="subtitle_no_permission">مجوز ADB لازم است</string>
     <string name="subtitle_write_refused">سیستم مسدود کرد</string>
+    <string name="tcpip_tile_label">اشکال‌زدایی TCP/IP</string>
+    <string name="subtitle_setup_needed">در برنامه تنظیم کنید</string>
+    <string name="subtitle_wifi_needed">به Wi-Fi نیاز است</string>
+    <string name="subtitle_failed">ناموفق بود</string>
 </resources>

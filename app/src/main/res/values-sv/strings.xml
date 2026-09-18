@@ -6,4 +6,8 @@
     <string name="subtitle_no_dev_options">Utvecklaralternativ · Av</string>
     <string name="subtitle_no_permission">ADB-behörighet krävs</string>
     <string name="subtitle_write_refused">Blockerad av systemet</string>
+    <string name="tcpip_tile_label">TCP/IP-felsökning</string>
+    <string name="subtitle_setup_needed">Konfigurera i appen</string>
+    <string name="subtitle_wifi_needed">Wi-Fi krävs</string>
+    <string name="subtitle_failed">Misslyckades</string>
 </resources>

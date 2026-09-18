@@ -6,4 +6,8 @@
     <string name="subtitle_no_dev_options">Opcje programisty · Wył.</string>
     <string name="subtitle_no_permission">Wymagane uprawnienie ADB</string>
     <string name="subtitle_write_refused">Zablokowane przez system</string>
+    <string name="tcpip_tile_label">Debugowanie TCP/IP</string>
+    <string name="subtitle_setup_needed">Skonfiguruj w aplikacji</string>
+    <string name="subtitle_wifi_needed">Wymagane Wi-Fi</string>
+    <string name="subtitle_failed">Niepowodzenie</string>
 </resources>

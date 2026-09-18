@@ -6,4 +6,8 @@
     <string name="subtitle_no_dev_options">Ontwikkelaarsopties · Uit</string>
     <string name="subtitle_no_permission">ADB-rechten vereist</string>
     <string name="subtitle_write_refused">Geblokkeerd door systeem</string>
+    <string name="tcpip_tile_label">TCP/IP-foutopsporing</string>
+    <string name="subtitle_setup_needed">Instellen in de app</string>
+    <string name="subtitle_wifi_needed">Wifi vereist</string>
+    <string name="subtitle_failed">Mislukt</string>
 </resources>

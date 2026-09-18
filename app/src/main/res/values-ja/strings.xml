@@ -6,4 +6,8 @@
     <string name="subtitle_no_dev_options">開発者向けオプション · OFF</string>
     <string name="subtitle_no_permission">ADB 権限が必要</string>
     <string name="subtitle_write_refused">システムによりブロック</string>
+    <string name="tcpip_tile_label">TCP/IP デバッグ</string>
+    <string name="subtitle_setup_needed">アプリで設定</string>
+    <string name="subtitle_wifi_needed">Wi-Fi が必要</string>
+    <string name="subtitle_failed">失敗しました</string>
 </resources>

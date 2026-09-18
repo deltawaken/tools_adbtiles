@@ -6,4 +6,8 @@
     <string name="subtitle_no_dev_options">Možnosti za razvijalce · Izklopljeno</string>
     <string name="subtitle_no_permission">Potrebno dovoljenje ADB</string>
     <string name="subtitle_write_refused">Sistem je blokiral</string>
+    <string name="tcpip_tile_label">Odpravljanje napak prek TCP/IP</string>
+    <string name="subtitle_setup_needed">Nastavite v aplikaciji</string>
+    <string name="subtitle_wifi_needed">Potreben je Wi-Fi</string>
+    <string name="subtitle_failed">Ni uspelo</string>
 </resources>

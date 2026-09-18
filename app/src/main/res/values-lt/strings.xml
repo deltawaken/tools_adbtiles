@@ -6,4 +6,8 @@
     <string name="subtitle_no_dev_options">Kūrėjo parinktys · Išjungta</string>
     <string name="subtitle_no_permission">Reikia ADB leidimo</string>
     <string name="subtitle_write_refused">Užblokavo sistema</string>
+    <string name="tcpip_tile_label">TCP/IP derinimas</string>
+    <string name="subtitle_setup_needed">Nustatykite programoje</string>
+    <string name="subtitle_wifi_needed">Reikia „Wi-Fi“</string>
+    <string name="subtitle_failed">Nepavyko</string>
 </resources>
