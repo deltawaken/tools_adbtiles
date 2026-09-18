@@ -1,4 +1,4 @@
-package com.deltawaken.adbtile;
+package com.deltawaken.adbtiles;
 
 import android.Manifest;
 import android.content.pm.PackageManager;
@@ -15,7 +15,7 @@ import android.util.Log;
  */
 public class TcpipTileService extends TileService {
 
-    private static final String TAG = "AdbTile";
+    private static final String TAG = "AdbTiles";
 
     private final Runnable refresher = this::refresh;
 
@@ -65,7 +65,7 @@ public class TcpipTileService extends TileService {
                 Tcpip.tcpipBusy = false;
                 Tcpip.notifyChanged();
             }
-        }, "adbtile-tcpip").start();
+        }, "adbtiles-tcpip").start();
     }
 
     private boolean isUsable() {

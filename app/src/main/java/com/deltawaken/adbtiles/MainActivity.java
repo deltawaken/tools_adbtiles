@@ -1,4 +1,4 @@
-package com.deltawaken.adbtile;
+package com.deltawaken.adbtiles;
 
 import android.Manifest;
 import android.app.Activity;
@@ -18,7 +18,7 @@ import android.widget.LinearLayout;
 import android.widget.ScrollView;
 import android.widget.TextView;
 
-import com.deltawaken.adbtile.adb.AdbClient;
+import com.deltawaken.adbtiles.adb.AdbClient;
 
 import java.net.ConnectException;
 
@@ -47,7 +47,7 @@ public class MainActivity extends Activity {
                     portOpen = open;
                     updateStatus();
                 });
-            }, "adbtile-poll").start();
+            }, "adbtiles-poll").start();
             handler.postDelayed(this, PORT_POLL_MS);
         }
     };
@@ -158,7 +158,7 @@ public class MainActivity extends Activity {
                 authorize.setEnabled(true);
                 updateStatus();
             });
-        }, "adbtile-authorize").start();
+        }, "adbtiles-authorize").start();
     }
 
     private TextView text(String value, int sizeSp) {

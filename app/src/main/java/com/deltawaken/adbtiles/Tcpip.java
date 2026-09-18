@@ -1,4 +1,4 @@
-package com.deltawaken.adbtile;
+package com.deltawaken.adbtiles;
 
 import android.content.ContentResolver;
 import android.content.Context;
@@ -10,9 +10,9 @@ import android.os.Handler;
 import android.os.Looper;
 import android.provider.Settings;
 
-import com.deltawaken.adbtile.adb.AdbClient;
-import com.deltawaken.adbtile.adb.AdbKey;
-import com.deltawaken.adbtile.adb.TlsPortFinder;
+import com.deltawaken.adbtiles.adb.AdbClient;
+import com.deltawaken.adbtiles.adb.AdbKey;
+import com.deltawaken.adbtiles.adb.TlsPortFinder;
 
 import java.io.IOException;
 import java.net.InetSocketAddress;
@@ -32,7 +32,7 @@ final class Tcpip {
 
     static final int PORT = 5555;
     private static final String LOCALHOST = "127.0.0.1";
-    private static final String PREFS = "adbtile";
+    private static final String PREFS = "adbtiles";
     private static final String PREF_AUTHORIZED = "authorized";
 
     // État partagé par les deux tuiles et l'écran. Il vit au niveau du processus parce que SystemUI
@@ -74,7 +74,7 @@ final class Tcpip {
         new Thread(() -> {
             portOpen = isPortOpen();
             notifyChanged();
-        }, "adbtile-probe").start();
+        }, "adbtiles-probe").start();
     }
 
     /**
@@ -93,7 +93,7 @@ final class Tcpip {
                 tcpipBusy = false;
                 notifyChanged();
             }
-        }, "adbtile-await").start();
+        }, "adbtiles-await").start();
     }
 
     static boolean isPortOpen() {

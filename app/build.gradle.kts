@@ -3,11 +3,11 @@ plugins {
 }
 
 android {
-    namespace = "com.deltawaken.adbtile"
+    namespace = "com.deltawaken.adbtiles"
     compileSdk = 36
 
     defaultConfig {
-        applicationId = "com.deltawaken.adbtile"
+        applicationId = "com.deltawaken.adbtiles"
         minSdk = 29
         targetSdk = 36
         versionCode = 1

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- Nom de l'app installée ; le libellé de la tuile est tile_label. -->
-    <string name="app_name">ADB Tile</string>
+    <string name="app_name">ADB Tiles</string>
     <string name="tile_label">USB debugging</string>
     <string name="subtitle_on">On</string>
     <string name="subtitle_off">Off</string>
@@ -15,7 +15,7 @@
     <string name="subtitle_working">…</string>
     <string name="subtitle_failed">Failed</string>
     <string name="main_perm_ok">WRITE_SECURE_SETTINGS: granted.</string>
-    <string name="main_perm_missing">WRITE_SECURE_SETTINGS is missing. From a computer, run:\nadb shell pm grant com.deltawaken.adbtile android.permission.WRITE_SECURE_SETTINGS</string>
+    <string name="main_perm_missing">WRITE_SECURE_SETTINGS is missing. From a computer, run:\nadb shell pm grant com.deltawaken.adbtiles android.permission.WRITE_SECURE_SETTINGS</string>
     <string name="main_key_ok">This app is authorized for adb.</string>
     <string name="main_key_missing">This app is not authorized for adb yet.</string>
     <string name="main_authorize">Authorize this app</string>

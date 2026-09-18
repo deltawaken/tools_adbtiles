@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <!-- Non accordable par l'utilisateur : passer par
-         adb shell pm grant com.deltawaken.adbtile android.permission.WRITE_SECURE_SETTINGS -->
+         adb shell pm grant com.deltawaken.adbtiles android.permission.WRITE_SECURE_SETTINGS -->
     <uses-permission
         android:name="android.permission.WRITE_SECURE_SETTINGS"
         tools:ignore="ProtectedPermissions" />

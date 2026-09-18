@@ -1,4 +1,4 @@
-package com.deltawaken.adbtile;
+package com.deltawaken.adbtiles;
 
 import android.Manifest;
 import android.content.pm.PackageManager;

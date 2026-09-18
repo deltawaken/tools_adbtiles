@@ -1,4 +1,4 @@
-package com.deltawaken.adbtile.adb;
+package com.deltawaken.adbtiles.adb;
 
 import android.content.Context;
 import android.net.nsd.NsdManager;

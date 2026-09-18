@@ -1,4 +1,4 @@
-package com.deltawaken.adbtile.adb;
+package com.deltawaken.adbtiles.adb;
 
 import java.io.EOFException;
 import java.io.IOException;

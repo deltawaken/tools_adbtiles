@@ -11,7 +11,7 @@
     <string name="subtitle_wifi_needed">Wi-Fi requis</string>
     <string name="subtitle_failed">Échec</string>
     <string name="main_perm_ok">WRITE_SECURE_SETTINGS : accordée.</string>
-    <string name="main_perm_missing">WRITE_SECURE_SETTINGS manque. Depuis un ordinateur, lancez :\nadb shell pm grant com.deltawaken.adbtile android.permission.WRITE_SECURE_SETTINGS</string>
+    <string name="main_perm_missing">WRITE_SECURE_SETTINGS manque. Depuis un ordinateur, lancez :\nadb shell pm grant com.deltawaken.adbtiles android.permission.WRITE_SECURE_SETTINGS</string>
     <string name="main_key_ok">Cette app est autorisée pour adb.</string>
     <string name="main_key_missing">Cette app n\'est pas encore autorisée pour adb.</string>
     <string name="main_authorize">Autoriser cette app</string>

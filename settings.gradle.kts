@@ -14,5 +14,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "adbTile"
+rootProject.name = "adbTiles"
 include(":app")

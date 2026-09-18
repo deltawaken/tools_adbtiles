@@ -1,4 +1,4 @@
-package com.deltawaken.adbtile.adb;
+package com.deltawaken.adbtiles.adb;
 
 import android.content.Context;
 import android.util.Base64;
@@ -94,7 +94,7 @@ public final class AdbKey {
         buffer.put(littleEndian(rr, words * 4));
         buffer.putInt(key.getPublicExponent().intValue());
 
-        String encoded = Base64.encodeToString(buffer.array(), Base64.NO_WRAP) + " adbtile@android\0";
+        String encoded = Base64.encodeToString(buffer.array(), Base64.NO_WRAP) + " adbtiles@android\0";
         return encoded.getBytes(StandardCharsets.UTF_8);
     }
 
@@ -123,7 +123,7 @@ public final class AdbKey {
         static byte[] create(KeyPair pair) throws GeneralSecurityException, IOException {
             byte[] name = der(0x30, der(0x31, der(0x30,
                     new byte[] {0x06, 0x03, 0x55, 0x04, 0x03},
-                    der(0x0c, "adbtile".getBytes(StandardCharsets.US_ASCII)))));
+                    der(0x0c, "adbtiles".getBytes(StandardCharsets.US_ASCII)))));
             byte[] validity = der(0x30,
                     der(0x17, "250101000000Z".getBytes(StandardCharsets.US_ASCII)),
                     der(0x18, "20991231235959Z".getBytes(StandardCharsets.US_ASCII)));
