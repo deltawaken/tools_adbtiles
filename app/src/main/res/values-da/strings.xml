@@ -3,7 +3,7 @@
     <string name="tile_label">USB-fejlretning</string>
     <string name="subtitle_on">Til</string>
     <string name="subtitle_off">Fra</string>
-    <string name="subtitle_no_dev_options">Indstillinger for udviklere · Fra</string>
+    <string name="subtitle_no_dev_options">Udviklerindst.: Fra</string>
     <string name="subtitle_no_permission">Kræver ADB-tilladelse</string>
     <string name="subtitle_write_refused">Blokeret af systemet</string>
     <string name="tcpip_tile_label">TCP/IP-fejlretning</string>
@@ -28,4 +28,5 @@
     <string name="main_battery_ok">Batteri: ubegrænset, TCP/IP-feltet kan altid nå adb.</string>
     <string name="main_battery_restricted">Batteri: optimeret. I inaktiv tilstand afbryder Android appens netværk, selv til telefonen selv, og TCP/IP-feltet bliver blindt.</string>
     <string name="main_battery_allow">Tillad i baggrunden</string>
+    <string name="subtitle_usb_off">USB fra</string>
 </resources>

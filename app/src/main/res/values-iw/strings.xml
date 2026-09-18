@@ -3,7 +3,7 @@
     <string name="tile_label">‏ניפוי באגים ב-USB</string>
     <string name="subtitle_on">פועל</string>
     <string name="subtitle_off">מצב כבוי</string>
-    <string name="subtitle_no_dev_options">אפשרויות למפתחים · מצב כבוי</string>
+    <string name="subtitle_no_dev_options">אפשרויות מפתח: כבוי</string>
     <string name="subtitle_no_permission">נדרשת הרשאת ADB</string>
     <string name="subtitle_write_refused">נחסם על ידי המערכת</string>
     <string name="tcpip_tile_label">ניפוי באגים ב-TCP/IP</string>
@@ -28,4 +28,5 @@
     <string name="main_battery_ok">סוללה: ללא הגבלה, כרטיס המידע של TCP/IP תמיד מגיע ל-adb.</string>
     <string name="main_battery_restricted">סוללה: עם אופטימיזציה. במצב המתנה, Android מנתק את הרשת של האפליקציה, גם אל הטלפון עצמו, וכרטיס המידע של TCP/IP מתעוור.</string>
     <string name="main_battery_allow">הרשאה לפעול ברקע</string>
+    <string name="subtitle_usb_off">USB כבוי</string>
 </resources>

@@ -3,7 +3,7 @@
     <string name="tile_label">USB derinimas</string>
     <string name="subtitle_on">Įjungta</string>
     <string name="subtitle_off">Išjungta</string>
-    <string name="subtitle_no_dev_options">Kūrėjo parinktys · Išjungta</string>
+    <string name="subtitle_no_dev_options">Kūrėjo parinktys išj.</string>
     <string name="subtitle_no_permission">Reikia ADB leidimo</string>
     <string name="subtitle_write_refused">Užblokavo sistema</string>
     <string name="tcpip_tile_label">TCP/IP derinimas</string>
@@ -28,4 +28,5 @@
     <string name="main_battery_ok">Akumuliatorius: neribojamas, TCP/IP išklotinės elementas visada pasiekia adb.</string>
     <string name="main_battery_restricted">Akumuliatorius: optimizuotas. Neveikos būsenoje Android atjungia šios programos tinklą, net iki paties telefono, ir TCP/IP išklotinės elementas apanka.</string>
     <string name="main_battery_allow">Leisti fone</string>
+    <string name="subtitle_usb_off">USB išjungtas</string>
 </resources>

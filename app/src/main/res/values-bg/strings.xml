@@ -3,10 +3,10 @@
     <string name="tile_label">През USB</string>
     <string name="subtitle_on">Вкл.</string>
     <string name="subtitle_off">Изкл.</string>
-    <string name="subtitle_no_dev_options">Опции за програмисти · Изкл.</string>
-    <string name="subtitle_no_permission">Нужно е разрешение чрез ADB</string>
+    <string name="subtitle_no_dev_options">За програмисти · Изкл.</string>
+    <string name="subtitle_no_permission">Нужно разрешение ADB</string>
     <string name="subtitle_write_refused">Блокирано от системата</string>
-    <string name="tcpip_tile_label">Отстраняване на грешки през TCP/IP</string>
+    <string name="tcpip_tile_label">През TCP/IP</string>
     <string name="subtitle_setup_needed">Настройте в приложението</string>
     <string name="subtitle_wifi_needed">Нужен е Wi-Fi</string>
     <string name="subtitle_failed">Неуспешно</string>
@@ -28,4 +28,5 @@
     <string name="main_battery_ok">Батерия: без ограничения, плочката TCP/IP винаги достига до adb.</string>
     <string name="main_battery_restricted">Батерия: оптимизирана. При неактивност Android прекъсва мрежата на това приложение, дори към самия телефон, и плочката TCP/IP ослепява.</string>
     <string name="main_battery_allow">Разрешаване на заден план</string>
+    <string name="subtitle_usb_off">USB изкл.</string>
 </resources>

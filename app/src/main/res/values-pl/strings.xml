@@ -3,7 +3,7 @@
     <string name="tile_label">Debugowanie USB</string>
     <string name="subtitle_on">Wł.</string>
     <string name="subtitle_off">Wył.</string>
-    <string name="subtitle_no_dev_options">Opcje programisty · Wył.</string>
+    <string name="subtitle_no_dev_options">Opcje prog.: wył.</string>
     <string name="subtitle_no_permission">Wymagane uprawnienie ADB</string>
     <string name="subtitle_write_refused">Zablokowane przez system</string>
     <string name="tcpip_tile_label">Debugowanie TCP/IP</string>
@@ -18,7 +18,7 @@
     <string name="main_key_missing">Ta aplikacja nie ma jeszcze autoryzacji adb.</string>
     <string name="main_authorize">Autoryzuj tę aplikację</string>
     <string name="main_authorize_hint">Port TCP/IP musi być otwarty (adb tcpip &lt;port&gt;). Pojawi się okno z pytaniem o zezwolenie na debugowanie: zaznacz „Zawsze zezwalaj z tego komputera”, a potem kliknij „Zezwalaj”.</string>
-    <string name="main_working">Czekam na okno…</string>
+    <string name="main_working">Oczekiwanie na okno…</string>
     <string name="main_port_closed">Port TCP/IP jest zamknięty. Najpierw uruchom adb tcpip &lt;port&gt; na komputerze.</string>
     <string name="main_refused">Odmowa autoryzacji.</string>
     <string name="main_error">Błąd: %1$s</string>
@@ -26,6 +26,7 @@
     <string name="main_port_locked">Wyłącz debugowanie TCP/IP, aby zmienić port.</string>
     <string name="main_port_invalid">Wpisz port od 1024 do 65535.</string>
     <string name="main_battery_ok">Bateria: bez ograniczeń, kafelek TCP/IP zawsze dociera do adb.</string>
-    <string name="main_battery_restricted">Bateria: optymalizowana. W stanie bezczynności Android odcina tej aplikacji sieć, nawet do samego telefonu, i kafelek TCP/IP przestaje cokolwiek widzieć.</string>
+    <string name="main_battery_restricted">Bateria: zoptymalizowana. W stanie bezczynności Android odcina tej aplikacji sieć, nawet do samego telefonu, i kafelek TCP/IP przestaje cokolwiek widzieć.</string>
     <string name="main_battery_allow">Zezwól w tle</string>
+    <string name="subtitle_usb_off">USB wył.</string>
 </resources>

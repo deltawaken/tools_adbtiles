@@ -3,7 +3,7 @@
     <string name="tile_label">Gỡ lỗi qua USB</string>
     <string name="subtitle_on">Đang bật</string>
     <string name="subtitle_off">Đang tắt</string>
-    <string name="subtitle_no_dev_options">Tùy chọn cho nhà phát triển · Đang tắt</string>
+    <string name="subtitle_no_dev_options">Nhà phát triển: Tắt</string>
     <string name="subtitle_no_permission">Cần quyền ADB</string>
     <string name="subtitle_write_refused">Bị hệ thống chặn</string>
     <string name="tcpip_tile_label">Gỡ lỗi qua TCP/IP</string>
@@ -28,4 +28,5 @@
     <string name="main_battery_ok">Pin: không hạn chế, ô TCP/IP luôn kết nối được với adb.</string>
     <string name="main_battery_restricted">Pin: được tối ưu hóa. Khi thiết bị ở trạng thái rảnh, Android cắt mạng của ứng dụng này, kể cả kết nối đến chính điện thoại, và ô TCP/IP không còn nắm được trạng thái.</string>
     <string name="main_battery_allow">Cho phép chạy trong nền</string>
+    <string name="subtitle_usb_off">USB đang tắt</string>
 </resources>

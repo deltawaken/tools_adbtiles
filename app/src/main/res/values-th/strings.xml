@@ -3,10 +3,10 @@
     <string name="tile_label">การแก้ไขข้อบกพร่อง USB</string>
     <string name="subtitle_on">เปิด</string>
     <string name="subtitle_off">ปิด</string>
-    <string name="subtitle_no_dev_options">ตัวเลือกสำหรับนักพัฒนาแอป · ปิด</string>
+    <string name="subtitle_no_dev_options">ตัวเลือกนักพัฒนา · ปิด</string>
     <string name="subtitle_no_permission">ต้องให้สิทธิ์ผ่าน ADB</string>
     <string name="subtitle_write_refused">ระบบบล็อกไว้</string>
-    <string name="tcpip_tile_label">การแก้ไขข้อบกพร่อง TCP/IP</string>
+    <string name="tcpip_tile_label">TCP/IP: การแก้ไขข้อบกพร่อง</string>
     <string name="subtitle_setup_needed">ตั้งค่าในแอป</string>
     <string name="subtitle_wifi_needed">ต้องใช้ Wi-Fi</string>
     <string name="subtitle_failed">ไม่สำเร็จ</string>
@@ -28,4 +28,5 @@
     <string name="main_battery_ok">แบตเตอรี่: ไม่จำกัด การ์ด TCP/IP เข้าถึง adb ได้เสมอ</string>
     <string name="main_battery_restricted">แบตเตอรี่: เพิ่มประสิทธิภาพ เมื่อไม่มีการใช้งาน Android จะตัดเครือข่ายของแอปนี้ แม้แต่ไปยังตัวโทรศัพท์เอง และการ์ด TCP/IP จะมองไม่เห็นอะไรเลย</string>
     <string name="main_battery_allow">อนุญาตในเบื้องหลัง</string>
+    <string name="subtitle_usb_off">USB ปิด</string>
 </resources>

@@ -3,13 +3,13 @@
     <string name="tile_label">Debug USB</string>
     <string name="subtitle_on">On</string>
     <string name="subtitle_off">Off</string>
-    <string name="subtitle_no_dev_options">Opzioni sviluppatore · Off</string>
-    <string name="subtitle_no_permission">Autorizzazione ADB richiesta</string>
+    <string name="subtitle_no_dev_options">Opz. sviluppo: off</string>
+    <string name="subtitle_no_permission">Serve permesso ADB</string>
     <string name="subtitle_write_refused">Bloccato dal sistema</string>
     <string name="tcpip_tile_label">Debug TCP/IP</string>
     <string name="subtitle_setup_needed">Configura nell\'app</string>
     <string name="subtitle_wifi_needed">Wi-Fi necessario</string>
-    <string name="subtitle_failed">Operazione non riuscita</string>
+    <string name="subtitle_failed">Non riuscito</string>
     <string name="subtitle_port_open">Porta %1$d</string>
     <string name="status_line">%1$s: %2$s</string>
     <string name="main_perm_ok">WRITE_SECURE_SETTINGS: concessa.</string>
@@ -28,4 +28,5 @@
     <string name="main_battery_ok">Batteria: senza restrizioni, il riquadro TCP/IP raggiunge sempre adb.</string>
     <string name="main_battery_restricted">Batteria: ottimizzata. In standby, Android interrompe la rete di questa app, anche verso il telefono stesso, e il riquadro TCP/IP diventa cieco.</string>
     <string name="main_battery_allow">Consenti in background</string>
+    <string name="subtitle_usb_off">USB off</string>
 </resources>

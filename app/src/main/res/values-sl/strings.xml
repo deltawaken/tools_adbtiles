@@ -3,10 +3,10 @@
     <string name="tile_label">Odpravljanje napak prek USB-ja</string>
     <string name="subtitle_on">Vklopljeno</string>
     <string name="subtitle_off">Izklopljeno</string>
-    <string name="subtitle_no_dev_options">Možnosti za razvijalce · Izklopljeno</string>
+    <string name="subtitle_no_dev_options">Možnosti razv.: izkl.</string>
     <string name="subtitle_no_permission">Potrebno dovoljenje ADB</string>
     <string name="subtitle_write_refused">Sistem je blokiral</string>
-    <string name="tcpip_tile_label">Odpravljanje napak prek TCP/IP</string>
+    <string name="tcpip_tile_label">TCP/IP: odpravljanje napak</string>
     <string name="subtitle_setup_needed">Nastavite v aplikaciji</string>
     <string name="subtitle_wifi_needed">Potreben je Wi-Fi</string>
     <string name="subtitle_failed">Ni uspelo</string>
@@ -23,9 +23,10 @@
     <string name="main_refused">Pooblastilo je zavrnjeno.</string>
     <string name="main_error">Napaka: %1$s</string>
     <string name="main_port_label">Vrata TCP/IP</string>
-    <string name="main_port_locked">Če želite spremeniti vrata, izklopite odpravljanje napak prek TCP/IP.</string>
+    <string name="main_port_locked">Če želite spremeniti vrata, izklopite odpravljanje napak prek TCP/IP-ja.</string>
     <string name="main_port_invalid">Vnesite vrata med 1024 in 65535.</string>
     <string name="main_battery_ok">Baterija: neomejeno, ploščica TCP/IP vedno doseže adb.</string>
     <string name="main_battery_restricted">Baterija: optimizirano. V stanju mirovanja Android tej aplikaciji prekine omrežje, celo do samega telefona, in ploščica TCP/IP oslepi.</string>
     <string name="main_battery_allow">Dovoli v ozadju</string>
+    <string name="subtitle_usb_off">USB izklopljen</string>
 </resources>

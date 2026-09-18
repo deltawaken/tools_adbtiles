@@ -3,11 +3,11 @@
     <string name="tile_label">Depuración por USB</string>
     <string name="subtitle_on">Activado</string>
     <string name="subtitle_off">Desactivado</string>
-    <string name="subtitle_no_dev_options">Opciones para desarrolladores · Desactivado</string>
+    <string name="subtitle_no_dev_options">Opc. desarrollo: no</string>
     <string name="subtitle_no_permission">Falta permiso por ADB</string>
     <string name="subtitle_write_refused">Bloqueado por el sistema</string>
-    <string name="tcpip_tile_label">Depuración por TCP/IP</string>
-    <string name="subtitle_setup_needed">Configúralo en la app</string>
+    <string name="tcpip_tile_label">Depuración TCP/IP</string>
+    <string name="subtitle_setup_needed">Abre la aplicación</string>
     <string name="subtitle_wifi_needed">Requiere Wi-Fi</string>
     <string name="subtitle_failed">Error</string>
     <string name="subtitle_port_open">Puerto %1$d</string>
@@ -28,4 +28,5 @@
     <string name="main_battery_ok">Batería: sin restricciones; el recuadro TCP/IP siempre puede llegar a adb.</string>
     <string name="main_battery_restricted">Batería: optimizada. En reposo, Android corta la red de esta aplicación, incluso hacia el propio teléfono, y el recuadro TCP/IP se queda ciego.</string>
     <string name="main_battery_allow">Permitir en segundo plano</string>
+    <string name="subtitle_usb_off">USB desactivado</string>
 </resources>

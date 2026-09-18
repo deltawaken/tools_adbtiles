@@ -3,11 +3,11 @@
     <string name="tile_label">Depuració per USB</string>
     <string name="subtitle_on">Activat</string>
     <string name="subtitle_off">Desactivat</string>
-    <string name="subtitle_no_dev_options">Opcions per a desenvolupadors · Desactivat</string>
+    <string name="subtitle_no_dev_options">Opcions desenv.: no</string>
     <string name="subtitle_no_permission">Cal permís per ADB</string>
     <string name="subtitle_write_refused">Bloquejat pel sistema</string>
-    <string name="tcpip_tile_label">Depuració per TCP/IP</string>
-    <string name="subtitle_setup_needed">Configura-ho a l\'app</string>
+    <string name="tcpip_tile_label">Depuració TCP/IP</string>
+    <string name="subtitle_setup_needed">Obre l\'aplicació</string>
     <string name="subtitle_wifi_needed">Cal Wi-Fi</string>
     <string name="subtitle_failed">Error</string>
     <string name="subtitle_port_open">Port %1$d</string>
@@ -28,4 +28,5 @@
     <string name="main_battery_ok">Bateria: sense restriccions; la icona TCP/IP sempre pot arribar a adb.</string>
     <string name="main_battery_restricted">Bateria: optimitzada. En repòs, Android talla la xarxa d\'aquesta aplicació, fins i tot cap al mateix telèfon, i la icona TCP/IP es queda cega.</string>
     <string name="main_battery_allow">Permet en segon pla</string>
+    <string name="subtitle_usb_off">USB desactivat</string>
 </resources>

@@ -3,7 +3,7 @@
     <string name="tile_label">‏USB ڈیبگنگ</string>
     <string name="subtitle_on">آن</string>
     <string name="subtitle_off">آف</string>
-    <string name="subtitle_no_dev_options">ڈویلپر کے اختیارات · آف</string>
+    <string name="subtitle_no_dev_options">ڈویلپر اختیارات: آف</string>
     <string name="subtitle_no_permission">ADB اجازت درکار</string>
     <string name="subtitle_write_refused">سسٹم نے روک دیا</string>
     <string name="tcpip_tile_label">TCP/IP ڈیبگنگ</string>
@@ -28,4 +28,5 @@
     <string name="main_battery_ok">بیٹری: غیر محدود، TCP/IP ٹائل ہمیشہ adb تک پہنچ سکتا ہے۔</string>
     <string name="main_battery_restricted">بیٹری: بہتر بنائی گئی۔ غیر فعال ہونے پر Android اس ایپ کا نیٹ ورک منقطع کر دیتا ہے، فون کے اپنے لیے بھی، اور TCP/IP ٹائل اندھا ہو جاتا ہے۔</string>
     <string name="main_battery_allow">پس منظر میں اجازت دیں</string>
+    <string name="subtitle_usb_off">USB آف</string>
 </resources>

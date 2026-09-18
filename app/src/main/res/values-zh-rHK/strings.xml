@@ -28,4 +28,5 @@
     <string name="main_battery_ok">電池：無限制，TCP/IP 圖塊一律可連線至 adb。</string>
     <string name="main_battery_restricted">電池：已優化。裝置閒置時，Android 會中斷此應用程式的網絡連線 (即使是連往手機本身)，令 TCP/IP 圖塊無法取得狀態。</string>
     <string name="main_battery_allow">允許在背景執行</string>
+    <string name="subtitle_usb_off">USB 已關閉</string>
 </resources>

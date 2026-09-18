@@ -3,7 +3,7 @@
     <string name="tile_label">USB арқылы түзету</string>
     <string name="subtitle_on">Қосулы</string>
     <string name="subtitle_off">Өшірулі</string>
-    <string name="subtitle_no_dev_options">Әзірлеуші опциялары · Өшірулі</string>
+    <string name="subtitle_no_dev_options">Әзірлеуші: өшірулі</string>
     <string name="subtitle_no_permission">ADB рұқсаты қажет</string>
     <string name="subtitle_write_refused">Жүйе бөгеді</string>
     <string name="tcpip_tile_label">TCP/IP арқылы түзету</string>
@@ -28,4 +28,5 @@
     <string name="main_battery_ok">Батарея: шектелмеген, TCP/IP бөлшегі adb-ге әрқашан қосыла алады.</string>
     <string name="main_battery_restricted">Батарея: оңтайландырылған. Құрылғы әрекетсіз тұрғанда, Android бұл қолданбаның желісін, тіпті телефонның өзіне қарай да, ажыратады, сондықтан TCP/IP бөлшегі ештеңе көрмей қалады.</string>
     <string name="main_battery_allow">Фондық режимде рұқсат ету</string>
+    <string name="subtitle_usb_off">USB өшірулі</string>
 </resources>

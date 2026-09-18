@@ -3,7 +3,7 @@
     <string name="tile_label">Proses debug USB</string>
     <string name="subtitle_on">Aktif</string>
     <string name="subtitle_off">Nonaktif</string>
-    <string name="subtitle_no_dev_options">Opsi developer · Nonaktif</string>
+    <string name="subtitle_no_dev_options">Opsi dev. nonaktif</string>
     <string name="subtitle_no_permission">Perlu izin lewat ADB</string>
     <string name="subtitle_write_refused">Diblokir sistem</string>
     <string name="tcpip_tile_label">Proses debug TCP/IP</string>
@@ -28,4 +28,5 @@
     <string name="main_battery_ok">Baterai: tidak dibatasi, kartu TCP/IP selalu dapat menjangkau adb.</string>
     <string name="main_battery_restricted">Baterai: dioptimalkan. Saat tidak aktif, Android memutus jaringan aplikasi ini, bahkan ke ponsel itu sendiri, sehingga kartu TCP/IP tidak dapat melihat statusnya.</string>
     <string name="main_battery_allow">Izinkan di latar belakang</string>
+    <string name="subtitle_usb_off">USB nonaktif</string>
 </resources>

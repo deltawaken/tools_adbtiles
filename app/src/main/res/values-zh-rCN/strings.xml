@@ -28,4 +28,5 @@
     <string name="main_battery_ok">电池：无限制，TCP/IP 功能块始终可以连接到 adb。</string>
     <string name="main_battery_restricted">电池：已优化。设备闲置时，Android 会切断此应用的网络连接（即使是连接手机本身），导致 TCP/IP 功能块无法获取状态。</string>
     <string name="main_battery_allow">允许在后台运行</string>
+    <string name="subtitle_usb_off">USB 已关闭</string>
 </resources>

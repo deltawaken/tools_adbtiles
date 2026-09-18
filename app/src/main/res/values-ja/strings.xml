@@ -28,4 +28,5 @@
     <string name="main_battery_ok">バッテリー: 制限なし。TCP/IP タイルは常に adb に接続できます。</string>
     <string name="main_battery_restricted">バッテリー: 最適化。アイドル状態になると Android がこのアプリのネットワークを（スマートフォン自身への接続も含めて）遮断するため、TCP/IP タイルは状態を取得できなくなります。</string>
     <string name="main_battery_allow">バックグラウンドでの実行を許可</string>
+    <string name="subtitle_usb_off">USB OFF</string>
 </resources>

@@ -3,7 +3,7 @@
     <string name="tile_label">Depuração USB</string>
     <string name="subtitle_on">Ativado</string>
     <string name="subtitle_off">Desativado</string>
-    <string name="subtitle_no_dev_options">Opções do desenvolvedor · Desativado</string>
+    <string name="subtitle_no_dev_options">Opções desenv.: não</string>
     <string name="subtitle_no_permission">Permissão ADB necessária</string>
     <string name="subtitle_write_refused">Bloqueado pelo sistema</string>
     <string name="tcpip_tile_label">Depuração TCP/IP</string>
@@ -28,4 +28,5 @@
     <string name="main_battery_ok">Bateria: sem restrições, o bloco TCP/IP sempre alcança o adb.</string>
     <string name="main_battery_restricted">Bateria: otimizada. Em repouso, o Android corta a rede deste app, até para o próprio smartphone, e o bloco TCP/IP fica cego.</string>
     <string name="main_battery_allow">Permitir em segundo plano</string>
+    <string name="subtitle_usb_off">USB desativado</string>
 </resources>

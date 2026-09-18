@@ -3,9 +3,9 @@
     <string name="tile_label">USB-ով վրիպազերծում</string>
     <string name="subtitle_on">Միացված է</string>
     <string name="subtitle_off">Անջատված է</string>
-    <string name="subtitle_no_dev_options">Մշակողի ընտրանքներ · Անջատված է</string>
-    <string name="subtitle_no_permission">Պահանջվում է ADB թույլտվություն</string>
-    <string name="subtitle_write_refused">Արգելափակվել է համակարգի կողմից</string>
+    <string name="subtitle_no_dev_options">Մշակողի ռեժիմ՝ անջատ</string>
+    <string name="subtitle_no_permission">ADB թույլտվ. չկա</string>
+    <string name="subtitle_write_refused">Համակարգը արգելեց</string>
     <string name="tcpip_tile_label">TCP/IP-ով վրիպազերծում</string>
     <string name="subtitle_setup_needed">Կարգավորեք հավելվածում</string>
     <string name="subtitle_wifi_needed">Անհրաժեշտ է Wi-Fi</string>
@@ -28,4 +28,5 @@
     <string name="main_battery_ok">Մարտկոց՝ առանց սահմանափակման, TCP/IP սալիկը միշտ կարող է կապվել adb-ի հետ։</string>
     <string name="main_battery_restricted">Մարտկոց՝ օպտիմալացված։ Անգործուն ռեժիմում Android-ն անջատում է այս հավելվածի ցանցը, նույնիսկ դեպի հեռախոսն ինքը, և TCP/IP սալիկը կուրանում է։</string>
     <string name="main_battery_allow">Թույլատրել ֆոնային ռեժիմում</string>
+    <string name="subtitle_usb_off">USB-ն անջատված է</string>
 </resources>

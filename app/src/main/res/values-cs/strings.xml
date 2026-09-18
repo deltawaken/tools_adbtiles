@@ -3,8 +3,8 @@
     <string name="tile_label">Ladění přes USB</string>
     <string name="subtitle_on">Zapnuto</string>
     <string name="subtitle_off">Vypnuto</string>
-    <string name="subtitle_no_dev_options">Pro vývojáře · Vypnuto</string>
-    <string name="subtitle_no_permission">Vyžaduje oprávnění přes ADB</string>
+    <string name="subtitle_no_dev_options">Pro vývojáře: vyp.</string>
+    <string name="subtitle_no_permission">Chybí oprávnění ADB</string>
     <string name="subtitle_write_refused">Blokováno systémem</string>
     <string name="tcpip_tile_label">Ladění přes TCP/IP</string>
     <string name="subtitle_setup_needed">Nastavte v aplikaci</string>
@@ -28,4 +28,5 @@
     <string name="main_battery_ok">Baterie: bez omezení, dlaždice TCP/IP vždy dosáhne na adb.</string>
     <string name="main_battery_restricted">Baterie: optimalizováno. V nečinnosti Android odpojí této aplikaci síť, i k samotnému telefonu, a dlaždice TCP/IP oslepne.</string>
     <string name="main_battery_allow">Povolit na pozadí</string>
+    <string name="subtitle_usb_off">USB vypnuto</string>
 </resources>

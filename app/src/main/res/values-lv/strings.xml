@@ -3,7 +3,7 @@
     <string name="tile_label">USB atkļūdošana</string>
     <string name="subtitle_on">Ieslēgts</string>
     <string name="subtitle_off">Izslēgta</string>
-    <string name="subtitle_no_dev_options">Izstrādātāju opcijas · Izslēgta</string>
+    <string name="subtitle_no_dev_options">Izstrād. opcijas: nē</string>
     <string name="subtitle_no_permission">Nepieciešama ADB atļauja</string>
     <string name="subtitle_write_refused">Bloķējusi sistēma</string>
     <string name="tcpip_tile_label">TCP/IP atkļūdošana</string>
@@ -28,4 +28,5 @@
     <string name="main_battery_ok">Akumulators: bez ierobežojumiem, TCP/IP elements vienmēr sasniedz adb.</string>
     <string name="main_battery_restricted">Akumulators: optimizēts. Dīkstāvē Android atslēdz šīs lietotnes tīklu, pat uz pašu tālruni, un TCP/IP elements kļūst akls.</string>
     <string name="main_battery_allow">Atļaut fonā</string>
+    <string name="subtitle_usb_off">USB izslēgts</string>
 </resources>

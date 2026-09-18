@@ -3,7 +3,7 @@
     <string name="tile_label">USB အမှားရှာခြင်း</string>
     <string name="subtitle_on">ဖွင့်</string>
     <string name="subtitle_off">ပိတ်</string>
-    <string name="subtitle_no_dev_options">ဆော့ဝဲလ်ရေးသူ ရွေးစရာများ · ပိတ်</string>
+    <string name="subtitle_no_dev_options">ဆော့ဝဲလ်ရေးသူ · ပိတ်</string>
     <string name="subtitle_no_permission">ADB ခွင့်ပြုချက် လိုသည်</string>
     <string name="subtitle_write_refused">စနစ်က ပိတ်ထားသည်</string>
     <string name="tcpip_tile_label">TCP/IP အမှားရှာခြင်း</string>
@@ -17,15 +17,16 @@
     <string name="main_key_ok">ဤအက်ပ်ကို adb အတွက် ခွင့်ပြုထားသည်။</string>
     <string name="main_key_missing">ဤအက်ပ်ကို adb အတွက် မခွင့်ပြုရသေးပါ။</string>
     <string name="main_authorize">ဤအက်ပ်ကို ခွင့်ပြုရန်</string>
-    <string name="main_authorize_hint">TCP/IP ပို့တ် ဖွင့်ထားရမည် (adb tcpip &lt;port&gt;)။ ဒိုင်ယာလော့တစ်ခုက အမှားရှာပြင်ခြင်းကို ခွင့်ပြုရန် မေးပါမည်- “ဒီကွန်ပျူတာမှ အမြဲခွင့်ပြုရန်” ကို အမှန်ခြစ်ပြီး “ခွင့်ပြုရန်” ကို တို့ပါ။</string>
+    <string name="main_authorize_hint">TCP/IP ပို့တ် ဖွင့်ထားရမည် (adb tcpip &lt;port&gt;)။ ဒိုင်ယာလော့တစ်ခုက အမှားရှာခြင်းကို ခွင့်ပြုရန် မေးပါမည်- “ဒီကွန်ပျူတာမှ အမြဲခွင့်ပြုရန်” ကို အမှန်ခြစ်ပြီး “ခွင့်ပြုရန်” ကို တို့ပါ။</string>
     <string name="main_working">ဒိုင်ယာလော့ကို စောင့်နေသည်…</string>
     <string name="main_port_closed">TCP/IP ပို့တ် ပိတ်ထားသည်။ ကွန်ပျူတာမှ adb tcpip &lt;port&gt; ကို အရင် လုပ်ဆောင်ပါ။</string>
     <string name="main_refused">ခွင့်ပြုချက် ငြင်းပယ်ခံရသည်။</string>
     <string name="main_error">အမှား: %1$s</string>
     <string name="main_port_label">TCP/IP ပို့တ်</string>
-    <string name="main_port_locked">ပို့တ်ပြောင်းရန် TCP/IP အမှားရှာပြင်ခြင်းကို ပိတ်ပါ။</string>
+    <string name="main_port_locked">ပို့တ်ပြောင်းရန် TCP/IP အမှားရှာခြင်းကို ပိတ်ပါ။</string>
     <string name="main_port_invalid">1024 နှင့် 65535 ကြား ပို့တ်တစ်ခု ထည့်ပါ။</string>
     <string name="main_battery_ok">ဘက်ထရီ: ကန့်သတ်မထားပါ၊ TCP/IP အကွက်သည် adb ကို အမြဲ ချိတ်ဆက်နိုင်သည်။</string>
     <string name="main_battery_restricted">ဘက်ထရီ: ပိုကောင်းအောင် ပြင်ထားသည်။ အသုံးမပြုချိန်တွင် Android သည် ဤအက်ပ်၏ ကွန်ရက်ကို ဖုန်းကိုယ်တိုင်သို့ပင် ဖြတ်တောက်သဖြင့် TCP/IP အကွက်သည် ဘာမျှ မမြင်နိုင်တော့ပါ။</string>
     <string name="main_battery_allow">နောက်ခံတွင် ခွင့်ပြုရန်</string>
+    <string name="subtitle_usb_off">USB ပိတ်</string>
 </resources>

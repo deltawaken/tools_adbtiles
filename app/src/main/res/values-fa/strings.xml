@@ -3,7 +3,7 @@
     <string name="tile_label">‏اشکال‌زدایی USB</string>
     <string name="subtitle_on">روشن</string>
     <string name="subtitle_off">خاموش</string>
-    <string name="subtitle_no_dev_options">گزینه‌های برنامه‌نویسان · خاموش</string>
+    <string name="subtitle_no_dev_options">برنامه‌نویسان · خاموش</string>
     <string name="subtitle_no_permission">مجوز ADB لازم است</string>
     <string name="subtitle_write_refused">سیستم مسدود کرد</string>
     <string name="tcpip_tile_label">اشکال‌زدایی TCP/IP</string>
@@ -28,4 +28,5 @@
     <string name="main_battery_ok">باتری: نامحدود؛ کاشی TCP/IP همیشه به adb دسترسی دارد.</string>
     <string name="main_battery_restricted">باتری: بهینه‌شده. در حالت بیکار، Android شبکه این برنامه را قطع می‌کند، حتی به خود تلفن، و کاشی TCP/IP کور می‌شود.</string>
     <string name="main_battery_allow">اجازه در پس‌زمینه</string>
+    <string name="subtitle_usb_off">USB خاموش</string>
 </resources>

@@ -3,7 +3,7 @@
     <string name="tile_label">USB-felsökning</string>
     <string name="subtitle_on">På</string>
     <string name="subtitle_off">Av</string>
-    <string name="subtitle_no_dev_options">Utvecklaralternativ · Av</string>
+    <string name="subtitle_no_dev_options">Utvecklaralt.: Av</string>
     <string name="subtitle_no_permission">ADB-behörighet krävs</string>
     <string name="subtitle_write_refused">Blockerad av systemet</string>
     <string name="tcpip_tile_label">TCP/IP-felsökning</string>
@@ -28,4 +28,5 @@
     <string name="main_battery_ok">Batteri: obegränsat, TCP/IP-rutan når alltid adb.</string>
     <string name="main_battery_restricted">Batteri: optimerat. I viloläge kopplar Android bort appens nätverk, även mot själva telefonen, och TCP/IP-rutan blir blind.</string>
     <string name="main_battery_allow">Tillåt i bakgrunden</string>
+    <string name="subtitle_usb_off">USB av</string>
 </resources>

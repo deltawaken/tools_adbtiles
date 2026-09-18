@@ -3,13 +3,13 @@
     <string name="tile_label">‏تصحيح أخطاء USB</string>
     <string name="subtitle_on">مفعّل</string>
     <string name="subtitle_off">غير مفعّل</string>
-    <string name="subtitle_no_dev_options">خيارات المطورين · غير مفعّل</string>
+    <string name="subtitle_no_dev_options">خيارات المطوّر معطّلة</string>
     <string name="subtitle_no_permission">إذن ADB مطلوب</string>
     <string name="subtitle_write_refused">مرفوض من النظام</string>
-    <string name="tcpip_tile_label">تصحيح الأخطاء عبر TCP/IP</string>
+    <string name="tcpip_tile_label">‏تصحيح أخطاء TCP/IP</string>
     <string name="subtitle_setup_needed">الإعداد في التطبيق</string>
     <string name="subtitle_wifi_needed">يلزم اتصال Wi-Fi</string>
-    <string name="subtitle_failed">تعذّر ذلك</string>
+    <string name="subtitle_failed">فشل</string>
     <string name="subtitle_port_open">المنفذ %1$d</string>
     <string name="status_line">%1$s: %2$s</string>
     <string name="main_perm_ok">WRITE_SECURE_SETTINGS: ممنوح.</string>
@@ -28,4 +28,5 @@
     <string name="main_battery_ok">البطارية: غير مقيَّدة، ويمكن لفئة TCP/IP الوصول إلى adb دائمًا.</string>
     <string name="main_battery_restricted">البطارية: محسَّنة. في وضع الخمول، يقطع Android الشبكة عن هذا التطبيق، حتى إلى الهاتف نفسه، فلا تعود فئة TCP/IP ترى شيئًا.</string>
     <string name="main_battery_allow">السماح في الخلفية</string>
+    <string name="subtitle_usb_off">USB غير مفعّل</string>
 </resources>

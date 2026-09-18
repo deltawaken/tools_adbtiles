@@ -3,10 +3,10 @@
     <string name="tile_label">Отклањање USB грешака</string>
     <string name="subtitle_on">Укључено</string>
     <string name="subtitle_off">Искључено</string>
-    <string name="subtitle_no_dev_options">Опције за програмере · Искључено</string>
+    <string name="subtitle_no_dev_options">Опције за прогр.: не</string>
     <string name="subtitle_no_permission">Потребна ADB дозвола</string>
     <string name="subtitle_write_refused">Систем је блокирао</string>
-    <string name="tcpip_tile_label">Отклањање грешака преко TCP/IP-а</string>
+    <string name="tcpip_tile_label">TCP/IP: отклањање грешака</string>
     <string name="subtitle_setup_needed">Подесите у апликацији</string>
     <string name="subtitle_wifi_needed">Потребан је Wi-Fi</string>
     <string name="subtitle_failed">Није успело</string>
@@ -28,4 +28,5 @@
     <string name="main_battery_ok">Батерија: неограничено, TCP/IP плочица увек може да приступи adb-у.</string>
     <string name="main_battery_restricted">Батерија: оптимизовано. У стању мировања Android прекида мрежу ове апликације, чак и ка самом телефону, и TCP/IP плочица више ништа не види.</string>
     <string name="main_battery_allow">Дозволи у позадини</string>
+    <string name="subtitle_usb_off">USB искључен</string>
 </resources>

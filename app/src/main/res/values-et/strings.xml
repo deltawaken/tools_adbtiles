@@ -3,10 +3,10 @@
     <string name="tile_label">USB silumine</string>
     <string name="subtitle_on">Sees</string>
     <string name="subtitle_off">Väljas</string>
-    <string name="subtitle_no_dev_options">Arendaja valikud · Väljas</string>
+    <string name="subtitle_no_dev_options">Arendaja: väljas</string>
     <string name="subtitle_no_permission">Vajalik ADB luba</string>
     <string name="subtitle_write_refused">Süsteem blokeeris</string>
-    <string name="tcpip_tile_label">TCP/IP silumine</string>
+    <string name="tcpip_tile_label">TCP/IP-silumine</string>
     <string name="subtitle_setup_needed">Seadista rakenduses</string>
     <string name="subtitle_wifi_needed">Vaja on WiFi-t</string>
     <string name="subtitle_failed">Ebaõnnestus</string>
@@ -28,4 +28,5 @@
     <string name="main_battery_ok">Aku: piiranguteta, TCP/IP-paan jõuab alati adb-ni.</string>
     <string name="main_battery_restricted">Aku: optimeeritud. Jõudeolekus katkestab Android rakenduse võrgu, isegi telefoni endaga, ja TCP/IP-paan jääb pimedaks.</string>
     <string name="main_battery_allow">Luba taustal</string>
+    <string name="subtitle_usb_off">USB väljas</string>
 </resources>

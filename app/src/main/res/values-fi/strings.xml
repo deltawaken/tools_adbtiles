@@ -3,7 +3,7 @@
     <string name="tile_label">USB-vianetsintä</string>
     <string name="subtitle_on">Päällä</string>
     <string name="subtitle_off">Ei päällä</string>
-    <string name="subtitle_no_dev_options">Kehittäjäasetukset · Ei päällä</string>
+    <string name="subtitle_no_dev_options">Kehittäjäasetus pois</string>
     <string name="subtitle_no_permission">ADB-lupa vaaditaan</string>
     <string name="subtitle_write_refused">Järjestelmä esti</string>
     <string name="tcpip_tile_label">TCP/IP-vianetsintä</string>
@@ -17,15 +17,16 @@
     <string name="main_key_ok">Tällä sovelluksella on adb-valtuutus.</string>
     <string name="main_key_missing">Tällä sovelluksella ei ole vielä adb-valtuutusta.</string>
     <string name="main_authorize">Valtuuta tämä sovellus</string>
-    <string name="main_authorize_hint">TCP/IP-portin on oltava auki (adb tcpip &lt;port&gt;). Näkyviin tulee ikkuna, jossa kysytään virheenkorjauksen sallimista: valitse ”Salli aina tällä tietokoneella” ja napauta sitten Salli.</string>
+    <string name="main_authorize_hint">TCP/IP-portin on oltava auki (adb tcpip &lt;port&gt;). Näkyviin tulee ikkuna, jossa kysytään vianetsinnän sallimista: valitse ”Salli aina tällä tietokoneella” ja napauta sitten Salli.</string>
     <string name="main_working">Odotetaan ikkunaa…</string>
     <string name="main_port_closed">TCP/IP-portti on suljettu. Suorita ensin adb tcpip &lt;port&gt; tietokoneelta.</string>
     <string name="main_refused">Valtuutus hylättiin.</string>
     <string name="main_error">Virhe: %1$s</string>
     <string name="main_port_label">TCP/IP-portti</string>
-    <string name="main_port_locked">Poista TCP/IP-virheenkorjaus käytöstä vaihtaaksesi porttia.</string>
+    <string name="main_port_locked">Poista TCP/IP-vianetsintä käytöstä vaihtaaksesi porttia.</string>
     <string name="main_port_invalid">Anna portti väliltä 1024–65535.</string>
     <string name="main_battery_ok">Akku: ei rajoituksia, TCP/IP-osio tavoittaa adb:n aina.</string>
     <string name="main_battery_restricted">Akku: optimoitu. Lepotilassa Android katkaisee sovelluksen verkkoyhteyden, jopa itse puhelimeen, eikä TCP/IP-osio enää näe mitään.</string>
     <string name="main_battery_allow">Salli taustalla</string>
+    <string name="subtitle_usb_off">USB pois</string>
 </resources>

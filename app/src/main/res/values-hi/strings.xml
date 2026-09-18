@@ -3,7 +3,7 @@
     <string name="tile_label">यूएसबी डीबग करना</string>
     <string name="subtitle_on">चालू</string>
     <string name="subtitle_off">बंद</string>
-    <string name="subtitle_no_dev_options">डेवलपर के लिए सेटिंग और टूल · बंद</string>
+    <string name="subtitle_no_dev_options">डेवलपर सेटिंग बंद</string>
     <string name="subtitle_no_permission">ADB अनुमति ज़रूरी</string>
     <string name="subtitle_write_refused">सिस्टम ने रोका</string>
     <string name="tcpip_tile_label">TCP/IP डीबग करना</string>
@@ -23,9 +23,10 @@
     <string name="main_refused">अनुमति नहीं दी गई।</string>
     <string name="main_error">गड़बड़ी: %1$s</string>
     <string name="main_port_label">TCP/IP पोर्ट</string>
-    <string name="main_port_locked">पोर्ट बदलने के लिए TCP/IP डीबगिंग बंद करें।</string>
+    <string name="main_port_locked">पोर्ट बदलने के लिए TCP/IP डीबग करना बंद करें।</string>
     <string name="main_port_invalid">1024 से 65535 के बीच का पोर्ट डालें।</string>
     <string name="main_battery_ok">बैटरी: पाबंदी नहीं है, TCP/IP टाइल हमेशा adb तक पहुंच सकती है।</string>
     <string name="main_battery_restricted">बैटरी: ऑप्टिमाइज़ की गई। डिवाइस इस्तेमाल में न होने पर Android इस ऐप का नेटवर्क बंद कर देता है, फ़ोन के लिए भी, और TCP/IP टाइल कुछ नहीं देख पाती।</string>
     <string name="main_battery_allow">बैकग्राउंड में अनुमति दें</string>
+    <string name="subtitle_usb_off">यूएसबी बंद</string>
 </resources>

@@ -87,7 +87,9 @@ public class TcpipTileService extends TileService {
             subtitle = getString(R.string.subtitle_no_dev_options);
         } else if (!isAdbEnabled()) {
             state = Tile.STATE_UNAVAILABLE;
-            subtitle = getString(R.string.tile_label) + " · " + getString(R.string.subtitle_off);
+            // Texte court et dédié : le libellé officiel « Débogage USB » dépasse la place d'un
+            // sous-titre dans une quinzaine de langues, et c'est l'état qui disparaissait.
+            subtitle = getString(R.string.subtitle_usb_off);
         } else if (!hasWriteSecureSettings()) {
             state = Tile.STATE_UNAVAILABLE;
             subtitle = getString(R.string.subtitle_no_permission);

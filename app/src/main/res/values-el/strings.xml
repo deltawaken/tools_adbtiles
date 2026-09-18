@@ -3,10 +3,10 @@
     <string name="tile_label">Εντοπισμός σφαλμάτων USB</string>
     <string name="subtitle_on">Ενεργό</string>
     <string name="subtitle_off">Ανενεργό</string>
-    <string name="subtitle_no_dev_options">Επιλογές για προγραμματιστές · Ανενεργό</string>
+    <string name="subtitle_no_dev_options">Επιλογές προγρ.: Όχι</string>
     <string name="subtitle_no_permission">Απαιτείται άδεια ADB</string>
     <string name="subtitle_write_refused">Αποκλείστηκε από το σύστημα</string>
-    <string name="tcpip_tile_label">Εντοπισμός σφαλμάτων TCP/IP</string>
+    <string name="tcpip_tile_label">TCP/IP: εντοπισμός σφαλμάτων</string>
     <string name="subtitle_setup_needed">Ρύθμιση στην εφαρμογή</string>
     <string name="subtitle_wifi_needed">Απαιτείται Wi-Fi</string>
     <string name="subtitle_failed">Απέτυχε</string>
@@ -28,4 +28,5 @@
     <string name="main_battery_ok">Μπαταρία: χωρίς περιορισμούς, το πλακίδιο TCP/IP φτάνει πάντα στο adb.</string>
     <string name="main_battery_restricted">Μπαταρία: βελτιστοποιημένη. Σε αδράνεια, το Android κόβει το δίκτυο αυτής της εφαρμογής, ακόμη και προς το ίδιο το τηλέφωνο, και το πλακίδιο TCP/IP τυφλώνεται.</string>
     <string name="main_battery_allow">Να επιτρέπεται στο παρασκήνιο</string>
+    <string name="subtitle_usb_off">USB ανενεργό</string>
 </resources>

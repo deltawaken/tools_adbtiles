@@ -3,7 +3,7 @@
     <string name="tile_label">USB-foutopsporing</string>
     <string name="subtitle_on">Aan</string>
     <string name="subtitle_off">Uit</string>
-    <string name="subtitle_no_dev_options">Ontwikkelaarsopties · Uit</string>
+    <string name="subtitle_no_dev_options">Ontwikkelaar: uit</string>
     <string name="subtitle_no_permission">ADB-rechten vereist</string>
     <string name="subtitle_write_refused">Geblokkeerd door systeem</string>
     <string name="tcpip_tile_label">TCP/IP-foutopsporing</string>
@@ -28,4 +28,5 @@
     <string name="main_battery_ok">Batterij: onbeperkt, de TCP/IP-tegel bereikt adb altijd.</string>
     <string name="main_battery_restricted">Batterij: geoptimaliseerd. In rust sluit Android het netwerk van deze app af, zelfs naar de telefoon zelf, en ziet de TCP/IP-tegel niets meer.</string>
     <string name="main_battery_allow">Toestaan op achtergrond</string>
+    <string name="subtitle_usb_off">USB uit</string>
 </resources>

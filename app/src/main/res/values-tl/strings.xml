@@ -3,8 +3,8 @@
     <string name="tile_label">Pag-debug ng USB</string>
     <string name="subtitle_on">Naka-on</string>
     <string name="subtitle_off">Naka-off</string>
-    <string name="subtitle_no_dev_options">Mga opsyon ng developer · Naka-off</string>
-    <string name="subtitle_no_permission">Kailangan ng ADB permission</string>
+    <string name="subtitle_no_dev_options">Developer: Naka-off</string>
+    <string name="subtitle_no_permission">Kailangan ng pahintulot ng ADB</string>
     <string name="subtitle_write_refused">Na-block ng system</string>
     <string name="tcpip_tile_label">Pag-debug ng TCP/IP</string>
     <string name="subtitle_setup_needed">I-set up sa app</string>
@@ -28,4 +28,5 @@
     <string name="main_battery_ok">Baterya: hindi pinaghihigpitan, laging naaabot ng TCP/IP tile ang adb.</string>
     <string name="main_battery_restricted">Baterya: naka-optimize. Kapag idle, pinuputol ng Android ang network ng app na ito, kahit papunta sa mismong telepono, at nabubulag ang TCP/IP tile.</string>
     <string name="main_battery_allow">Payagan sa background</string>
+    <string name="subtitle_usb_off">USB naka-off</string>
 </resources>

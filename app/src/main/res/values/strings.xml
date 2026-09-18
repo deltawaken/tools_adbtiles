@@ -31,4 +31,5 @@
     <string name="main_battery_ok">Battery: unrestricted, the TCP/IP tile can always reach adb.</string>
     <string name="main_battery_restricted">Battery: optimized. When idle, Android cuts this app\'s network, even to the phone itself, and the TCP/IP tile goes blind.</string>
     <string name="main_battery_allow">Allow in background</string>
+    <string name="subtitle_usb_off">USB off</string>
 </resources>

@@ -3,10 +3,10 @@
     <string name="tile_label">Remedierea erorilor prin USB</string>
     <string name="subtitle_on">Activat(ă)</string>
     <string name="subtitle_off">Dezactivat(ă)</string>
-    <string name="subtitle_no_dev_options">Opțiuni pentru dezvoltatori · Dezactivat(ă)</string>
+    <string name="subtitle_no_dev_options">Opț. dezvoltator: nu</string>
     <string name="subtitle_no_permission">Necesită permisiune ADB</string>
     <string name="subtitle_write_refused">Blocat de sistem</string>
-    <string name="tcpip_tile_label">Remedierea erorilor prin TCP/IP</string>
+    <string name="tcpip_tile_label">TCP/IP: remedierea erorilor</string>
     <string name="subtitle_setup_needed">Configurați în aplicație</string>
     <string name="subtitle_wifi_needed">Necesită Wi-Fi</string>
     <string name="subtitle_failed">Eșuat</string>
@@ -28,4 +28,5 @@
     <string name="main_battery_ok">Baterie: fără restricții, caseta TCP/IP ajunge mereu la adb.</string>
     <string name="main_battery_restricted">Baterie: optimizată. În repaus, Android întrerupe rețeaua acestei aplicații, chiar și către telefonul însuși, iar caseta TCP/IP nu mai vede nimic.</string>
     <string name="main_battery_allow">Permiteți în fundal</string>
+    <string name="subtitle_usb_off">USB dezactivat</string>
 </resources>

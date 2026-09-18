@@ -28,4 +28,5 @@
     <string name="main_battery_ok">배터리: 제한 없음. TCP/IP 타일이 항상 adb에 연결할 수 있습니다.</string>
     <string name="main_battery_restricted">배터리: 최적화됨. 유휴 상태일 때 Android가 휴대전화 자체로의 연결까지 포함해 이 앱의 네트워크를 차단하므로 TCP/IP 타일이 상태를 확인할 수 없게 됩니다.</string>
     <string name="main_battery_allow">백그라운드에서 허용</string>
+    <string name="subtitle_usb_off">USB 사용 안함</string>
 </resources>

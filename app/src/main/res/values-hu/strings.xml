@@ -3,11 +3,11 @@
     <string name="tile_label">USB hibakeresés</string>
     <string name="subtitle_on">Be</string>
     <string name="subtitle_off">Ki</string>
-    <string name="subtitle_no_dev_options">Fejlesztői beállítások · Ki</string>
+    <string name="subtitle_no_dev_options">Fejlesztői mód: ki</string>
     <string name="subtitle_no_permission">ADB-engedély szükséges</string>
     <string name="subtitle_write_refused">A rendszer letiltotta</string>
-    <string name="tcpip_tile_label">TCP/IP hibakeresés</string>
-    <string name="subtitle_setup_needed">Beállítás az appban</string>
+    <string name="tcpip_tile_label">TCP/IP-hibakeresés</string>
+    <string name="subtitle_setup_needed">Beállítás szükséges</string>
     <string name="subtitle_wifi_needed">Wi-Fi szükséges</string>
     <string name="subtitle_failed">Sikertelen</string>
     <string name="subtitle_port_open">Port: %1$d</string>
@@ -28,4 +28,5 @@
     <string name="main_battery_ok">Akkumulátor: korlátozás nélkül, a TCP/IP-csempe mindig eléri az adb-t.</string>
     <string name="main_battery_restricted">Akkumulátor: optimalizált. Tétlen állapotban az Android megszakítja az alkalmazás hálózati kapcsolatát, még magával a telefonnal is, és a TCP/IP-csempe megvakul.</string>
     <string name="main_battery_allow">Engedélyezés a háttérben</string>
+    <string name="subtitle_usb_off">USB ki</string>
 </resources>

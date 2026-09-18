@@ -3,7 +3,7 @@
     <string name="tile_label">USB hata ayıklaması</string>
     <string name="subtitle_on">Açık</string>
     <string name="subtitle_off">Kapalı</string>
-    <string name="subtitle_no_dev_options">Geliştirici seçenekleri · Kapalı</string>
+    <string name="subtitle_no_dev_options">Geliştirici: Kapalı</string>
     <string name="subtitle_no_permission">ADB izni gerekli</string>
     <string name="subtitle_write_refused">Sistem engelledi</string>
     <string name="tcpip_tile_label">TCP/IP hata ayıklaması</string>
@@ -26,6 +26,7 @@
     <string name="main_port_locked">Bağlantı noktasını değiştirmek için TCP/IP hata ayıklamayı kapatın.</string>
     <string name="main_port_invalid">1024 ile 65535 arasında bir bağlantı noktası girin.</string>
     <string name="main_battery_ok">Pil: kısıtlanmamış, TCP/IP kutusu adb\'ye her zaman ulaşabilir.</string>
-    <string name="main_battery_restricted">Pil: optimize edilmiş. Boşta kalındığında Android, telefonun kendisine yönelik olsa bile bu uygulamanın ağ erişimini keser ve TCP/IP kutusu kör olur.</string>
+    <string name="main_battery_restricted">Pil: optimize edilmiş. Cihaz boştayken Android, telefonun kendisine yönelik olsa bile bu uygulamanın ağ erişimini keser ve TCP/IP kutusu kör olur.</string>
     <string name="main_battery_allow">Arka planda izin ver</string>
+    <string name="subtitle_usb_off">USB kapalı</string>
 </resources>

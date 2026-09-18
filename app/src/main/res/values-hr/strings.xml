@@ -3,10 +3,10 @@
     <string name="tile_label">Otklanjanje pogrešaka putem USB-a</string>
     <string name="subtitle_on">Uključeno</string>
     <string name="subtitle_off">Isključeno</string>
-    <string name="subtitle_no_dev_options">Opcije za razvojne programere · Isključeno</string>
+    <string name="subtitle_no_dev_options">Razvojne opcije: ne</string>
     <string name="subtitle_no_permission">Potrebno ADB dopuštenje</string>
     <string name="subtitle_write_refused">Blokirao sustav</string>
-    <string name="tcpip_tile_label">Otklanjanje pogrešaka putem TCP/IP-a</string>
+    <string name="tcpip_tile_label">TCP/IP: otklanjanje pogrešaka</string>
     <string name="subtitle_setup_needed">Postavite u aplikaciji</string>
     <string name="subtitle_wifi_needed">Potreban je Wi-Fi</string>
     <string name="subtitle_failed">Nije uspjelo</string>
@@ -28,4 +28,5 @@
     <string name="main_battery_ok">Baterija: neograničeno, pločica TCP/IP uvijek može pristupiti adb-u.</string>
     <string name="main_battery_restricted">Baterija: optimizirano. U mirovanju Android prekida mrežu ove aplikacije, čak i prema samom telefonu, pa pločica TCP/IP više ništa ne vidi.</string>
     <string name="main_battery_allow">Dopusti u pozadini</string>
+    <string name="subtitle_usb_off">USB isključen</string>
 </resources>

@@ -3,7 +3,7 @@
     <string name="tile_label">USB-Debugging</string>
     <string name="subtitle_on">An</string>
     <string name="subtitle_off">Aus</string>
-    <string name="subtitle_no_dev_options">Entwickleroptionen · Aus</string>
+    <string name="subtitle_no_dev_options">Entwickleropt.: Aus</string>
     <string name="subtitle_no_permission">ADB-Berechtigung nötig</string>
     <string name="subtitle_write_refused">Vom System blockiert</string>
     <string name="tcpip_tile_label">TCP/IP-Debugging</string>
@@ -28,4 +28,5 @@
     <string name="main_battery_ok">Akku: nicht eingeschränkt, die TCP/IP-Kachel erreicht adb immer.</string>
     <string name="main_battery_restricted">Akku: optimiert. Im Ruhezustand trennt Android das Netzwerk dieser App, sogar zum Smartphone selbst, und die TCP/IP-Kachel wird blind.</string>
     <string name="main_battery_allow">Im Hintergrund zulassen</string>
+    <string name="subtitle_usb_off">USB aus</string>
 </resources>
