@@ -24,4 +24,5 @@
     <string name="main_port_closed">Port 5555 is closed. Run adb tcpip 5555 from a computer first.</string>
     <string name="main_refused">Authorization refused.</string>
     <string name="main_error">Error: %1$s</string>
+    <string name="status_line">%1$s: %2$s</string>
 </resources>
