@@ -2,12 +2,14 @@ package com.deltawaken.adbtiles;
 
 import android.Manifest;
 import android.app.Activity;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.database.ContentObserver;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
+import android.os.PowerManager;
 import android.provider.Settings;
 import android.text.Editable;
 import android.text.InputType;
@@ -61,6 +63,8 @@ public class MainActivity extends Activity {
     private TextView tcpipStatus;
     private TextView permissionStatus;
     private TextView keyStatus;
+    private TextView batteryStatus;
+    private Button batteryAllow;
     private TextView hint;
     private EditText portField;
     private TextView portNote;
@@ -104,6 +108,12 @@ public class MainActivity extends Activity {
         permissionStatus = text("", 16);
         permissionStatus.setTextIsSelectable(true);
         keyStatus = text("", 16);
+        batteryStatus = text("", 16);
+        batteryAllow = new Button(this);
+        batteryAllow.setText(R.string.main_battery_allow);
+        batteryAllow.setOnClickListener(v -> startActivity(
+                new Intent(Settings.ACTION_REQUEST_IGNORE_BATTERY_OPTIMIZATIONS,
+                        Uri.fromParts("package", getPackageName(), null))));
         hint = text(getString(R.string.main_authorize_hint), 14);
         authorize = new Button(this);
         authorize.setText(R.string.main_authorize);
@@ -119,6 +129,8 @@ public class MainActivity extends Activity {
         column.addView(portNote);
         column.addView(permissionStatus);
         column.addView(keyStatus);
+        column.addView(batteryStatus);
+        column.addView(batteryAllow);
         column.addView(hint);
         column.addView(authorize);
         column.addView(result);
@@ -164,6 +176,10 @@ public class MainActivity extends Activity {
         permissionStatus.setText(granted ? R.string.main_perm_ok : R.string.main_perm_missing);
         boolean authorized = Tcpip.isAuthorized(this);
         keyStatus.setText(authorized ? R.string.main_key_ok : R.string.main_key_missing);
+        PowerManager power = getSystemService(PowerManager.class);
+        boolean unrestricted = power != null && power.isIgnoringBatteryOptimizations(getPackageName());
+        batteryStatus.setText(unrestricted ? R.string.main_battery_ok : R.string.main_battery_restricted);
+        batteryAllow.setVisibility(unrestricted ? View.GONE : View.VISIBLE);
         // Le port ne se change que TCP/IP éteint : adbd écoute sur l'ancien tant qu'il est ouvert.
         boolean portEditable = Boolean.FALSE.equals(portOpen);
         portField.setEnabled(portEditable);

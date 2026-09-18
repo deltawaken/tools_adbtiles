@@ -71,7 +71,7 @@ public class TcpipTileService extends TileService {
 
     private boolean isUsable() {
         return isDeveloperOptionsEnabled() && isAdbEnabled() && hasWriteSecureSettings()
-                && Tcpip.isAuthorized(this);
+                && Tcpip.isAuthorized(this) && !Tcpip.networkBlocked;
     }
 
     private void refresh() {
@@ -91,7 +91,8 @@ public class TcpipTileService extends TileService {
         } else if (!hasWriteSecureSettings()) {
             state = Tile.STATE_UNAVAILABLE;
             subtitle = getString(R.string.subtitle_no_permission);
-        } else if (!Tcpip.isAuthorized(this)) {
+        } else if (!Tcpip.isAuthorized(this) || Tcpip.networkBlocked) {
+            // Réseau de l'app bloqué en veille : l'écran de l'app propose l'exemption.
             state = Tile.STATE_UNAVAILABLE;
             subtitle = getString(R.string.subtitle_setup_needed);
         } else if (Tcpip.tcpipBusy || portOpen == null) {

@@ -24,4 +24,7 @@
     <string name="main_port_label">Port TCP/IP</string>
     <string name="main_port_locked">Éteignez le débogage TCP/IP pour changer de port.</string>
     <string name="main_port_invalid">Saisissez un port entre 1024 et 65535.</string>
+    <string name="main_battery_ok">Batterie : non restreinte, la tuile TCP/IP joint toujours adb.</string>
+    <string name="main_battery_restricted">Batterie : optimisée. En veille, Android coupe le réseau de l\'app, même vers le téléphone lui-même, et la tuile TCP/IP devient aveugle.</string>
+    <string name="main_battery_allow">Autoriser en arrière-plan</string>
 </resources>

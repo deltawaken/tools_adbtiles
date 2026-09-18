@@ -17,6 +17,7 @@ import com.deltawaken.adbtiles.adb.TlsPortFinder;
 import java.io.IOException;
 import java.net.InetSocketAddress;
 import java.net.Socket;
+import java.net.SocketTimeoutException;
 import java.security.GeneralSecurityException;
 import java.util.Set;
 import java.util.concurrent.CopyOnWriteArraySet;
@@ -49,6 +50,8 @@ final class Tcpip {
     static volatile Boolean portOpen;
     /** Une bascule TCP/IP, ou l'attente d'adbd après le rallumage du débogage USB, est en cours. */
     static volatile boolean tcpipBusy;
+    /** Le système jette les paquets de l'app : la sonde ne dit rien du port. */
+    static volatile boolean networkBlocked;
     /** La dernière bascule TCP/IP a échoué. */
     static volatile boolean tcpipFailed;
     /** Jusqu'à quand ignorer les appuis sur la tuile USB, le temps qu'adbd s'arrête ou démarre. */
@@ -94,7 +97,11 @@ final class Tcpip {
     /** Sonde le port hors du fil principal, puis prévient. */
     static void probeAsync() {
         new Thread(() -> {
-            portOpen = isPortOpen();
+            Probe result = probe();
+            networkBlocked = result == Probe.BLOCKED;
+            if (!networkBlocked) {
+                portOpen = result == Probe.OPEN;
+            }
             notifyChanged();
         }, "adbtiles-probe").start();
     }
@@ -119,11 +126,25 @@ final class Tcpip {
     }
 
     static boolean isPortOpen() {
+        return probe() == Probe.OPEN;
+    }
+
+    enum Probe { OPEN, CLOSED, BLOCKED }
+
+    /**
+     * Sonde le port. Un port fermé refuse la connexion aussitôt ; un délai dépassé vers
+     * {@code 127.0.0.1} signifie que le système jette les paquets de l'app — Android coupe le réseau
+     * des apps en veille, loopback compris (mesuré sur le Jelly Max le 2026-09-18 : la tuile affichait
+     * « Désactivé » alors que 5555 répondait au shell).
+     */
+    static Probe probe() {
         try (Socket socket = new Socket()) {
-            socket.connect(new InetSocketAddress(LOCALHOST, port), 300);
-            return true;
+            socket.connect(new InetSocketAddress(LOCALHOST, port), 1000);
+            return Probe.OPEN;
+        } catch (SocketTimeoutException e) {
+            return Probe.BLOCKED;
         } catch (IOException e) {
-            return false;
+            return Probe.CLOSED;
         }
     }
 
