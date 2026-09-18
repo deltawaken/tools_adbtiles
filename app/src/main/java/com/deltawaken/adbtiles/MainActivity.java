@@ -80,7 +80,6 @@ public class MainActivity extends Activity {
         column.setOrientation(LinearLayout.VERTICAL);
         column.setPadding(padding, padding, padding, padding);
 
-        TextView title = text(getString(R.string.app_name), 24);
         usbStatus = text("", 18);
         tcpipStatus = text("", 18);
         TextView portLabel = text(getString(R.string.main_port_label), 14);
@@ -121,7 +120,6 @@ public class MainActivity extends Activity {
         result = text("", 14);
         result.setMovementMethod(LinkMovementMethod.getInstance());
 
-        column.addView(title);
         column.addView(usbStatus);
         column.addView(tcpipStatus);
         column.addView(portLabel);
