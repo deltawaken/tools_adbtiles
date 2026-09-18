@@ -10,4 +10,22 @@
     <string name="subtitle_setup_needed">アプリで設定</string>
     <string name="subtitle_wifi_needed">Wi-Fi が必要</string>
     <string name="subtitle_failed">失敗しました</string>
+    <string name="subtitle_port_open">ポート %1$d</string>
+    <string name="status_line">%1$s: %2$s</string>
+    <string name="main_perm_ok">WRITE_SECURE_SETTINGS: 付与済み</string>
+    <string name="main_perm_missing">WRITE_SECURE_SETTINGS がありません。パソコンで次のコマンドを実行してください:\nadb shell pm grant com.deltawaken.adbtiles android.permission.WRITE_SECURE_SETTINGS</string>
+    <string name="main_key_ok">このアプリは adb の使用を承認されています。</string>
+    <string name="main_key_missing">このアプリはまだ adb の使用を承認されていません。</string>
+    <string name="main_authorize">このアプリを承認</string>
+    <string name="main_authorize_hint">TCP/IP ポートが開いている必要があります（adb tcpip &lt;port&gt;）。デバッグの許可を求めるダイアログが表示されたら、「このパソコンからの USB デバッグを常に許可する」にチェックを入れて「許可」をタップします。</string>
+    <string name="main_working">ダイアログを待っています…</string>
+    <string name="main_port_closed">TCP/IP ポートが閉じています。先にパソコンで adb tcpip &lt;port&gt; を実行してください。</string>
+    <string name="main_refused">承認が拒否されました。</string>
+    <string name="main_error">エラー: %1$s</string>
+    <string name="main_port_label">TCP/IP ポート</string>
+    <string name="main_port_locked">ポートを変更するには TCP/IP デバッグを OFF にしてください。</string>
+    <string name="main_port_invalid">1024～65535 のポート番号を入力してください。</string>
+    <string name="main_battery_ok">バッテリー: 制限なし。TCP/IP タイルは常に adb に接続できます。</string>
+    <string name="main_battery_restricted">バッテリー: 最適化。アイドル状態になると Android がこのアプリのネットワークを（スマートフォン自身への接続も含めて）遮断するため、TCP/IP タイルは状態を取得できなくなります。</string>
+    <string name="main_battery_allow">バックグラウンドでの実行を許可</string>
 </resources>

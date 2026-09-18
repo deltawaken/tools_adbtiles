@@ -10,4 +10,22 @@
     <string name="subtitle_setup_needed">ایپ میں سیٹ اپ کریں</string>
     <string name="subtitle_wifi_needed">Wi-Fi درکار ہے</string>
     <string name="subtitle_failed">ناکام</string>
+    <string name="subtitle_port_open">پورٹ %1$d</string>
+    <string name="status_line">%1$s: %2$s</string>
+    <string name="main_perm_ok">WRITE_SECURE_SETTINGS: عطا کر دی گئی۔</string>
+    <string name="main_perm_missing">WRITE_SECURE_SETTINGS موجود نہیں ہے۔ کمپیوٹر سے چلائیں:\nadb shell pm grant com.deltawaken.adbtiles android.permission.WRITE_SECURE_SETTINGS</string>
+    <string name="main_key_ok">یہ ایپ adb کے لیے مجاز ہے۔</string>
+    <string name="main_key_missing">یہ ایپ ابھی adb کے لیے مجاز نہیں ہے۔</string>
+    <string name="main_authorize">اس ایپ کو مجاز کریں</string>
+    <string name="main_authorize_hint">TCP/IP پورٹ کھلا ہونا چاہیے (adb tcpip &lt;port&gt;)۔ ایک ڈائیلاگ ڈیبگ کرنے کی اجازت مانگے گا: “اس کمپیوٹر سے ہمیشہ اجازت دیں” پر نشان لگائیں، پھر “اجازت دیں”۔</string>
+    <string name="main_working">ڈائیلاگ کا انتظار ہے…</string>
+    <string name="main_port_closed">TCP/IP پورٹ بند ہے۔ پہلے کمپیوٹر سے adb tcpip &lt;port&gt; چلائیں۔</string>
+    <string name="main_refused">اجازت مسترد کر دی گئی۔</string>
+    <string name="main_error">خرابی: %1$s</string>
+    <string name="main_port_label">TCP/IP پورٹ</string>
+    <string name="main_port_locked">پورٹ تبدیل کرنے کے لیے TCP/IP ڈیبگنگ آف کریں۔</string>
+    <string name="main_port_invalid">1024 اور 65535 کے درمیان پورٹ درج کریں۔</string>
+    <string name="main_battery_ok">بیٹری: غیر محدود، TCP/IP ٹائل ہمیشہ adb تک پہنچ سکتا ہے۔</string>
+    <string name="main_battery_restricted">بیٹری: بہتر بنائی گئی۔ غیر فعال ہونے پر Android اس ایپ کا نیٹ ورک منقطع کر دیتا ہے، فون کے اپنے لیے بھی، اور TCP/IP ٹائل اندھا ہو جاتا ہے۔</string>
+    <string name="main_battery_allow">پس منظر میں اجازت دیں</string>
 </resources>

@@ -10,4 +10,22 @@
     <string name="subtitle_setup_needed">Konfigurera i appen</string>
     <string name="subtitle_wifi_needed">Wi-Fi krävs</string>
     <string name="subtitle_failed">Misslyckades</string>
+    <string name="subtitle_port_open">Port %1$d</string>
+    <string name="status_line">%1$s: %2$s</string>
+    <string name="main_perm_ok">WRITE_SECURE_SETTINGS: beviljad.</string>
+    <string name="main_perm_missing">WRITE_SECURE_SETTINGS saknas. Kör från en dator:\nadb shell pm grant com.deltawaken.adbtiles android.permission.WRITE_SECURE_SETTINGS</string>
+    <string name="main_key_ok">Den här appen är auktoriserad för adb.</string>
+    <string name="main_key_missing">Den här appen är inte auktoriserad för adb än.</string>
+    <string name="main_authorize">Auktorisera den här appen</string>
+    <string name="main_authorize_hint">TCP/IP-porten måste vara öppen (adb tcpip &lt;port&gt;). En dialogruta frågar om felsökning ska tillåtas: markera ”Tillåt alltid på den här datorn” och tryck sedan på Tillåt.</string>
+    <string name="main_working">Väntar på dialogrutan …</string>
+    <string name="main_port_closed">TCP/IP-porten är stängd. Kör först adb tcpip &lt;port&gt; från en dator.</string>
+    <string name="main_refused">Auktorisering nekad.</string>
+    <string name="main_error">Fel: %1$s</string>
+    <string name="main_port_label">TCP/IP-port</string>
+    <string name="main_port_locked">Inaktivera TCP/IP-felsökning för att ändra porten.</string>
+    <string name="main_port_invalid">Ange en port mellan 1024 och 65535.</string>
+    <string name="main_battery_ok">Batteri: obegränsat, TCP/IP-rutan når alltid adb.</string>
+    <string name="main_battery_restricted">Batteri: optimerat. I viloläge kopplar Android bort appens nätverk, även mot själva telefonen, och TCP/IP-rutan blir blind.</string>
+    <string name="main_battery_allow">Tillåt i bakgrunden</string>
 </resources>

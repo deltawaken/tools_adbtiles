@@ -10,4 +10,22 @@
     <string name="subtitle_setup_needed">Uygulamada ayarlayın</string>
     <string name="subtitle_wifi_needed">Kablosuz ağ gerekli</string>
     <string name="subtitle_failed">Başarısız</string>
+    <string name="subtitle_port_open">Port %1$d</string>
+    <string name="status_line">%1$s: %2$s</string>
+    <string name="main_perm_ok">WRITE_SECURE_SETTINGS: verildi.</string>
+    <string name="main_perm_missing">WRITE_SECURE_SETTINGS izni eksik. Bir bilgisayardan şunu çalıştırın:\nadb shell pm grant com.deltawaken.adbtiles android.permission.WRITE_SECURE_SETTINGS</string>
+    <string name="main_key_ok">Bu uygulama adb için yetkilendirildi.</string>
+    <string name="main_key_missing">Bu uygulama henüz adb için yetkilendirilmedi.</string>
+    <string name="main_authorize">Bu uygulamayı yetkilendir</string>
+    <string name="main_authorize_hint">TCP/IP bağlantı noktası açık olmalıdır (adb tcpip &lt;port&gt;). Bir iletişim kutusu hata ayıklamaya izin vermenizi isteyecek: “Bu bilgisayardan her zaman izin ver” seçeneğini işaretleyin, ardından “İzin ver” düğmesine dokunun.</string>
+    <string name="main_working">İletişim kutusu bekleniyor…</string>
+    <string name="main_port_closed">TCP/IP bağlantı noktası kapalı. Önce bir bilgisayardan adb tcpip &lt;port&gt; komutunu çalıştırın.</string>
+    <string name="main_refused">Yetkilendirme reddedildi.</string>
+    <string name="main_error">Hata: %1$s</string>
+    <string name="main_port_label">TCP/IP bağlantı noktası</string>
+    <string name="main_port_locked">Bağlantı noktasını değiştirmek için TCP/IP hata ayıklamayı kapatın.</string>
+    <string name="main_port_invalid">1024 ile 65535 arasında bir bağlantı noktası girin.</string>
+    <string name="main_battery_ok">Pil: kısıtlanmamış, TCP/IP kutusu adb\'ye her zaman ulaşabilir.</string>
+    <string name="main_battery_restricted">Pil: optimize edilmiş. Boşta kalındığında Android, telefonun kendisine yönelik olsa bile bu uygulamanın ağ erişimini keser ve TCP/IP kutusu kör olur.</string>
+    <string name="main_battery_allow">Arka planda izin ver</string>
 </resources>

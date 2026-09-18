@@ -10,4 +10,22 @@
     <string name="subtitle_setup_needed">Қолданбада реттеңіз</string>
     <string name="subtitle_wifi_needed">Wi-Fi қажет</string>
     <string name="subtitle_failed">Сәтсіз аяқталды</string>
+    <string name="subtitle_port_open">Порт %1$d</string>
+    <string name="status_line">%1$s: %2$s</string>
+    <string name="main_perm_ok">WRITE_SECURE_SETTINGS: берілген.</string>
+    <string name="main_perm_missing">WRITE_SECURE_SETTINGS жоқ. Компьютерден мына пәрменді орындаңыз:\nadb shell pm grant com.deltawaken.adbtiles android.permission.WRITE_SECURE_SETTINGS</string>
+    <string name="main_key_ok">Бұл қолданбаға adb үшін рұқсат берілген.</string>
+    <string name="main_key_missing">Бұл қолданбаға adb үшін әлі рұқсат берілмеген.</string>
+    <string name="main_authorize">Бұл қолданбаға рұқсат беру</string>
+    <string name="main_authorize_hint">TCP/IP порты ашық болуы керек (adb tcpip &lt;port&gt;). Диалогтік терезе түзетуге рұқсат сұрайды: «Осы компьютерден әрқашан рұқсат беру» құсбелгісін қойып, «Рұқсат беру» түймесін басыңыз.</string>
+    <string name="main_working">Диалогтік терезе күтілуде…</string>
+    <string name="main_port_closed">TCP/IP порты жабық. Алдымен компьютерден adb tcpip &lt;port&gt; пәрменін орындаңыз.</string>
+    <string name="main_refused">Рұқсат берілмеді.</string>
+    <string name="main_error">Қате: %1$s</string>
+    <string name="main_port_label">TCP/IP порты</string>
+    <string name="main_port_locked">Портты өзгерту үшін TCP/IP арқылы түзетуді өшіріңіз.</string>
+    <string name="main_port_invalid">1024 және 65535 аралығындағы портты енгізіңіз.</string>
+    <string name="main_battery_ok">Батарея: шектелмеген, TCP/IP бөлшегі adb-ге әрқашан қосыла алады.</string>
+    <string name="main_battery_restricted">Батарея: оңтайландырылған. Құрылғы әрекетсіз тұрғанда, Android бұл қолданбаның желісін, тіпті телефонның өзіне қарай да, ажыратады, сондықтан TCP/IP бөлшегі ештеңе көрмей қалады.</string>
+    <string name="main_battery_allow">Фондық режимде рұқсат ету</string>
 </resources>

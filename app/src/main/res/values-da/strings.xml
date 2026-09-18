@@ -10,4 +10,22 @@
     <string name="subtitle_setup_needed">Konfigurer i appen</string>
     <string name="subtitle_wifi_needed">Kræver Wi-Fi</string>
     <string name="subtitle_failed">Mislykkedes</string>
+    <string name="subtitle_port_open">Port %1$d</string>
+    <string name="status_line">%1$s: %2$s</string>
+    <string name="main_perm_ok">WRITE_SECURE_SETTINGS: givet.</string>
+    <string name="main_perm_missing">WRITE_SECURE_SETTINGS mangler. Kør fra en computer:\nadb shell pm grant com.deltawaken.adbtiles android.permission.WRITE_SECURE_SETTINGS</string>
+    <string name="main_key_ok">Denne app har tilladelse til adb.</string>
+    <string name="main_key_missing">Denne app har endnu ikke tilladelse til adb.</string>
+    <string name="main_authorize">Giv denne app tilladelse</string>
+    <string name="main_authorize_hint">TCP/IP-porten skal være åben (adb tcpip &lt;port&gt;). En dialogboks spørger, om fejlretning skal tillades: Markér »Tillad altid fra denne computer«, og tryk derefter på Tillad.</string>
+    <string name="main_working">Venter på dialogboksen…</string>
+    <string name="main_port_closed">TCP/IP-porten er lukket. Kør først adb tcpip &lt;port&gt; fra en computer.</string>
+    <string name="main_refused">Tilladelse afvist.</string>
+    <string name="main_error">Fejl: %1$s</string>
+    <string name="main_port_label">TCP/IP-port</string>
+    <string name="main_port_locked">Slå TCP/IP-fejlretning fra for at ændre porten.</string>
+    <string name="main_port_invalid">Angiv en port mellem 1024 og 65535.</string>
+    <string name="main_battery_ok">Batteri: ubegrænset, TCP/IP-feltet kan altid nå adb.</string>
+    <string name="main_battery_restricted">Batteri: optimeret. I inaktiv tilstand afbryder Android appens netværk, selv til telefonen selv, og TCP/IP-feltet bliver blindt.</string>
+    <string name="main_battery_allow">Tillad i baggrunden</string>
 </resources>

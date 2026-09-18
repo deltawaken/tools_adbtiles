@@ -15,7 +15,7 @@
     <string name="main_key_ok">Cette app est autorisée pour adb.</string>
     <string name="main_key_missing">Cette app n\'est pas encore autorisée pour adb.</string>
     <string name="main_authorize">Autoriser cette app</string>
-    <string name="main_authorize_hint">Le port TCP/IP doit être ouvert (adb tcpip &lt;port&gt;). Une boîte demandera d\'autoriser le débogage : cochez « Toujours autoriser », puis Autoriser.</string>
+    <string name="main_authorize_hint">Le port TCP/IP doit être ouvert (adb tcpip &lt;port&gt;). Une boîte demandera d\'autoriser le débogage : cochez « Toujours autoriser sur cet ordinateur », puis Autoriser.</string>
     <string name="main_working">En attente de la boîte de dialogue…</string>
     <string name="main_port_closed">Le port TCP/IP est fermé. Lancez d\'abord adb tcpip &lt;port&gt; depuis un ordinateur.</string>
     <string name="main_refused">Autorisation refusée.</string>
@@ -24,7 +24,7 @@
     <string name="main_port_label">Port TCP/IP</string>
     <string name="main_port_locked">Éteignez le débogage TCP/IP pour changer de port.</string>
     <string name="main_port_invalid">Saisissez un port entre 1024 et 65535.</string>
-    <string name="main_battery_ok">Batterie : non restreinte, la tuile TCP/IP joint toujours adb.</string>
-    <string name="main_battery_restricted">Batterie : optimisée. En veille, Android coupe le réseau de l\'app, même vers le téléphone lui-même, et la tuile TCP/IP devient aveugle.</string>
+    <string name="main_battery_ok">Batterie : non restreinte, le bloc TCP/IP joint toujours adb.</string>
+    <string name="main_battery_restricted">Batterie : optimisée. En veille, Android coupe le réseau de l\'app, même vers le téléphone lui-même, et le bloc TCP/IP devient aveugle.</string>
     <string name="main_battery_allow">Autoriser en arrière-plan</string>
 </resources>

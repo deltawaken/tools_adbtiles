@@ -10,4 +10,22 @@
     <string name="subtitle_setup_needed">Подесите у апликацији</string>
     <string name="subtitle_wifi_needed">Потребан је Wi-Fi</string>
     <string name="subtitle_failed">Није успело</string>
+    <string name="subtitle_port_open">Порт %1$d</string>
+    <string name="status_line">%1$s: %2$s</string>
+    <string name="main_perm_ok">WRITE_SECURE_SETTINGS: одобрено.</string>
+    <string name="main_perm_missing">Недостаје WRITE_SECURE_SETTINGS. На рачунару покрените:\nadb shell pm grant com.deltawaken.adbtiles android.permission.WRITE_SECURE_SETTINGS</string>
+    <string name="main_key_ok">Ова апликација је овлашћена за adb.</string>
+    <string name="main_key_missing">Ова апликација још није овлашћена за adb.</string>
+    <string name="main_authorize">Овласти ову апликацију</string>
+    <string name="main_authorize_hint">TCP/IP порт мора да буде отворен (adb tcpip &lt;port&gt;). Дијалог ће тражити дозволу за отклањање грешака: означите „Увек дозволи са овог рачунара“, па додирните „Дозволи“.</string>
+    <string name="main_working">Чека се дијалог…</string>
+    <string name="main_port_closed">TCP/IP порт је затворен. Прво покрените adb tcpip &lt;port&gt; на рачунару.</string>
+    <string name="main_refused">Овлашћење је одбијено.</string>
+    <string name="main_error">Грешка: %1$s</string>
+    <string name="main_port_label">TCP/IP порт</string>
+    <string name="main_port_locked">Искључите отклањање грешака преко TCP/IP-а да бисте променили порт.</string>
+    <string name="main_port_invalid">Унесите порт између 1024 и 65535.</string>
+    <string name="main_battery_ok">Батерија: неограничено, TCP/IP плочица увек може да приступи adb-у.</string>
+    <string name="main_battery_restricted">Батерија: оптимизовано. У стању мировања Android прекида мрежу ове апликације, чак и ка самом телефону, и TCP/IP плочица више ништа не види.</string>
+    <string name="main_battery_allow">Дозволи у позадини</string>
 </resources>

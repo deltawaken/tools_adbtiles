@@ -10,4 +10,22 @@
     <string name="subtitle_setup_needed">অ্যাপে সেট আপ করুন</string>
     <string name="subtitle_wifi_needed">Wi-Fi প্রয়োজন</string>
     <string name="subtitle_failed">ব্যর্থ হয়েছে</string>
+    <string name="subtitle_port_open">পোর্ট %1$d</string>
+    <string name="status_line">%1$s: %2$s</string>
+    <string name="main_perm_ok">WRITE_SECURE_SETTINGS: দেওয়া হয়েছে।</string>
+    <string name="main_perm_missing">WRITE_SECURE_SETTINGS নেই। কম্পিউটার থেকে চালান:\nadb shell pm grant com.deltawaken.adbtiles android.permission.WRITE_SECURE_SETTINGS</string>
+    <string name="main_key_ok">এই অ্যাপটি adb-এর জন্য অনুমোদিত।</string>
+    <string name="main_key_missing">এই অ্যাপটি এখনও adb-এর জন্য অনুমোদিত নয়।</string>
+    <string name="main_authorize">এই অ্যাপটিকে অনুমোদন দিন</string>
+    <string name="main_authorize_hint">TCP/IP পোর্ট খোলা থাকতে হবে (adb tcpip &lt;port&gt;)। একটি ডায়ালগ ডিবাগিং-এর অনুমতি চাইবে: “এই কম্পিউটার থেকে সর্বদা অনুমতি দিন” বেছে নিন, তারপর “অনুমতি দিন”।</string>
+    <string name="main_working">ডায়ালগের জন্য অপেক্ষা করা হচ্ছে…</string>
+    <string name="main_port_closed">TCP/IP পোর্ট বন্ধ আছে। প্রথমে কম্পিউটার থেকে adb tcpip &lt;port&gt; চালান।</string>
+    <string name="main_refused">অনুমোদন প্রত্যাখ্যান করা হয়েছে।</string>
+    <string name="main_error">ত্রুটি: %1$s</string>
+    <string name="main_port_label">TCP/IP পোর্ট</string>
+    <string name="main_port_locked">পোর্ট পরিবর্তন করতে TCP/IP ডিবাগিং বন্ধ করুন।</string>
+    <string name="main_port_invalid">1024 থেকে 65535-এর মধ্যে একটি পোর্ট লিখুন।</string>
+    <string name="main_battery_ok">ব্যাটারি: সীমাবদ্ধ নয়, TCP/IP টাইল সবসময় adb-তে পৌঁছাতে পারে।</string>
+    <string name="main_battery_restricted">ব্যাটারি: অপ্টিমাইজ করা। নিষ্ক্রিয় থাকলে Android এই অ্যাপের নেটওয়ার্ক বন্ধ করে দেয়, এমনকি ফোনের নিজের কাছেও, আর TCP/IP টাইল অন্ধ হয়ে যায়।</string>
+    <string name="main_battery_allow">ব্যাকগ্রাউন্ডে অনুমতি দিন</string>
 </resources>

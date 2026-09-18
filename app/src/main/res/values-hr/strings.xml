@@ -10,4 +10,22 @@
     <string name="subtitle_setup_needed">Postavite u aplikaciji</string>
     <string name="subtitle_wifi_needed">Potreban je Wi-Fi</string>
     <string name="subtitle_failed">Nije uspjelo</string>
+    <string name="subtitle_port_open">Priključak %1$d</string>
+    <string name="status_line">%1$s: %2$s</string>
+    <string name="main_perm_ok">WRITE_SECURE_SETTINGS: odobreno.</string>
+    <string name="main_perm_missing">Nedostaje WRITE_SECURE_SETTINGS. Na računalu pokrenite:\nadb shell pm grant com.deltawaken.adbtiles android.permission.WRITE_SECURE_SETTINGS</string>
+    <string name="main_key_ok">Ova je aplikacija autorizirana za adb.</string>
+    <string name="main_key_missing">Ova aplikacija još nije autorizirana za adb.</string>
+    <string name="main_authorize">Autoriziraj ovu aplikaciju</string>
+    <string name="main_authorize_hint">TCP/IP priključak mora biti otvoren (adb tcpip &lt;port&gt;). Dijalog će zatražiti dopuštenje za otklanjanje pogrešaka: označite „Uvijek dopusti s ovog računala”, zatim dodirnite „Dopusti”.</string>
+    <string name="main_working">Čeka se dijalog…</string>
+    <string name="main_port_closed">TCP/IP priključak je zatvoren. Najprije pokrenite adb tcpip &lt;port&gt; na računalu.</string>
+    <string name="main_refused">Autorizacija je odbijena.</string>
+    <string name="main_error">Pogreška: %1$s</string>
+    <string name="main_port_label">TCP/IP priključak</string>
+    <string name="main_port_locked">Isključite otklanjanje pogrešaka putem TCP/IP-a da biste promijenili priključak.</string>
+    <string name="main_port_invalid">Unesite priključak između 1024 i 65535.</string>
+    <string name="main_battery_ok">Baterija: neograničeno, pločica TCP/IP uvijek može pristupiti adb-u.</string>
+    <string name="main_battery_restricted">Baterija: optimizirano. U mirovanju Android prekida mrežu ove aplikacije, čak i prema samom telefonu, pa pločica TCP/IP više ništa ne vidi.</string>
+    <string name="main_battery_allow">Dopusti u pozadini</string>
 </resources>

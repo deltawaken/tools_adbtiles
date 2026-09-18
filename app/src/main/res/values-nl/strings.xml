@@ -10,4 +10,22 @@
     <string name="subtitle_setup_needed">Instellen in de app</string>
     <string name="subtitle_wifi_needed">Wifi vereist</string>
     <string name="subtitle_failed">Mislukt</string>
+    <string name="subtitle_port_open">Poort %1$d</string>
+    <string name="status_line">%1$s: %2$s</string>
+    <string name="main_perm_ok">WRITE_SECURE_SETTINGS: verleend.</string>
+    <string name="main_perm_missing">WRITE_SECURE_SETTINGS ontbreekt. Voer op een computer uit:\nadb shell pm grant com.deltawaken.adbtiles android.permission.WRITE_SECURE_SETTINGS</string>
+    <string name="main_key_ok">Deze app is geautoriseerd voor adb.</string>
+    <string name="main_key_missing">Deze app is nog niet geautoriseerd voor adb.</string>
+    <string name="main_authorize">Deze app autoriseren</string>
+    <string name="main_authorize_hint">De TCP/IP-poort moet open zijn (adb tcpip &lt;port&gt;). Een dialoogvenster vraagt om foutopsporing toe te staan: vink ‘Altijd toestaan vanaf deze computer’ aan en tik op Toestaan.</string>
+    <string name="main_working">Wachten op het dialoogvenster…</string>
+    <string name="main_port_closed">De TCP/IP-poort is gesloten. Voer eerst adb tcpip &lt;port&gt; uit op een computer.</string>
+    <string name="main_refused">Autorisatie geweigerd.</string>
+    <string name="main_error">Fout: %1$s</string>
+    <string name="main_port_label">TCP/IP-poort</string>
+    <string name="main_port_locked">Zet TCP/IP-foutopsporing uit om de poort te wijzigen.</string>
+    <string name="main_port_invalid">Geef een poort op tussen 1024 en 65535.</string>
+    <string name="main_battery_ok">Batterij: onbeperkt, de TCP/IP-tegel bereikt adb altijd.</string>
+    <string name="main_battery_restricted">Batterij: geoptimaliseerd. In rust sluit Android het netwerk van deze app af, zelfs naar de telefoon zelf, en ziet de TCP/IP-tegel niets meer.</string>
+    <string name="main_battery_allow">Toestaan op achtergrond</string>
 </resources>

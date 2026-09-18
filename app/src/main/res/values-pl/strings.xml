@@ -10,4 +10,22 @@
     <string name="subtitle_setup_needed">Skonfiguruj w aplikacji</string>
     <string name="subtitle_wifi_needed">Wymagane Wi-Fi</string>
     <string name="subtitle_failed">Niepowodzenie</string>
+    <string name="subtitle_port_open">Port %1$d</string>
+    <string name="status_line">%1$s: %2$s</string>
+    <string name="main_perm_ok">WRITE_SECURE_SETTINGS: przyznane.</string>
+    <string name="main_perm_missing">Brak WRITE_SECURE_SETTINGS. Na komputerze uruchom:\nadb shell pm grant com.deltawaken.adbtiles android.permission.WRITE_SECURE_SETTINGS</string>
+    <string name="main_key_ok">Ta aplikacja ma autoryzację adb.</string>
+    <string name="main_key_missing">Ta aplikacja nie ma jeszcze autoryzacji adb.</string>
+    <string name="main_authorize">Autoryzuj tę aplikację</string>
+    <string name="main_authorize_hint">Port TCP/IP musi być otwarty (adb tcpip &lt;port&gt;). Pojawi się okno z pytaniem o zezwolenie na debugowanie: zaznacz „Zawsze zezwalaj z tego komputera”, a potem kliknij „Zezwalaj”.</string>
+    <string name="main_working">Czekam na okno…</string>
+    <string name="main_port_closed">Port TCP/IP jest zamknięty. Najpierw uruchom adb tcpip &lt;port&gt; na komputerze.</string>
+    <string name="main_refused">Odmowa autoryzacji.</string>
+    <string name="main_error">Błąd: %1$s</string>
+    <string name="main_port_label">Port TCP/IP</string>
+    <string name="main_port_locked">Wyłącz debugowanie TCP/IP, aby zmienić port.</string>
+    <string name="main_port_invalid">Wpisz port od 1024 do 65535.</string>
+    <string name="main_battery_ok">Bateria: bez ograniczeń, kafelek TCP/IP zawsze dociera do adb.</string>
+    <string name="main_battery_restricted">Bateria: optymalizowana. W stanie bezczynności Android odcina tej aplikacji sieć, nawet do samego telefonu, i kafelek TCP/IP przestaje cokolwiek widzieć.</string>
+    <string name="main_battery_allow">Zezwól w tle</string>
 </resources>

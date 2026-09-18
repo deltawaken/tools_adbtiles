@@ -10,4 +10,22 @@
     <string name="subtitle_setup_needed">Կարգավորեք հավելվածում</string>
     <string name="subtitle_wifi_needed">Անհրաժեշտ է Wi-Fi</string>
     <string name="subtitle_failed">Չհաջողվեց</string>
+    <string name="subtitle_port_open">Պորտ %1$d</string>
+    <string name="status_line">%1$s: %2$s</string>
+    <string name="main_perm_ok">WRITE_SECURE_SETTINGS: տրամադրված է։</string>
+    <string name="main_perm_missing">WRITE_SECURE_SETTINGS թույլտվությունը բացակայում է։ Համակարգչից գործարկեք՝\nadb shell pm grant com.deltawaken.adbtiles android.permission.WRITE_SECURE_SETTINGS</string>
+    <string name="main_key_ok">Այս հավելվածը թույլատրված է adb-ի համար։</string>
+    <string name="main_key_missing">Այս հավելվածը դեռ թույլատրված չէ adb-ի համար։</string>
+    <string name="main_authorize">Թույլատրել այս հավելվածը</string>
+    <string name="main_authorize_hint">TCP/IP պորտը պետք է բաց լինի (adb tcpip &lt;port&gt;)։ Պատուհանում կառաջարկվի թույլատրել վրիպազերծումը. նշեք «Միշտ թույլատրել այս համակարգչից», ապա՝ «Թույլատրել»։</string>
+    <string name="main_working">Սպասում ենք պատուհանին…</string>
+    <string name="main_port_closed">TCP/IP պորտը փակ է։ Նախ համակարգչից գործարկեք adb tcpip &lt;port&gt;։</string>
+    <string name="main_refused">Թույլտվությունը մերժվեց։</string>
+    <string name="main_error">Սխալ՝ %1$s</string>
+    <string name="main_port_label">TCP/IP պորտ</string>
+    <string name="main_port_locked">Պորտը փոխելու համար անջատեք TCP/IP վրիպազերծումը։</string>
+    <string name="main_port_invalid">Մուտքագրեք պորտ 1024-ից 65535 միջակայքում։</string>
+    <string name="main_battery_ok">Մարտկոց՝ առանց սահմանափակման, TCP/IP սալիկը միշտ կարող է կապվել adb-ի հետ։</string>
+    <string name="main_battery_restricted">Մարտկոց՝ օպտիմալացված։ Անգործուն ռեժիմում Android-ն անջատում է այս հավելվածի ցանցը, նույնիսկ դեպի հեռախոսն ինքը, և TCP/IP սալիկը կուրանում է։</string>
+    <string name="main_battery_allow">Թույլատրել ֆոնային ռեժիմում</string>
 </resources>

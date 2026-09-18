@@ -10,4 +10,22 @@
     <string name="subtitle_setup_needed">Nastavite v aplikaciji</string>
     <string name="subtitle_wifi_needed">Potreben je Wi-Fi</string>
     <string name="subtitle_failed">Ni uspelo</string>
+    <string name="subtitle_port_open">Vrata %1$d</string>
+    <string name="status_line">%1$s: %2$s</string>
+    <string name="main_perm_ok">WRITE_SECURE_SETTINGS: odobreno.</string>
+    <string name="main_perm_missing">Manjka WRITE_SECURE_SETTINGS. V računalniku zaženite:\nadb shell pm grant com.deltawaken.adbtiles android.permission.WRITE_SECURE_SETTINGS</string>
+    <string name="main_key_ok">Ta aplikacija je pooblaščena za adb.</string>
+    <string name="main_key_missing">Ta aplikacija še ni pooblaščena za adb.</string>
+    <string name="main_authorize">Pooblasti to aplikacijo</string>
+    <string name="main_authorize_hint">Vrata TCP/IP morajo biti odprta (adb tcpip &lt;port&gt;). Pogovorno okno bo zahtevalo dovoljenje za odpravljanje napak: označite „Vedno dovoli iz tega računalnika“, nato se dotaknite „Dovoli“.</string>
+    <string name="main_working">Čakanje na pogovorno okno …</string>
+    <string name="main_port_closed">Vrata TCP/IP so zaprta. Najprej v računalniku zaženite adb tcpip &lt;port&gt;.</string>
+    <string name="main_refused">Pooblastilo je zavrnjeno.</string>
+    <string name="main_error">Napaka: %1$s</string>
+    <string name="main_port_label">Vrata TCP/IP</string>
+    <string name="main_port_locked">Če želite spremeniti vrata, izklopite odpravljanje napak prek TCP/IP.</string>
+    <string name="main_port_invalid">Vnesite vrata med 1024 in 65535.</string>
+    <string name="main_battery_ok">Baterija: neomejeno, ploščica TCP/IP vedno doseže adb.</string>
+    <string name="main_battery_restricted">Baterija: optimizirano. V stanju mirovanja Android tej aplikaciji prekine omrežje, celo do samega telefona, in ploščica TCP/IP oslepi.</string>
+    <string name="main_battery_allow">Dovoli v ozadju</string>
 </resources>

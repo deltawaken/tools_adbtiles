@@ -10,4 +10,22 @@
     <string name="subtitle_setup_needed">יש להגדיר באפליקציה</string>
     <string name="subtitle_wifi_needed">נדרש Wi-Fi</string>
     <string name="subtitle_failed">הפעולה נכשלה</string>
+    <string name="subtitle_port_open">יציאה %1$d</string>
+    <string name="status_line">%1$s: %2$s</string>
+    <string name="main_perm_ok">WRITE_SECURE_SETTINGS: ניתנה.</string>
+    <string name="main_perm_missing">חסרה ההרשאה WRITE_SECURE_SETTINGS. יש להריץ ממחשב:\nadb shell pm grant com.deltawaken.adbtiles android.permission.WRITE_SECURE_SETTINGS</string>
+    <string name="main_key_ok">האפליקציה הזו מורשית ל-adb.</string>
+    <string name="main_key_missing">האפליקציה הזו עדיין לא מורשית ל-adb.</string>
+    <string name="main_authorize">מתן הרשאה לאפליקציה</string>
+    <string name="main_authorize_hint">יציאת TCP/IP חייבת להיות פתוחה (adb tcpip &lt;port&gt;). תופיע תיבת דו-שיח שתבקש לאפשר ניפוי באגים: יש לסמן „אפשר תמיד מהמחשב הזה” ואז ללחוץ על „יש אישור”.</string>
+    <string name="main_working">ממתין לתיבת הדו-שיח…</string>
+    <string name="main_port_closed">יציאת TCP/IP סגורה. קודם יש להריץ adb tcpip &lt;port&gt; ממחשב.</string>
+    <string name="main_refused">ההרשאה נדחתה.</string>
+    <string name="main_error">שגיאה: %1$s</string>
+    <string name="main_port_label">יציאת TCP/IP</string>
+    <string name="main_port_locked">כדי לשנות את היציאה, יש לכבות את ניפוי הבאגים ב-TCP/IP.</string>
+    <string name="main_port_invalid">יש להזין יציאה בין 1024 ל-65535.</string>
+    <string name="main_battery_ok">סוללה: ללא הגבלה, כרטיס המידע של TCP/IP תמיד מגיע ל-adb.</string>
+    <string name="main_battery_restricted">סוללה: עם אופטימיזציה. במצב המתנה, Android מנתק את הרשת של האפליקציה, גם אל הטלפון עצמו, וכרטיס המידע של TCP/IP מתעוור.</string>
+    <string name="main_battery_allow">הרשאה לפעול ברקע</string>
 </resources>

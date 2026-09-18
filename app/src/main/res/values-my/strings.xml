@@ -10,4 +10,22 @@
     <string name="subtitle_setup_needed">အက်ပ်တွင် စနစ်ထည့်ပါ</string>
     <string name="subtitle_wifi_needed">Wi-Fi လိုသည်</string>
     <string name="subtitle_failed">မအောင်မြင်ပါ</string>
+    <string name="subtitle_port_open">ပို့တ် %1$d</string>
+    <string name="status_line">%1$s: %2$s</string>
+    <string name="main_perm_ok">WRITE_SECURE_SETTINGS: ခွင့်ပြုထားသည်။</string>
+    <string name="main_perm_missing">WRITE_SECURE_SETTINGS မရှိပါ။ ကွန်ပျူတာမှ အောက်ပါအတိုင်း လုပ်ဆောင်ပါ-\nadb shell pm grant com.deltawaken.adbtiles android.permission.WRITE_SECURE_SETTINGS</string>
+    <string name="main_key_ok">ဤအက်ပ်ကို adb အတွက် ခွင့်ပြုထားသည်။</string>
+    <string name="main_key_missing">ဤအက်ပ်ကို adb အတွက် မခွင့်ပြုရသေးပါ။</string>
+    <string name="main_authorize">ဤအက်ပ်ကို ခွင့်ပြုရန်</string>
+    <string name="main_authorize_hint">TCP/IP ပို့တ် ဖွင့်ထားရမည် (adb tcpip &lt;port&gt;)။ ဒိုင်ယာလော့တစ်ခုက အမှားရှာပြင်ခြင်းကို ခွင့်ပြုရန် မေးပါမည်- “ဒီကွန်ပျူတာမှ အမြဲခွင့်ပြုရန်” ကို အမှန်ခြစ်ပြီး “ခွင့်ပြုရန်” ကို တို့ပါ။</string>
+    <string name="main_working">ဒိုင်ယာလော့ကို စောင့်နေသည်…</string>
+    <string name="main_port_closed">TCP/IP ပို့တ် ပိတ်ထားသည်။ ကွန်ပျူတာမှ adb tcpip &lt;port&gt; ကို အရင် လုပ်ဆောင်ပါ။</string>
+    <string name="main_refused">ခွင့်ပြုချက် ငြင်းပယ်ခံရသည်။</string>
+    <string name="main_error">အမှား: %1$s</string>
+    <string name="main_port_label">TCP/IP ပို့တ်</string>
+    <string name="main_port_locked">ပို့တ်ပြောင်းရန် TCP/IP အမှားရှာပြင်ခြင်းကို ပိတ်ပါ။</string>
+    <string name="main_port_invalid">1024 နှင့် 65535 ကြား ပို့တ်တစ်ခု ထည့်ပါ။</string>
+    <string name="main_battery_ok">ဘက်ထရီ: ကန့်သတ်မထားပါ၊ TCP/IP အကွက်သည် adb ကို အမြဲ ချိတ်ဆက်နိုင်သည်။</string>
+    <string name="main_battery_restricted">ဘက်ထရီ: ပိုကောင်းအောင် ပြင်ထားသည်။ အသုံးမပြုချိန်တွင် Android သည် ဤအက်ပ်၏ ကွန်ရက်ကို ဖုန်းကိုယ်တိုင်သို့ပင် ဖြတ်တောက်သဖြင့် TCP/IP အကွက်သည် ဘာမျှ မမြင်နိုင်တော့ပါ။</string>
+    <string name="main_battery_allow">နောက်ခံတွင် ခွင့်ပြုရန်</string>
 </resources>

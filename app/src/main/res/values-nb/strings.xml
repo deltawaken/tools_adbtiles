@@ -10,4 +10,22 @@
     <string name="subtitle_setup_needed">Konfigurer i appen</string>
     <string name="subtitle_wifi_needed">Krever Wi-Fi</string>
     <string name="subtitle_failed">Mislyktes</string>
+    <string name="subtitle_port_open">Port %1$d</string>
+    <string name="status_line">%1$s: %2$s</string>
+    <string name="main_perm_ok">WRITE_SECURE_SETTINGS: gitt.</string>
+    <string name="main_perm_missing">WRITE_SECURE_SETTINGS mangler. Kjør fra en datamaskin:\nadb shell pm grant com.deltawaken.adbtiles android.permission.WRITE_SECURE_SETTINGS</string>
+    <string name="main_key_ok">Denne appen er autorisert for adb.</string>
+    <string name="main_key_missing">Denne appen er ikke autorisert for adb ennå.</string>
+    <string name="main_authorize">Autoriser denne appen</string>
+    <string name="main_authorize_hint">TCP/IP-porten må være åpen (adb tcpip &lt;port&gt;). En dialogboks spør om feilsøking skal tillates: Kryss av for «Tillat alltid fra denne datamaskinen», og trykk deretter på Tillat.</string>
+    <string name="main_working">Venter på dialogboksen …</string>
+    <string name="main_port_closed">TCP/IP-porten er lukket. Kjør adb tcpip &lt;port&gt; fra en datamaskin først.</string>
+    <string name="main_refused">Autorisering avslått.</string>
+    <string name="main_error">Feil: %1$s</string>
+    <string name="main_port_label">TCP/IP-port</string>
+    <string name="main_port_locked">Slå av TCP/IP-feilsøking for å endre porten.</string>
+    <string name="main_port_invalid">Skriv inn en port mellom 1024 og 65535.</string>
+    <string name="main_battery_ok">Batteri: ubegrenset, TCP/IP-ruten når alltid adb.</string>
+    <string name="main_battery_restricted">Batteri: optimalisert. I hvilemodus kutter Android nettverket til denne appen, selv mot telefonen selv, og TCP/IP-ruten blir blind.</string>
+    <string name="main_battery_allow">Tillat i bakgrunnen</string>
 </resources>

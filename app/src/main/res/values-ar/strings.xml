@@ -10,4 +10,22 @@
     <string name="subtitle_setup_needed">الإعداد في التطبيق</string>
     <string name="subtitle_wifi_needed">يلزم اتصال Wi-Fi</string>
     <string name="subtitle_failed">تعذّر ذلك</string>
+    <string name="subtitle_port_open">المنفذ %1$d</string>
+    <string name="status_line">%1$s: %2$s</string>
+    <string name="main_perm_ok">WRITE_SECURE_SETTINGS: ممنوح.</string>
+    <string name="main_perm_missing">WRITE_SECURE_SETTINGS غير ممنوح. شغِّل من جهاز كمبيوتر:\nadb shell pm grant com.deltawaken.adbtiles android.permission.WRITE_SECURE_SETTINGS</string>
+    <string name="main_key_ok">هذا التطبيق مصرَّح له باستخدام adb.</string>
+    <string name="main_key_missing">هذا التطبيق غير مصرَّح له باستخدام adb بعد.</string>
+    <string name="main_authorize">تفويض هذا التطبيق</string>
+    <string name="main_authorize_hint">يجب أن يكون منفذ TCP/IP مفتوحًا (adb tcpip &lt;port&gt;). سيطلب مربع حوار السماح بتصحيح الأخطاء: حدِّد «السماح دائمًا من هذا الكمبيوتر» ثم «سماح».</string>
+    <string name="main_working">في انتظار مربع الحوار…</string>
+    <string name="main_port_closed">منفذ TCP/IP مغلق. شغِّل أولاً adb tcpip &lt;port&gt; من جهاز كمبيوتر.</string>
+    <string name="main_refused">تم رفض التفويض.</string>
+    <string name="main_error">خطأ: %1$s</string>
+    <string name="main_port_label">منفذ TCP/IP</string>
+    <string name="main_port_locked">أوقِف تصحيح الأخطاء عبر TCP/IP لتغيير المنفذ.</string>
+    <string name="main_port_invalid">أدخِل منفذًا بين 1024 و65535.</string>
+    <string name="main_battery_ok">البطارية: غير مقيَّدة، ويمكن لفئة TCP/IP الوصول إلى adb دائمًا.</string>
+    <string name="main_battery_restricted">البطارية: محسَّنة. في وضع الخمول، يقطع Android الشبكة عن هذا التطبيق، حتى إلى الهاتف نفسه، فلا تعود فئة TCP/IP ترى شيئًا.</string>
+    <string name="main_battery_allow">السماح في الخلفية</string>
 </resources>

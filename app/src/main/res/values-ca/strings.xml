@@ -10,4 +10,22 @@
     <string name="subtitle_setup_needed">Configura-ho a l\'app</string>
     <string name="subtitle_wifi_needed">Cal Wi-Fi</string>
     <string name="subtitle_failed">Error</string>
+    <string name="subtitle_port_open">Port %1$d</string>
+    <string name="status_line">%1$s: %2$s</string>
+    <string name="main_perm_ok">WRITE_SECURE_SETTINGS: concedit.</string>
+    <string name="main_perm_missing">Falta WRITE_SECURE_SETTINGS. Des d\'un ordinador, executa:\nadb shell pm grant com.deltawaken.adbtiles android.permission.WRITE_SECURE_SETTINGS</string>
+    <string name="main_key_ok">Aquesta aplicació està autoritzada per a adb.</string>
+    <string name="main_key_missing">Aquesta aplicació encara no està autoritzada per a adb.</string>
+    <string name="main_authorize">Autoritza aquesta aplicació</string>
+    <string name="main_authorize_hint">El port TCP/IP ha d\'estar obert (adb tcpip &lt;port&gt;). Un quadre de diàleg et demanarà que permetis la depuració: marca «Dona sempre permís des d\'aquest equip» i, després, toca Permet.</string>
+    <string name="main_working">S\'està esperant el quadre de diàleg…</string>
+    <string name="main_port_closed">El port TCP/IP està tancat. Primer executa adb tcpip &lt;port&gt; des d\'un ordinador.</string>
+    <string name="main_refused">S\'ha denegat l\'autorització.</string>
+    <string name="main_error">Error: %1$s</string>
+    <string name="main_port_label">Port TCP/IP</string>
+    <string name="main_port_locked">Desactiva la depuració per TCP/IP per canviar el port.</string>
+    <string name="main_port_invalid">Introdueix un port entre 1024 i 65535.</string>
+    <string name="main_battery_ok">Bateria: sense restriccions; la icona TCP/IP sempre pot arribar a adb.</string>
+    <string name="main_battery_restricted">Bateria: optimitzada. En repòs, Android talla la xarxa d\'aquesta aplicació, fins i tot cap al mateix telèfon, i la icona TCP/IP es queda cega.</string>
+    <string name="main_battery_allow">Permet en segon pla</string>
 </resources>

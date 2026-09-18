@@ -10,4 +10,22 @@
     <string name="subtitle_setup_needed">Siapkan di aplikasi</string>
     <string name="subtitle_wifi_needed">Perlu Wi-Fi</string>
     <string name="subtitle_failed">Gagal</string>
+    <string name="subtitle_port_open">Port %1$d</string>
+    <string name="status_line">%1$s: %2$s</string>
+    <string name="main_perm_ok">WRITE_SECURE_SETTINGS: diberikan.</string>
+    <string name="main_perm_missing">WRITE_SECURE_SETTINGS tidak ada. Dari komputer, jalankan:\nadb shell pm grant com.deltawaken.adbtiles android.permission.WRITE_SECURE_SETTINGS</string>
+    <string name="main_key_ok">Aplikasi ini diizinkan untuk adb.</string>
+    <string name="main_key_missing">Aplikasi ini belum diizinkan untuk adb.</string>
+    <string name="main_authorize">Izinkan aplikasi ini</string>
+    <string name="main_authorize_hint">Port TCP/IP harus terbuka (adb tcpip &lt;port&gt;). Dialog akan meminta izin proses debug: centang “Selalu izinkan dari komputer ini”, lalu ketuk “Izinkan”.</string>
+    <string name="main_working">Menunggu dialog…</string>
+    <string name="main_port_closed">Port TCP/IP tertutup. Jalankan adb tcpip &lt;port&gt; dari komputer terlebih dahulu.</string>
+    <string name="main_refused">Otorisasi ditolak.</string>
+    <string name="main_error">Error: %1$s</string>
+    <string name="main_port_label">Port TCP/IP</string>
+    <string name="main_port_locked">Nonaktifkan proses debug TCP/IP untuk mengubah port.</string>
+    <string name="main_port_invalid">Masukkan port antara 1024 dan 65535.</string>
+    <string name="main_battery_ok">Baterai: tidak dibatasi, kartu TCP/IP selalu dapat menjangkau adb.</string>
+    <string name="main_battery_restricted">Baterai: dioptimalkan. Saat tidak aktif, Android memutus jaringan aplikasi ini, bahkan ke ponsel itu sendiri, sehingga kartu TCP/IP tidak dapat melihat statusnya.</string>
+    <string name="main_battery_allow">Izinkan di latar belakang</string>
 </resources>

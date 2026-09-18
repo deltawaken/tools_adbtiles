@@ -10,4 +10,22 @@
     <string name="subtitle_setup_needed">请在应用中设置</string>
     <string name="subtitle_wifi_needed">需要 WLAN</string>
     <string name="subtitle_failed">失败</string>
+    <string name="subtitle_port_open">端口 %1$d</string>
+    <string name="status_line">%1$s：%2$s</string>
+    <string name="main_perm_ok">WRITE_SECURE_SETTINGS：已授予。</string>
+    <string name="main_perm_missing">缺少 WRITE_SECURE_SETTINGS。请在计算机上运行：\nadb shell pm grant com.deltawaken.adbtiles android.permission.WRITE_SECURE_SETTINGS</string>
+    <string name="main_key_ok">此应用已获得 adb 授权。</string>
+    <string name="main_key_missing">此应用尚未获得 adb 授权。</string>
+    <string name="main_authorize">授权此应用</string>
+    <string name="main_authorize_hint">TCP/IP 端口必须处于开启状态（adb tcpip &lt;port&gt;）。系统会弹出对话框询问是否允许调试：请勾选“一律允许使用这台计算机进行调试”，然后点按“允许”。</string>
+    <string name="main_working">正在等待对话框…</string>
+    <string name="main_port_closed">TCP/IP 端口已关闭。请先在计算机上运行 adb tcpip &lt;port&gt;。</string>
+    <string name="main_refused">授权被拒绝。</string>
+    <string name="main_error">错误：%1$s</string>
+    <string name="main_port_label">TCP/IP 端口</string>
+    <string name="main_port_locked">请先关闭 TCP/IP 调试，然后再更改端口。</string>
+    <string name="main_port_invalid">请输入 1024 到 65535 之间的端口。</string>
+    <string name="main_battery_ok">电池：无限制，TCP/IP 功能块始终可以连接到 adb。</string>
+    <string name="main_battery_restricted">电池：已优化。设备闲置时，Android 会切断此应用的网络连接（即使是连接手机本身），导致 TCP/IP 功能块无法获取状态。</string>
+    <string name="main_battery_allow">允许在后台运行</string>
 </resources>

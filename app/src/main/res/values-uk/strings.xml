@@ -10,4 +10,22 @@
     <string name="subtitle_setup_needed">Налаштуйте в додатку</string>
     <string name="subtitle_wifi_needed">Потрібен Wi-Fi</string>
     <string name="subtitle_failed">Помилка</string>
+    <string name="subtitle_port_open">Порт %1$d</string>
+    <string name="status_line">%1$s: %2$s</string>
+    <string name="main_perm_ok">WRITE_SECURE_SETTINGS: надано.</string>
+    <string name="main_perm_missing">Немає дозволу WRITE_SECURE_SETTINGS. Виконайте на комп’ютері:\nadb shell pm grant com.deltawaken.adbtiles android.permission.WRITE_SECURE_SETTINGS</string>
+    <string name="main_key_ok">Цей додаток авторизовано для adb.</string>
+    <string name="main_key_missing">Цей додаток ще не авторизовано для adb.</string>
+    <string name="main_authorize">Авторизувати додаток</string>
+    <string name="main_authorize_hint">Порт TCP/IP має бути відкритий (adb tcpip &lt;port&gt;). З’явиться запит на дозвіл налагодження: поставте прапорець «Завжди дозволяти з цього комп’ютера», потім натисніть «Дозволити».</string>
+    <string name="main_working">Очікування діалогового вікна…</string>
+    <string name="main_port_closed">Порт TCP/IP закрито. Спершу виконайте adb tcpip &lt;port&gt; на комп’ютері.</string>
+    <string name="main_refused">В авторизації відмовлено.</string>
+    <string name="main_error">Помилка: %1$s</string>
+    <string name="main_port_label">Порт TCP/IP</string>
+    <string name="main_port_locked">Щоб змінити порт, вимкніть налагодження через TCP/IP.</string>
+    <string name="main_port_invalid">Введіть порт від 1024 до 65535.</string>
+    <string name="main_battery_ok">Акумулятор: без обмежень, блок TCP/IP завжди може зв’язатися з adb.</string>
+    <string name="main_battery_restricted">Акумулятор: оптимізовано. У режимі очікування Android вимикає мережу цього додатка, навіть до самого телефона, і блок TCP/IP втрачає зв’язок з adb.</string>
+    <string name="main_battery_allow">Дозволити у фоні</string>
 </resources>

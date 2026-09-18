@@ -10,4 +10,22 @@
     <string name="subtitle_setup_needed">Thiết lập trong ứng dụng</string>
     <string name="subtitle_wifi_needed">Cần Wi-Fi</string>
     <string name="subtitle_failed">Không thành công</string>
+    <string name="subtitle_port_open">Cổng %1$d</string>
+    <string name="status_line">%1$s: %2$s</string>
+    <string name="main_perm_ok">WRITE_SECURE_SETTINGS: đã cấp.</string>
+    <string name="main_perm_missing">Thiếu WRITE_SECURE_SETTINGS. Trên máy tính, hãy chạy:\nadb shell pm grant com.deltawaken.adbtiles android.permission.WRITE_SECURE_SETTINGS</string>
+    <string name="main_key_ok">Ứng dụng này đã được cấp quyền dùng adb.</string>
+    <string name="main_key_missing">Ứng dụng này chưa được cấp quyền dùng adb.</string>
+    <string name="main_authorize">Cấp quyền cho ứng dụng này</string>
+    <string name="main_authorize_hint">Cổng TCP/IP phải đang mở (adb tcpip &lt;port&gt;). Một hộp thoại sẽ hỏi có cho phép gỡ lỗi không: đánh dấu “Luôn cho phép từ máy tính này”, rồi nhấn “Cho phép”.</string>
+    <string name="main_working">Đang chờ hộp thoại…</string>
+    <string name="main_port_closed">Cổng TCP/IP đang đóng. Trước tiên, hãy chạy adb tcpip &lt;port&gt; từ máy tính.</string>
+    <string name="main_refused">Yêu cầu cấp quyền bị từ chối.</string>
+    <string name="main_error">Lỗi: %1$s</string>
+    <string name="main_port_label">Cổng TCP/IP</string>
+    <string name="main_port_locked">Hãy tắt tính năng gỡ lỗi qua TCP/IP để đổi cổng.</string>
+    <string name="main_port_invalid">Nhập cổng từ 1024 đến 65535.</string>
+    <string name="main_battery_ok">Pin: không hạn chế, ô TCP/IP luôn kết nối được với adb.</string>
+    <string name="main_battery_restricted">Pin: được tối ưu hóa. Khi thiết bị ở trạng thái rảnh, Android cắt mạng của ứng dụng này, kể cả kết nối đến chính điện thoại, và ô TCP/IP không còn nắm được trạng thái.</string>
+    <string name="main_battery_allow">Cho phép chạy trong nền</string>
 </resources>

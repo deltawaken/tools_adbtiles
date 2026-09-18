@@ -10,4 +10,22 @@
     <string name="subtitle_setup_needed">در برنامه تنظیم کنید</string>
     <string name="subtitle_wifi_needed">به Wi-Fi نیاز است</string>
     <string name="subtitle_failed">ناموفق بود</string>
+    <string name="subtitle_port_open">درگاه %1$d</string>
+    <string name="status_line">%1$s: %2$s</string>
+    <string name="main_perm_ok">WRITE_SECURE_SETTINGS: اعطا شد.</string>
+    <string name="main_perm_missing">WRITE_SECURE_SETTINGS اعطا نشده است. از رایانه اجرا کنید:\nadb shell pm grant com.deltawaken.adbtiles android.permission.WRITE_SECURE_SETTINGS</string>
+    <string name="main_key_ok">این برنامه برای adb مجاز است.</string>
+    <string name="main_key_missing">این برنامه هنوز برای adb مجاز نیست.</string>
+    <string name="main_authorize">مجاز کردن این برنامه</string>
+    <string name="main_authorize_hint">درگاه TCP/IP باید باز باشد (adb tcpip &lt;port&gt;). کادری برای اجازهٔ اشکال‌زدایی باز می‌شود: «همیشه از این رایانه انجام شود» را علامت بزنید، سپس «اجازه دادن».</string>
+    <string name="main_working">در انتظار کادر گفتگو…</string>
+    <string name="main_port_closed">درگاه TCP/IP بسته است. ابتدا از رایانه adb tcpip &lt;port&gt; را اجرا کنید.</string>
+    <string name="main_refused">اجازه رد شد.</string>
+    <string name="main_error">خطا: %1$s</string>
+    <string name="main_port_label">درگاه TCP/IP</string>
+    <string name="main_port_locked">برای تغییر درگاه، اشکال‌زدایی TCP/IP را خاموش کنید.</string>
+    <string name="main_port_invalid">درگاهی بین 1024 و 65535 وارد کنید.</string>
+    <string name="main_battery_ok">باتری: نامحدود؛ کاشی TCP/IP همیشه به adb دسترسی دارد.</string>
+    <string name="main_battery_restricted">باتری: بهینه‌شده. در حالت بیکار، Android شبکه این برنامه را قطع می‌کند، حتی به خود تلفن، و کاشی TCP/IP کور می‌شود.</string>
+    <string name="main_battery_allow">اجازه در پس‌زمینه</string>
 </resources>

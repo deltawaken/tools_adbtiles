@@ -10,4 +10,22 @@
     <string name="subtitle_setup_needed">請在應用程式中設定</string>
     <string name="subtitle_wifi_needed">需要 Wi-Fi</string>
     <string name="subtitle_failed">失敗</string>
+    <string name="subtitle_port_open">連接埠 %1$d</string>
+    <string name="status_line">%1$s：%2$s</string>
+    <string name="main_perm_ok">WRITE_SECURE_SETTINGS：已授予。</string>
+    <string name="main_perm_missing">缺少 WRITE_SECURE_SETTINGS。請在電腦上執行：\nadb shell pm grant com.deltawaken.adbtiles android.permission.WRITE_SECURE_SETTINGS</string>
+    <string name="main_key_ok">此應用程式已獲 adb 授權。</string>
+    <string name="main_key_missing">此應用程式尚未獲 adb 授權。</string>
+    <string name="main_authorize">授權此應用程式</string>
+    <string name="main_authorize_hint">TCP/IP 連接埠必須開啟 (adb tcpip &lt;port&gt;)。系統會顯示對話框，詢問是否允許偵錯：請剔選「一律允許透過這部電腦進行」，然後輕按「允許」。</string>
+    <string name="main_working">正在等待對話框…</string>
+    <string name="main_port_closed">TCP/IP 連接埠已關閉。請先在電腦上執行 adb tcpip &lt;port&gt;。</string>
+    <string name="main_refused">授權被拒。</string>
+    <string name="main_error">錯誤：%1$s</string>
+    <string name="main_port_label">TCP/IP 連接埠</string>
+    <string name="main_port_locked">如要變更連接埠，請先關閉 TCP/IP 偵錯。</string>
+    <string name="main_port_invalid">請輸入 1024 至 65535 之間的連接埠。</string>
+    <string name="main_battery_ok">電池：無限制，TCP/IP 圖塊一律可連線至 adb。</string>
+    <string name="main_battery_restricted">電池：已優化。裝置閒置時，Android 會中斷此應用程式的網絡連線 (即使是連往手機本身)，令 TCP/IP 圖塊無法取得狀態。</string>
+    <string name="main_battery_allow">允許在背景執行</string>
 </resources>

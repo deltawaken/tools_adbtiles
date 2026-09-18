@@ -10,4 +10,22 @@
     <string name="subtitle_setup_needed">រៀបចំក្នុងកម្មវិធី</string>
     <string name="subtitle_wifi_needed">ត្រូវការ Wi-Fi</string>
     <string name="subtitle_failed">បរាជ័យ</string>
+    <string name="subtitle_port_open">ច្រក %1$d</string>
+    <string name="status_line">%1$s៖ %2$s</string>
+    <string name="main_perm_ok">WRITE_SECURE_SETTINGS៖ បានផ្ដល់ការអនុញ្ញាត។</string>
+    <string name="main_perm_missing">មិនមាន WRITE_SECURE_SETTINGS ទេ។ ពីកុំព្យូទ័រ សូមដំណើរការ៖\nadb shell pm grant com.deltawaken.adbtiles android.permission.WRITE_SECURE_SETTINGS</string>
+    <string name="main_key_ok">កម្មវិធីនេះត្រូវបានអនុញ្ញាតសម្រាប់ adb។</string>
+    <string name="main_key_missing">កម្មវិធីនេះមិនទាន់ត្រូវបានអនុញ្ញាតសម្រាប់ adb នៅឡើយទេ។</string>
+    <string name="main_authorize">អនុញ្ញាតកម្មវិធីនេះ</string>
+    <string name="main_authorize_hint">ច្រក TCP/IP ត្រូវតែបើក (adb tcpip &lt;port&gt;)។ ប្រអប់មួយនឹងសុំឱ្យអនុញ្ញាតការជួសជុល៖ ធីក “អនុញ្ញាត​ជា​និច្ច​សម្រាប់​កុំព្យូទ័រ​នេះ” បន្ទាប់មកចុច “អនុញ្ញាត”។</string>
+    <string name="main_working">កំពុងរង់ចាំប្រអប់…</string>
+    <string name="main_port_closed">ច្រក TCP/IP ត្រូវបានបិទ។ សូមដំណើរការ adb tcpip &lt;port&gt; ពីកុំព្យូទ័រជាមុនសិន។</string>
+    <string name="main_refused">ការអនុញ្ញាតត្រូវបានបដិសេធ។</string>
+    <string name="main_error">បញ្ហា៖ %1$s</string>
+    <string name="main_port_label">ច្រក TCP/IP</string>
+    <string name="main_port_locked">បិទការជួសជុលតាម TCP/IP ដើម្បីប្ដូរច្រក។</string>
+    <string name="main_port_invalid">បញ្ចូលច្រកចន្លោះពី 1024 ដល់ 65535។</string>
+    <string name="main_battery_ok">ថ្ម៖ មិនដាក់កំហិត ប្រអប់ TCP/IP អាចភ្ជាប់ទៅ adb បានជានិច្ច។</string>
+    <string name="main_battery_restricted">ថ្ម៖ បានបង្កើនប្រសិទ្ធភាព។ ពេលទំនេរ Android ផ្ដាច់បណ្ដាញរបស់កម្មវិធីនេះ សូម្បីតែទៅទូរសព្ទខ្លួនឯង ហើយប្រអប់ TCP/IP លែងមើលឃើញអ្វីទៀត។</string>
+    <string name="main_battery_allow">អនុញ្ញាតនៅផ្ទៃខាងក្រោយ</string>
 </resources>

@@ -10,4 +10,22 @@
     <string name="subtitle_setup_needed">Configúralo en la app</string>
     <string name="subtitle_wifi_needed">Requiere Wi-Fi</string>
     <string name="subtitle_failed">Error</string>
+    <string name="subtitle_port_open">Puerto %1$d</string>
+    <string name="status_line">%1$s: %2$s</string>
+    <string name="main_perm_ok">WRITE_SECURE_SETTINGS: concedido.</string>
+    <string name="main_perm_missing">Falta WRITE_SECURE_SETTINGS. Desde un ordenador, ejecuta:\nadb shell pm grant com.deltawaken.adbtiles android.permission.WRITE_SECURE_SETTINGS</string>
+    <string name="main_key_ok">Esta aplicación está autorizada para adb.</string>
+    <string name="main_key_missing">Esta aplicación aún no está autorizada para adb.</string>
+    <string name="main_authorize">Autorizar esta aplicación</string>
+    <string name="main_authorize_hint">El puerto TCP/IP debe estar abierto (adb tcpip &lt;port&gt;). Un cuadro de diálogo pedirá permitir la depuración: marca «Permitir siempre desde este ordenador» y, después, toca Permitir.</string>
+    <string name="main_working">Esperando el cuadro de diálogo…</string>
+    <string name="main_port_closed">El puerto TCP/IP está cerrado. Primero ejecuta adb tcpip &lt;port&gt; desde un ordenador.</string>
+    <string name="main_refused">Autorización denegada.</string>
+    <string name="main_error">Error: %1$s</string>
+    <string name="main_port_label">Puerto TCP/IP</string>
+    <string name="main_port_locked">Desactiva la depuración TCP/IP para cambiar el puerto.</string>
+    <string name="main_port_invalid">Introduce un puerto entre 1024 y 65535.</string>
+    <string name="main_battery_ok">Batería: sin restricciones; el recuadro TCP/IP siempre puede llegar a adb.</string>
+    <string name="main_battery_restricted">Batería: optimizada. En reposo, Android corta la red de esta aplicación, incluso hacia el propio teléfono, y el recuadro TCP/IP se queda ciego.</string>
+    <string name="main_battery_allow">Permitir en segundo plano</string>
 </resources>

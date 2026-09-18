@@ -10,4 +10,22 @@
     <string name="subtitle_setup_needed">I-set up sa app</string>
     <string name="subtitle_wifi_needed">Kailangan ng Wi-Fi</string>
     <string name="subtitle_failed">Nabigo</string>
+    <string name="subtitle_port_open">Port %1$d</string>
+    <string name="status_line">%1$s: %2$s</string>
+    <string name="main_perm_ok">WRITE_SECURE_SETTINGS: ibinigay.</string>
+    <string name="main_perm_missing">Wala ang WRITE_SECURE_SETTINGS. Mula sa isang computer, patakbuhin ang:\nadb shell pm grant com.deltawaken.adbtiles android.permission.WRITE_SECURE_SETTINGS</string>
+    <string name="main_key_ok">Awtorisado ang app na ito para sa adb.</string>
+    <string name="main_key_missing">Hindi pa awtorisado ang app na ito para sa adb.</string>
+    <string name="main_authorize">Awtorisahan ang app na ito</string>
+    <string name="main_authorize_hint">Dapat bukas ang TCP/IP port (adb tcpip &lt;port&gt;). May dialog na hihingi ng pahintulot sa pag-debug: lagyan ng check ang “Palaging payagan mula sa computer na ito”, pagkatapos ay “Payagan”.</string>
+    <string name="main_working">Hinihintay ang dialog…</string>
+    <string name="main_port_closed">Sarado ang TCP/IP port. Patakbuhin muna ang adb tcpip &lt;port&gt; mula sa isang computer.</string>
+    <string name="main_refused">Tinanggihan ang awtorisasyon.</string>
+    <string name="main_error">Error: %1$s</string>
+    <string name="main_port_label">TCP/IP port</string>
+    <string name="main_port_locked">I-off ang pag-debug sa TCP/IP para mapalitan ang port.</string>
+    <string name="main_port_invalid">Maglagay ng port mula 1024 hanggang 65535.</string>
+    <string name="main_battery_ok">Baterya: hindi pinaghihigpitan, laging naaabot ng TCP/IP tile ang adb.</string>
+    <string name="main_battery_restricted">Baterya: naka-optimize. Kapag idle, pinuputol ng Android ang network ng app na ito, kahit papunta sa mismong telepono, at nabubulag ang TCP/IP tile.</string>
+    <string name="main_battery_allow">Payagan sa background</string>
 </resources>

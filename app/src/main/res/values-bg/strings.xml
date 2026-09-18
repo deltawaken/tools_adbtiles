@@ -10,4 +10,22 @@
     <string name="subtitle_setup_needed">Настройте в приложението</string>
     <string name="subtitle_wifi_needed">Нужен е Wi-Fi</string>
     <string name="subtitle_failed">Неуспешно</string>
+    <string name="subtitle_port_open">Порт %1$d</string>
+    <string name="status_line">%1$s: %2$s</string>
+    <string name="main_perm_ok">WRITE_SECURE_SETTINGS: предоставено.</string>
+    <string name="main_perm_missing">Липсва WRITE_SECURE_SETTINGS. От компютър изпълнете:\nadb shell pm grant com.deltawaken.adbtiles android.permission.WRITE_SECURE_SETTINGS</string>
+    <string name="main_key_ok">Това приложение е упълномощено за adb.</string>
+    <string name="main_key_missing">Това приложение все още не е упълномощено за adb.</string>
+    <string name="main_authorize">Упълномощаване на това приложение</string>
+    <string name="main_authorize_hint">Портът TCP/IP трябва да е отворен (adb tcpip &lt;port&gt;). Ще се покаже диалогов прозорец за разрешаване на отстраняването на грешки: поставете отметка в „Винаги да се разрешава от този компютър“, след това докоснете „Разрешаване“.</string>
+    <string name="main_working">Изчаква се диалоговият прозорец…</string>
+    <string name="main_port_closed">Портът TCP/IP е затворен. Първо изпълнете adb tcpip &lt;port&gt; от компютър.</string>
+    <string name="main_refused">Упълномощаването е отказано.</string>
+    <string name="main_error">Грешка: %1$s</string>
+    <string name="main_port_label">Порт TCP/IP</string>
+    <string name="main_port_locked">Изключете отстраняването на грешки през TCP/IP, за да промените порта.</string>
+    <string name="main_port_invalid">Въведете порт между 1024 и 65535.</string>
+    <string name="main_battery_ok">Батерия: без ограничения, плочката TCP/IP винаги достига до adb.</string>
+    <string name="main_battery_restricted">Батерия: оптимизирана. При неактивност Android прекъсва мрежата на това приложение, дори към самия телефон, и плочката TCP/IP ослепява.</string>
+    <string name="main_battery_allow">Разрешаване на заден план</string>
 </resources>

@@ -10,4 +10,22 @@
     <string name="subtitle_setup_needed">ตั้งค่าในแอป</string>
     <string name="subtitle_wifi_needed">ต้องใช้ Wi-Fi</string>
     <string name="subtitle_failed">ไม่สำเร็จ</string>
+    <string name="subtitle_port_open">พอร์ต %1$d</string>
+    <string name="status_line">%1$s: %2$s</string>
+    <string name="main_perm_ok">WRITE_SECURE_SETTINGS: ได้รับแล้ว</string>
+    <string name="main_perm_missing">ไม่มี WRITE_SECURE_SETTINGS เรียกใช้คำสั่งนี้จากคอมพิวเตอร์:\nadb shell pm grant com.deltawaken.adbtiles android.permission.WRITE_SECURE_SETTINGS</string>
+    <string name="main_key_ok">แอปนี้ได้รับอนุญาตสำหรับ adb แล้ว</string>
+    <string name="main_key_missing">แอปนี้ยังไม่ได้รับอนุญาตสำหรับ adb</string>
+    <string name="main_authorize">อนุญาตแอปนี้</string>
+    <string name="main_authorize_hint">พอร์ต TCP/IP ต้องเปิดอยู่ (adb tcpip &lt;port&gt;) กล่องโต้ตอบจะขอให้อนุญาตการแก้ไขข้อบกพร่อง ให้เลือก “อนุญาตจากคอมพิวเตอร์เครื่องนี้เสมอ” แล้วแตะ “อนุญาต”</string>
+    <string name="main_working">กำลังรอกล่องโต้ตอบ…</string>
+    <string name="main_port_closed">พอร์ต TCP/IP ปิดอยู่ เรียกใช้ adb tcpip &lt;port&gt; จากคอมพิวเตอร์ก่อน</string>
+    <string name="main_refused">การอนุญาตถูกปฏิเสธ</string>
+    <string name="main_error">ข้อผิดพลาด: %1$s</string>
+    <string name="main_port_label">พอร์ต TCP/IP</string>
+    <string name="main_port_locked">ปิดการแก้ไขข้อบกพร่องผ่าน TCP/IP เพื่อเปลี่ยนพอร์ต</string>
+    <string name="main_port_invalid">ป้อนพอร์ตระหว่าง 1024 ถึง 65535</string>
+    <string name="main_battery_ok">แบตเตอรี่: ไม่จำกัด การ์ด TCP/IP เข้าถึง adb ได้เสมอ</string>
+    <string name="main_battery_restricted">แบตเตอรี่: เพิ่มประสิทธิภาพ เมื่อไม่มีการใช้งาน Android จะตัดเครือข่ายของแอปนี้ แม้แต่ไปยังตัวโทรศัพท์เอง และการ์ด TCP/IP จะมองไม่เห็นอะไรเลย</string>
+    <string name="main_battery_allow">อนุญาตในเบื้องหลัง</string>
 </resources>

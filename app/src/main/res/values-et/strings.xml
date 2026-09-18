@@ -10,4 +10,22 @@
     <string name="subtitle_setup_needed">Seadista rakenduses</string>
     <string name="subtitle_wifi_needed">Vaja on WiFi-t</string>
     <string name="subtitle_failed">Ebaõnnestus</string>
+    <string name="subtitle_port_open">Port %1$d</string>
+    <string name="status_line">%1$s: %2$s</string>
+    <string name="main_perm_ok">WRITE_SECURE_SETTINGS: antud.</string>
+    <string name="main_perm_missing">WRITE_SECURE_SETTINGS puudub. Käivitage arvutist:\nadb shell pm grant com.deltawaken.adbtiles android.permission.WRITE_SECURE_SETTINGS</string>
+    <string name="main_key_ok">See rakendus on adb jaoks volitatud.</string>
+    <string name="main_key_missing">See rakendus pole veel adb jaoks volitatud.</string>
+    <string name="main_authorize">Volita see rakendus</string>
+    <string name="main_authorize_hint">TCP/IP-port peab olema avatud (adb tcpip &lt;port&gt;). Dialoog küsib silumise lubamist: märkige „Luba alati sellest arvutist“ ja seejärel puudutage valikut Luba.</string>
+    <string name="main_working">Dialoogi ootamine …</string>
+    <string name="main_port_closed">TCP/IP-port on suletud. Käivitage esmalt arvutist adb tcpip &lt;port&gt;.</string>
+    <string name="main_refused">Volitamisest keelduti.</string>
+    <string name="main_error">Viga: %1$s</string>
+    <string name="main_port_label">TCP/IP-port</string>
+    <string name="main_port_locked">Pordi muutmiseks lülitage TCP/IP-silumine välja.</string>
+    <string name="main_port_invalid">Sisestage port vahemikus 1024–65535.</string>
+    <string name="main_battery_ok">Aku: piiranguteta, TCP/IP-paan jõuab alati adb-ni.</string>
+    <string name="main_battery_restricted">Aku: optimeeritud. Jõudeolekus katkestab Android rakenduse võrgu, isegi telefoni endaga, ja TCP/IP-paan jääb pimedaks.</string>
+    <string name="main_battery_allow">Luba taustal</string>
 </resources>

@@ -10,4 +10,22 @@
     <string name="subtitle_setup_needed">Configura nell\'app</string>
     <string name="subtitle_wifi_needed">Wi-Fi necessario</string>
     <string name="subtitle_failed">Operazione non riuscita</string>
+    <string name="subtitle_port_open">Porta %1$d</string>
+    <string name="status_line">%1$s: %2$s</string>
+    <string name="main_perm_ok">WRITE_SECURE_SETTINGS: concessa.</string>
+    <string name="main_perm_missing">Manca WRITE_SECURE_SETTINGS. Da un computer, esegui:\nadb shell pm grant com.deltawaken.adbtiles android.permission.WRITE_SECURE_SETTINGS</string>
+    <string name="main_key_ok">Questa app è autorizzata per adb.</string>
+    <string name="main_key_missing">Questa app non è ancora autorizzata per adb.</string>
+    <string name="main_authorize">Autorizza questa app</string>
+    <string name="main_authorize_hint">La porta TCP/IP deve essere aperta (adb tcpip &lt;port&gt;). Una finestra di dialogo chiederà di consentire il debug: seleziona «Consenti sempre da questo computer», poi tocca Consenti.</string>
+    <string name="main_working">In attesa della finestra di dialogo…</string>
+    <string name="main_port_closed">La porta TCP/IP è chiusa. Prima esegui adb tcpip &lt;port&gt; da un computer.</string>
+    <string name="main_refused">Autorizzazione rifiutata.</string>
+    <string name="main_error">Errore: %1$s</string>
+    <string name="main_port_label">Porta TCP/IP</string>
+    <string name="main_port_locked">Disattiva il debug TCP/IP per cambiare porta.</string>
+    <string name="main_port_invalid">Inserisci una porta tra 1024 e 65535.</string>
+    <string name="main_battery_ok">Batteria: senza restrizioni, il riquadro TCP/IP raggiunge sempre adb.</string>
+    <string name="main_battery_restricted">Batteria: ottimizzata. In standby, Android interrompe la rete di questa app, anche verso il telefono stesso, e il riquadro TCP/IP diventa cieco.</string>
+    <string name="main_battery_allow">Consenti in background</string>
 </resources>

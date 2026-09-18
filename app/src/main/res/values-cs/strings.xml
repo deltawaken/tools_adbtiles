@@ -10,4 +10,22 @@
     <string name="subtitle_setup_needed">Nastavte v aplikaci</string>
     <string name="subtitle_wifi_needed">Vyžaduje Wi-Fi</string>
     <string name="subtitle_failed">Selhalo</string>
+    <string name="subtitle_port_open">Port %1$d</string>
+    <string name="status_line">%1$s: %2$s</string>
+    <string name="main_perm_ok">WRITE_SECURE_SETTINGS: uděleno.</string>
+    <string name="main_perm_missing">Chybí WRITE_SECURE_SETTINGS. Na počítači spusťte:\nadb shell pm grant com.deltawaken.adbtiles android.permission.WRITE_SECURE_SETTINGS</string>
+    <string name="main_key_ok">Tato aplikace je autorizována pro adb.</string>
+    <string name="main_key_missing">Tato aplikace zatím není autorizována pro adb.</string>
+    <string name="main_authorize">Autorizovat tuto aplikaci</string>
+    <string name="main_authorize_hint">Port TCP/IP musí být otevřený (adb tcpip &lt;port&gt;). Dialog se zeptá, zda povolit ladění: zaškrtněte „Vždy povolit z tohoto počítače“ a pak klepněte na Povolit.</string>
+    <string name="main_working">Čekání na dialog…</string>
+    <string name="main_port_closed">Port TCP/IP je zavřený. Nejdřív na počítači spusťte adb tcpip &lt;port&gt;.</string>
+    <string name="main_refused">Autorizace odmítnuta.</string>
+    <string name="main_error">Chyba: %1$s</string>
+    <string name="main_port_label">Port TCP/IP</string>
+    <string name="main_port_locked">Chcete-li změnit port, vypněte ladění přes TCP/IP.</string>
+    <string name="main_port_invalid">Zadejte port od 1024 do 65535.</string>
+    <string name="main_battery_ok">Baterie: bez omezení, dlaždice TCP/IP vždy dosáhne na adb.</string>
+    <string name="main_battery_restricted">Baterie: optimalizováno. V nečinnosti Android odpojí této aplikaci síť, i k samotnému telefonu, a dlaždice TCP/IP oslepne.</string>
+    <string name="main_battery_allow">Povolit na pozadí</string>
 </resources>

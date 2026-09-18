@@ -10,4 +10,22 @@
     <string name="subtitle_setup_needed">Ρύθμιση στην εφαρμογή</string>
     <string name="subtitle_wifi_needed">Απαιτείται Wi-Fi</string>
     <string name="subtitle_failed">Απέτυχε</string>
+    <string name="subtitle_port_open">Θύρα %1$d</string>
+    <string name="status_line">%1$s: %2$s</string>
+    <string name="main_perm_ok">WRITE_SECURE_SETTINGS: παραχωρήθηκε.</string>
+    <string name="main_perm_missing">Λείπει η άδεια WRITE_SECURE_SETTINGS. Από έναν υπολογιστή, εκτελέστε:\nadb shell pm grant com.deltawaken.adbtiles android.permission.WRITE_SECURE_SETTINGS</string>
+    <string name="main_key_ok">Αυτή η εφαρμογή είναι εξουσιοδοτημένη για το adb.</string>
+    <string name="main_key_missing">Αυτή η εφαρμογή δεν είναι ακόμη εξουσιοδοτημένη για το adb.</string>
+    <string name="main_authorize">Εξουσιοδότηση αυτής της εφαρμογής</string>
+    <string name="main_authorize_hint">Η θύρα TCP/IP πρέπει να είναι ανοιχτή (adb tcpip &lt;port&gt;). Ένα παράθυρο διαλόγου θα ζητήσει να επιτρέψετε τον εντοπισμό σφαλμάτων: επιλέξτε «Να επιτρέπεται πάντα από αυτόν τον υπολογιστή» και μετά πατήστε «Να επιτρέπεται».</string>
+    <string name="main_working">Αναμονή για το παράθυρο διαλόγου…</string>
+    <string name="main_port_closed">Η θύρα TCP/IP είναι κλειστή. Εκτελέστε πρώτα adb tcpip &lt;port&gt; από έναν υπολογιστή.</string>
+    <string name="main_refused">Η εξουσιοδότηση απορρίφθηκε.</string>
+    <string name="main_error">Σφάλμα: %1$s</string>
+    <string name="main_port_label">Θύρα TCP/IP</string>
+    <string name="main_port_locked">Απενεργοποιήστε τον εντοπισμό σφαλμάτων TCP/IP για να αλλάξετε θύρα.</string>
+    <string name="main_port_invalid">Εισαγάγετε μια θύρα μεταξύ 1024 και 65535.</string>
+    <string name="main_battery_ok">Μπαταρία: χωρίς περιορισμούς, το πλακίδιο TCP/IP φτάνει πάντα στο adb.</string>
+    <string name="main_battery_restricted">Μπαταρία: βελτιστοποιημένη. Σε αδράνεια, το Android κόβει το δίκτυο αυτής της εφαρμογής, ακόμη και προς το ίδιο το τηλέφωνο, και το πλακίδιο TCP/IP τυφλώνεται.</string>
+    <string name="main_battery_allow">Να επιτρέπεται στο παρασκήνιο</string>
 </resources>

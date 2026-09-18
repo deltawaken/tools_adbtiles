@@ -10,4 +10,22 @@
     <string name="subtitle_setup_needed">ऐप में सेट अप करें</string>
     <string name="subtitle_wifi_needed">वाई-फ़ाई ज़रूरी है</string>
     <string name="subtitle_failed">विफल</string>
+    <string name="subtitle_port_open">पोर्ट %1$d</string>
+    <string name="status_line">%1$s: %2$s</string>
+    <string name="main_perm_ok">WRITE_SECURE_SETTINGS: दी गई है।</string>
+    <string name="main_perm_missing">WRITE_SECURE_SETTINGS नहीं है। कंप्यूटर से यह चलाएं:\nadb shell pm grant com.deltawaken.adbtiles android.permission.WRITE_SECURE_SETTINGS</string>
+    <string name="main_key_ok">इस ऐप को adb के लिए अनुमति मिली हुई है।</string>
+    <string name="main_key_missing">इस ऐप को अभी adb के लिए अनुमति नहीं मिली है।</string>
+    <string name="main_authorize">इस ऐप को अनुमति दें</string>
+    <string name="main_authorize_hint">TCP/IP पोर्ट खुला होना चाहिए (adb tcpip &lt;port&gt;)। एक डायलॉग डीबग करने की अनुमति मांगेगा: “इस कंप्यूटर से हमेशा अनुमति दें” चुनें, फिर “अनुमति दें”।</string>
+    <string name="main_working">डायलॉग का इंतज़ार किया जा रहा है…</string>
+    <string name="main_port_closed">TCP/IP पोर्ट बंद है। पहले कंप्यूटर से adb tcpip &lt;port&gt; चलाएं।</string>
+    <string name="main_refused">अनुमति नहीं दी गई।</string>
+    <string name="main_error">गड़बड़ी: %1$s</string>
+    <string name="main_port_label">TCP/IP पोर्ट</string>
+    <string name="main_port_locked">पोर्ट बदलने के लिए TCP/IP डीबगिंग बंद करें।</string>
+    <string name="main_port_invalid">1024 से 65535 के बीच का पोर्ट डालें।</string>
+    <string name="main_battery_ok">बैटरी: पाबंदी नहीं है, TCP/IP टाइल हमेशा adb तक पहुंच सकती है।</string>
+    <string name="main_battery_restricted">बैटरी: ऑप्टिमाइज़ की गई। डिवाइस इस्तेमाल में न होने पर Android इस ऐप का नेटवर्क बंद कर देता है, फ़ोन के लिए भी, और TCP/IP टाइल कुछ नहीं देख पाती।</string>
+    <string name="main_battery_allow">बैकग्राउंड में अनुमति दें</string>
 </resources>

@@ -10,4 +10,22 @@
     <string name="subtitle_setup_needed">Настройте в приложении</string>
     <string name="subtitle_wifi_needed">Нужен Wi-Fi</string>
     <string name="subtitle_failed">Ошибка</string>
+    <string name="subtitle_port_open">Порт %1$d</string>
+    <string name="status_line">%1$s: %2$s</string>
+    <string name="main_perm_ok">WRITE_SECURE_SETTINGS: предоставлено.</string>
+    <string name="main_perm_missing">Нет разрешения WRITE_SECURE_SETTINGS. Выполните на компьютере:\nadb shell pm grant com.deltawaken.adbtiles android.permission.WRITE_SECURE_SETTINGS</string>
+    <string name="main_key_ok">Приложение авторизовано для adb.</string>
+    <string name="main_key_missing">Приложение ещё не авторизовано для adb.</string>
+    <string name="main_authorize">Авторизовать приложение</string>
+    <string name="main_authorize_hint">Порт TCP/IP должен быть открыт (adb tcpip &lt;port&gt;). Появится запрос на разрешение отладки: установите флажок «Всегда разрешать отладку с этого компьютера», затем нажмите «Разрешить».</string>
+    <string name="main_working">Ожидание диалогового окна…</string>
+    <string name="main_port_closed">Порт TCP/IP закрыт. Сначала выполните adb tcpip &lt;port&gt; на компьютере.</string>
+    <string name="main_refused">В авторизации отказано.</string>
+    <string name="main_error">Ошибка: %1$s</string>
+    <string name="main_port_label">Порт TCP/IP</string>
+    <string name="main_port_locked">Чтобы изменить порт, отключите отладку по TCP/IP.</string>
+    <string name="main_port_invalid">Введите порт от 1024 до 65535.</string>
+    <string name="main_battery_ok">Батарея: без ограничений, элемент TCP/IP всегда может подключиться к adb.</string>
+    <string name="main_battery_restricted">Батарея: оптимизировано. В режиме ожидания Android отключает этому приложению сеть, даже к самому телефону, и элемент TCP/IP теряет связь с adb.</string>
+    <string name="main_battery_allow">Разрешить работу в фоне</string>
 </resources>

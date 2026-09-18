@@ -10,4 +10,22 @@
     <string name="subtitle_setup_needed">Configúralo en la app</string>
     <string name="subtitle_wifi_needed">Requiere Wi-Fi</string>
     <string name="subtitle_failed">Error</string>
+    <string name="subtitle_port_open">Puerto %1$d</string>
+    <string name="status_line">%1$s: %2$s</string>
+    <string name="main_perm_ok">WRITE_SECURE_SETTINGS: otorgado.</string>
+    <string name="main_perm_missing">Falta WRITE_SECURE_SETTINGS. Desde una computadora, ejecuta:\nadb shell pm grant com.deltawaken.adbtiles android.permission.WRITE_SECURE_SETTINGS</string>
+    <string name="main_key_ok">Esta app está autorizada para adb.</string>
+    <string name="main_key_missing">Esta app todavía no está autorizada para adb.</string>
+    <string name="main_authorize">Autorizar esta app</string>
+    <string name="main_authorize_hint">El puerto TCP/IP debe estar abierto (adb tcpip &lt;port&gt;). Un diálogo te pedirá permitir la depuración: marca “Permitir siempre desde esta computadora” y, luego, presiona Permitir.</string>
+    <string name="main_working">Esperando el diálogo…</string>
+    <string name="main_port_closed">El puerto TCP/IP está cerrado. Primero ejecuta adb tcpip &lt;port&gt; desde una computadora.</string>
+    <string name="main_refused">Se rechazó la autorización.</string>
+    <string name="main_error">Error: %1$s</string>
+    <string name="main_port_label">Puerto TCP/IP</string>
+    <string name="main_port_locked">Desactiva la depuración TCP/IP para cambiar el puerto.</string>
+    <string name="main_port_invalid">Ingresa un puerto entre 1024 y 65535.</string>
+    <string name="main_battery_ok">Batería: sin restricciones; la tarjeta TCP/IP siempre puede llegar a adb.</string>
+    <string name="main_battery_restricted">Batería: optimizada. Cuando está inactivo, Android corta la red de esta app, incluso hacia el mismo teléfono, y la tarjeta TCP/IP queda ciega.</string>
+    <string name="main_battery_allow">Permitir en segundo plano</string>
 </resources>

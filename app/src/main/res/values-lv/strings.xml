@@ -10,4 +10,22 @@
     <string name="subtitle_setup_needed">Iestatiet lietotnē</string>
     <string name="subtitle_wifi_needed">Nepieciešams Wi-Fi</string>
     <string name="subtitle_failed">Neizdevās</string>
+    <string name="subtitle_port_open">Ports %1$d</string>
+    <string name="status_line">%1$s: %2$s</string>
+    <string name="main_perm_ok">WRITE_SECURE_SETTINGS: piešķirta.</string>
+    <string name="main_perm_missing">Trūkst WRITE_SECURE_SETTINGS. Datorā izpildiet:\nadb shell pm grant com.deltawaken.adbtiles android.permission.WRITE_SECURE_SETTINGS</string>
+    <string name="main_key_ok">Šī lietotne ir autorizēta darbam ar adb.</string>
+    <string name="main_key_missing">Šī lietotne vēl nav autorizēta darbam ar adb.</string>
+    <string name="main_authorize">Autorizēt šo lietotni</string>
+    <string name="main_authorize_hint">TCP/IP portam jābūt atvērtam (adb tcpip &lt;port&gt;). Dialogā tiks jautāts, vai atļaut atkļūdošanu: atzīmējiet „Vienmēr atļaut no šī datora” un pēc tam pieskarieties pie Atļaut.</string>
+    <string name="main_working">Gaida dialogu…</string>
+    <string name="main_port_closed">TCP/IP ports ir aizvērts. Vispirms datorā izpildiet adb tcpip &lt;port&gt;.</string>
+    <string name="main_refused">Autorizācija noraidīta.</string>
+    <string name="main_error">Kļūda: %1$s</string>
+    <string name="main_port_label">TCP/IP ports</string>
+    <string name="main_port_locked">Lai mainītu portu, izslēdziet TCP/IP atkļūdošanu.</string>
+    <string name="main_port_invalid">Ievadiet portu no 1024 līdz 65535.</string>
+    <string name="main_battery_ok">Akumulators: bez ierobežojumiem, TCP/IP elements vienmēr sasniedz adb.</string>
+    <string name="main_battery_restricted">Akumulators: optimizēts. Dīkstāvē Android atslēdz šīs lietotnes tīklu, pat uz pašu tālruni, un TCP/IP elements kļūst akls.</string>
+    <string name="main_battery_allow">Atļaut fonā</string>
 </resources>

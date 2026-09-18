@@ -19,7 +19,7 @@
     <string name="main_key_ok">This app is authorized for adb.</string>
     <string name="main_key_missing">This app is not authorized for adb yet.</string>
     <string name="main_authorize">Authorize this app</string>
-    <string name="main_authorize_hint">The TCP/IP port must be open (adb tcpip &lt;port&gt;). A dialog will ask to allow debugging: tick “Always allow”, then Allow.</string>
+    <string name="main_authorize_hint">The TCP/IP port must be open (adb tcpip &lt;port&gt;). A dialog will ask to allow debugging: tick “Always allow from this computer”, then Allow.</string>
     <string name="main_working">Waiting for the dialog…</string>
     <string name="main_port_closed">The TCP/IP port is closed. Run adb tcpip &lt;port&gt; from a computer first.</string>
     <string name="main_refused">Authorization refused.</string>

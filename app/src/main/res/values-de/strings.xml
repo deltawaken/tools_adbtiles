@@ -10,4 +10,22 @@
     <string name="subtitle_setup_needed">In der App einrichten</string>
     <string name="subtitle_wifi_needed">WLAN erforderlich</string>
     <string name="subtitle_failed">Fehlgeschlagen</string>
+    <string name="subtitle_port_open">Port %1$d</string>
+    <string name="status_line">%1$s: %2$s</string>
+    <string name="main_perm_ok">WRITE_SECURE_SETTINGS: gewährt.</string>
+    <string name="main_perm_missing">WRITE_SECURE_SETTINGS fehlt. Führe auf einem Computer aus:\nadb shell pm grant com.deltawaken.adbtiles android.permission.WRITE_SECURE_SETTINGS</string>
+    <string name="main_key_ok">Diese App ist für adb autorisiert.</string>
+    <string name="main_key_missing">Diese App ist noch nicht für adb autorisiert.</string>
+    <string name="main_authorize">Diese App autorisieren</string>
+    <string name="main_authorize_hint">Der TCP/IP-Port muss offen sein (adb tcpip &lt;port&gt;). Ein Dialog fragt, ob Debugging zugelassen werden soll: Setze einen Haken bei „Von diesem Computer immer zulassen“ und tippe dann auf „Erlauben“.</string>
+    <string name="main_working">Warten auf den Dialog…</string>
+    <string name="main_port_closed">Der TCP/IP-Port ist geschlossen. Führe zuerst adb tcpip &lt;port&gt; auf einem Computer aus.</string>
+    <string name="main_refused">Autorisierung abgelehnt.</string>
+    <string name="main_error">Fehler: %1$s</string>
+    <string name="main_port_label">TCP/IP-Port</string>
+    <string name="main_port_locked">Deaktiviere TCP/IP-Debugging, um den Port zu ändern.</string>
+    <string name="main_port_invalid">Gib einen Port zwischen 1024 und 65535 ein.</string>
+    <string name="main_battery_ok">Akku: nicht eingeschränkt, die TCP/IP-Kachel erreicht adb immer.</string>
+    <string name="main_battery_restricted">Akku: optimiert. Im Ruhezustand trennt Android das Netzwerk dieser App, sogar zum Smartphone selbst, und die TCP/IP-Kachel wird blind.</string>
+    <string name="main_battery_allow">Im Hintergrund zulassen</string>
 </resources>
