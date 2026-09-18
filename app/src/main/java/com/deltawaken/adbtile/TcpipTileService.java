@@ -38,6 +38,9 @@ public class TcpipTileService extends TileService {
                     // attendre la sonde du port, qui tombe pendant l'arrêt d'adbd.
                     refresh();
                     probe();
+                    // adbd met une à deux secondes à (re)démarrer : sonder de nouveau ensuite.
+                    handler.postDelayed(TcpipTileService.this::probe, 1500);
+                    handler.postDelayed(TcpipTileService.this::probe, 4000);
                 }
             };
             getContentResolver().registerContentObserver(
@@ -55,6 +58,7 @@ public class TcpipTileService extends TileService {
             getContentResolver().unregisterContentObserver(observer);
             observer = null;
         }
+        handler.removeCallbacksAndMessages(null);
         super.onStopListening();
     }
 
