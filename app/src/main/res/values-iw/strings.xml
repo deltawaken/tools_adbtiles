@@ -29,4 +29,5 @@
     <string name="main_battery_restricted">סוללה: עם אופטימיזציה. במצב המתנה, Android מנתק את הרשת של האפליקציה, גם אל הטלפון עצמו, וכרטיס המידע של TCP/IP מתעוור.</string>
     <string name="main_battery_allow">הרשאה לפעול ברקע</string>
     <string name="subtitle_usb_off">USB כבוי</string>
+    <string name="main_wifi_note">פתיחת יציאת TCP/IP דורשת חיבור Wi-Fi: בלעדיו Android לא יפעיל את \"ניפוי באגים אלחוטי\". לאחר הפתיחה, היציאה נשארת נגישה גם בלי Wi-Fi, דרך חבילת גלישה או VPN, עד להפעלה מחדש של הטלפון.</string>
 </resources>

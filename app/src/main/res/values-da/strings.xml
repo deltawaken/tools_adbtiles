@@ -29,4 +29,5 @@
     <string name="main_battery_restricted">Batteri: optimeret. I inaktiv tilstand afbryder Android appens netværk, selv til telefonen selv, og TCP/IP-feltet bliver blindt.</string>
     <string name="main_battery_allow">Tillad i baggrunden</string>
     <string name="subtitle_usb_off">USB fra</string>
+    <string name="main_wifi_note">Åbning af TCP/IP-porten kræver en Wi-Fi-forbindelse: Android starter ikke »Trådløs fejlretning« uden. Når porten er åben, kan den nås uden Wi-Fi, via mobildata eller VPN, indtil telefonen genstartes.</string>
 </resources>

@@ -29,4 +29,5 @@
     <string name="main_battery_restricted">Pin: được tối ưu hóa. Khi thiết bị ở trạng thái rảnh, Android cắt mạng của ứng dụng này, kể cả kết nối đến chính điện thoại, và ô TCP/IP không còn nắm được trạng thái.</string>
     <string name="main_battery_allow">Cho phép chạy trong nền</string>
     <string name="subtitle_usb_off">USB đang tắt</string>
+    <string name="main_wifi_note">Mở cổng TCP/IP cần có kết nối Wi-Fi: Android sẽ không bật “Gỡ lỗi qua Wi-Fi” nếu không có kết nối này. Sau khi mở, cổng vẫn truy cập được mà không cần Wi-Fi, qua dữ liệu di động hoặc VPN, cho đến khi điện thoại khởi động lại.</string>
 </resources>

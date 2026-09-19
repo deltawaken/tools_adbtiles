@@ -29,4 +29,5 @@
     <string name="main_battery_restricted">Батарея: оптимизировано. В режиме ожидания Android отключает этому приложению сеть, даже к самому телефону, и элемент TCP/IP теряет связь с adb.</string>
     <string name="main_battery_allow">Разрешить работу в фоне</string>
     <string name="subtitle_usb_off">USB выкл.</string>
+    <string name="main_wifi_note">Для открытия порта TCP/IP нужно подключение к Wi-Fi: без него Android не запускает функцию «Отладка по Wi-Fi». После открытия порт остаётся доступным без Wi-Fi, через мобильный интернет или VPN, до перезагрузки телефона.</string>
 </resources>

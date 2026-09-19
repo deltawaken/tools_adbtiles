@@ -29,4 +29,5 @@
     <string name="main_battery_restricted">Akumulators: optimizēts. Dīkstāvē Android atslēdz šīs lietotnes tīklu, pat uz pašu tālruni, un TCP/IP elements kļūst akls.</string>
     <string name="main_battery_allow">Atļaut fonā</string>
     <string name="subtitle_usb_off">USB izslēgts</string>
+    <string name="main_wifi_note">Lai atvērtu TCP/IP portu, ir nepieciešams Wi-Fi savienojums: bez tā Android nepalaiž funkciju „Bezvadu atkļūdošana”. Pēc atvēršanas ports paliek sasniedzams bez Wi-Fi, izmantojot mobilos datus vai VPN, līdz tālruņa restartēšanai.</string>
 </resources>

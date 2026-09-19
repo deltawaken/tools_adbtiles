@@ -29,4 +29,5 @@
     <string name="main_battery_restricted">Baterie: optimizată. În repaus, Android întrerupe rețeaua acestei aplicații, chiar și către telefonul însuși, iar caseta TCP/IP nu mai vede nimic.</string>
     <string name="main_battery_allow">Permiteți în fundal</string>
     <string name="subtitle_usb_off">USB dezactivat</string>
+    <string name="main_wifi_note">Deschiderea portului TCP/IP necesită o conexiune Wi-Fi: fără ea, Android nu pornește „Remedierea erorilor wireless”. Odată deschis, portul rămâne accesibil fără Wi-Fi, prin date mobile sau VPN, până la repornirea telefonului.</string>
 </resources>

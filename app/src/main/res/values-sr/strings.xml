@@ -29,4 +29,5 @@
     <string name="main_battery_restricted">Батерија: оптимизовано. У стању мировања Android прекида мрежу ове апликације, чак и ка самом телефону, и TCP/IP плочица више ништа не види.</string>
     <string name="main_battery_allow">Дозволи у позадини</string>
     <string name="subtitle_usb_off">USB искључен</string>
+    <string name="main_wifi_note">За отварање TCP/IP порта потребна је Wi-Fi веза: без ње Android не покреће „Бежично отклањање грешака“. Када се отвори, порт остаје доступан без Wi-Fi-ја, преко мобилних података или VPN-а, до поновног покретања телефона.</string>
 </resources>

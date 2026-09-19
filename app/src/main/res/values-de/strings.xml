@@ -29,4 +29,5 @@
     <string name="main_battery_restricted">Akku: optimiert. Im Ruhezustand trennt Android das Netzwerk dieser App, sogar zum Smartphone selbst, und die TCP/IP-Kachel wird blind.</string>
     <string name="main_battery_allow">Im Hintergrund zulassen</string>
     <string name="subtitle_usb_off">USB aus</string>
+    <string name="main_wifi_note">Zum Öffnen des TCP/IP-Ports ist eine WLAN-Verbindung nötig: Ohne sie startet Android „Debugging über WLAN“ nicht. Einmal geöffnet, bleibt der Port ohne WLAN erreichbar, über mobile Daten oder VPN, bis zum Neustart des Smartphones.</string>
 </resources>

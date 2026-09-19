@@ -29,4 +29,5 @@
     <string name="main_battery_restricted">Baterija: optimizirano. U mirovanju Android prekida mrežu ove aplikacije, čak i prema samom telefonu, pa pločica TCP/IP više ništa ne vidi.</string>
     <string name="main_battery_allow">Dopusti u pozadini</string>
     <string name="subtitle_usb_off">USB isključen</string>
+    <string name="main_wifi_note">Za otvaranje TCP/IP priključka potrebna je Wi-Fi veza: bez nje Android ne pokreće „Bežično otklanjanje pogrešaka”. Nakon otvaranja priključak ostaje dostupan bez Wi-Fija, putem mobilnih podataka ili VPN-a, do ponovnog pokretanja telefona.</string>
 </resources>

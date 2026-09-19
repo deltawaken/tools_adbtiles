@@ -29,4 +29,5 @@
     <string name="main_battery_restricted">Akkumulátor: optimalizált. Tétlen állapotban az Android megszakítja az alkalmazás hálózati kapcsolatát, még magával a telefonnal is, és a TCP/IP-csempe megvakul.</string>
     <string name="main_battery_allow">Engedélyezés a háttérben</string>
     <string name="subtitle_usb_off">USB ki</string>
+    <string name="main_wifi_note">A TCP/IP-port megnyitásához Wi-Fi-kapcsolat kell: nélküle az Android nem indítja el a „Vezeték nélküli hibakeresés” funkciót. Megnyitás után a port Wi-Fi nélkül is elérhető marad, mobiladat-kapcsolaton vagy VPN-en át, a telefon újraindításáig.</string>
 </resources>

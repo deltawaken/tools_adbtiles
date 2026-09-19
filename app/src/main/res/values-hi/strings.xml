@@ -29,4 +29,5 @@
     <string name="main_battery_restricted">बैटरी: ऑप्टिमाइज़ की गई। डिवाइस इस्तेमाल में न होने पर Android इस ऐप का नेटवर्क बंद कर देता है, फ़ोन के लिए भी, और TCP/IP टाइल कुछ नहीं देख पाती।</string>
     <string name="main_battery_allow">बैकग्राउंड में अनुमति दें</string>
     <string name="subtitle_usb_off">यूएसबी बंद</string>
+    <string name="main_wifi_note">TCP/IP पोर्ट खोलने के लिए वाई-फ़ाई कनेक्शन ज़रूरी है: इसके बिना Android “वॉयरलेस डीबगिंग” शुरू नहीं करता। खुलने के बाद, फ़ोन रीस्टार्ट होने तक पोर्ट वाई-फ़ाई के बिना, मोबाइल डेटा या VPN से ऐक्सेस किया जा सकता है।</string>
 </resources>

@@ -122,6 +122,8 @@ public class MainActivity extends Activity {
 
         column.addView(usbStatus);
         column.addView(tcpipStatus);
+        // Toujours visible : c'est la limite qui surprend le plus (mesurée, point d'accès compris).
+        column.addView(text(getString(R.string.main_wifi_note), 14));
         column.addView(portLabel);
         column.addView(portField);
         column.addView(portNote);

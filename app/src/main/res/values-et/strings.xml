@@ -29,4 +29,5 @@
     <string name="main_battery_restricted">Aku: optimeeritud. Jõudeolekus katkestab Android rakenduse võrgu, isegi telefoni endaga, ja TCP/IP-paan jääb pimedaks.</string>
     <string name="main_battery_allow">Luba taustal</string>
     <string name="subtitle_usb_off">USB väljas</string>
+    <string name="main_wifi_note">TCP/IP-pordi avamiseks on vaja WiFi-ühendust: ilma selleta ei käivita Android funktsiooni „Juhtmevaba silumine“. Pärast avamist jääb port kättesaadavaks ka ilma WiFi-ta, mobiilse andmeside või VPN-i kaudu, kuni telefon taaskäivitatakse.</string>
 </resources>

@@ -29,4 +29,5 @@
     <string name="main_battery_restricted">البطارية: محسَّنة. في وضع الخمول، يقطع Android الشبكة عن هذا التطبيق، حتى إلى الهاتف نفسه، فلا تعود فئة TCP/IP ترى شيئًا.</string>
     <string name="main_battery_allow">السماح في الخلفية</string>
     <string name="subtitle_usb_off">USB غير مفعّل</string>
+    <string name="main_wifi_note">يتطلب فتح منفذ TCP/IP اتصال Wi-Fi: لا يشغّل Android «تصحيح الأخطاء اللاسلكي» بدونه. بعد فتحه، يبقى المنفذ متاحًا بدون Wi-Fi، عبر بيانات الجوّال أو VPN، إلى أن تتم إعادة تشغيل الهاتف.</string>
 </resources>

@@ -29,4 +29,5 @@
     <string name="main_battery_restricted">Bateria: optimitzada. En repòs, Android talla la xarxa d\'aquesta aplicació, fins i tot cap al mateix telèfon, i la icona TCP/IP es queda cega.</string>
     <string name="main_battery_allow">Permet en segon pla</string>
     <string name="subtitle_usb_off">USB desactivat</string>
+    <string name="main_wifi_note">Per obrir el port TCP/IP cal una connexió Wi-Fi: sense, Android no inicia «Depuració sense fil». Un cop obert, el port continua accessible sense Wi-Fi, amb dades mòbils o per VPN, fins que es reinicia el telèfon.</string>
 </resources>

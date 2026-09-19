@@ -29,4 +29,5 @@
     <string name="main_battery_restricted">Bateria: otimizada. Em inatividade, o Android corta a rede desta app, mesmo para o próprio telemóvel, e o mosaico TCP/IP fica cego.</string>
     <string name="main_battery_allow">Permitir em segundo plano</string>
     <string name="subtitle_usb_off">USB desativado</string>
+    <string name="main_wifi_note">Abrir a porta TCP/IP requer uma ligação Wi-Fi: o Android não inicia a «Depuração sem fios» sem ela. Depois de aberta, a porta continua acessível sem Wi-Fi, através de dados móveis ou VPN, até o telemóvel ser reiniciado.</string>
 </resources>

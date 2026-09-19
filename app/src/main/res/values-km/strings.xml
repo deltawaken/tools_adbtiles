@@ -29,4 +29,5 @@
     <string name="main_battery_restricted">ថ្ម៖ បានបង្កើនប្រសិទ្ធភាព។ ពេលទំនេរ Android ផ្ដាច់បណ្ដាញរបស់កម្មវិធីនេះ សូម្បីតែទៅទូរសព្ទខ្លួនឯង ហើយប្រអប់ TCP/IP លែងមើលឃើញអ្វីទៀត។</string>
     <string name="main_battery_allow">អនុញ្ញាតនៅផ្ទៃខាងក្រោយ</string>
     <string name="subtitle_usb_off">USB បិទ</string>
+    <string name="main_wifi_note">ការបើកច្រក TCP/IP ត្រូវការការតភ្ជាប់ Wi-Fi៖ Android នឹងមិនចាប់ផ្ដើម “ការជួសជុល​ដោយឥតខ្សែ” ដោយគ្មានវាទេ។ នៅពេលបើករួច ច្រកនៅតែអាចភ្ជាប់បានដោយគ្មាន Wi-Fi តាមរយៈទិន្នន័យទូរស័ព្ទចល័ត ឬ VPN រហូតដល់ទូរស័ព្ទចាប់ផ្ដើមឡើងវិញ។</string>
 </resources>

@@ -29,4 +29,5 @@
     <string name="main_battery_restricted">باتری: بهینه‌شده. در حالت بیکار، Android شبکه این برنامه را قطع می‌کند، حتی به خود تلفن، و کاشی TCP/IP کور می‌شود.</string>
     <string name="main_battery_allow">اجازه در پس‌زمینه</string>
     <string name="subtitle_usb_off">USB خاموش</string>
+    <string name="main_wifi_note">باز کردن درگاه TCP/IP به اتصال Wi-Fi نیاز دارد: Android بدون آن «اشکال‌زدایی بی‌سیم» را راه‌اندازی نمی‌کند. پس از باز شدن، درگاه تا راه‌اندازی مجدد تلفن، بدون Wi-Fi، از طریق داده تلفن همراه یا VPN در دسترس می‌ماند.</string>
 </resources>

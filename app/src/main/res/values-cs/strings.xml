@@ -29,4 +29,5 @@
     <string name="main_battery_restricted">Baterie: optimalizováno. V nečinnosti Android odpojí této aplikaci síť, i k samotnému telefonu, a dlaždice TCP/IP oslepne.</string>
     <string name="main_battery_allow">Povolit na pozadí</string>
     <string name="subtitle_usb_off">USB vypnuto</string>
+    <string name="main_wifi_note">Otevření portu TCP/IP vyžaduje připojení k Wi-Fi: bez něj Android nespustí „Bezdrátové ladění“. Po otevření zůstane port dostupný i bez Wi-Fi, přes mobilní data nebo VPN, až do restartu telefonu.</string>
 </resources>

@@ -29,4 +29,5 @@
     <string name="main_battery_restricted">Batería: optimizada. En reposo, Android corta la red de esta aplicación, incluso hacia el propio teléfono, y el recuadro TCP/IP se queda ciego.</string>
     <string name="main_battery_allow">Permitir en segundo plano</string>
     <string name="subtitle_usb_off">USB desactivado</string>
+    <string name="main_wifi_note">Abrir el puerto TCP/IP requiere una conexión Wi-Fi: Android no inicia la «Depuración inalámbrica» sin ella. Una vez abierto, el puerto sigue accesible sin Wi-Fi, con datos móviles o por VPN, hasta que se reinicie el teléfono.</string>
 </resources>

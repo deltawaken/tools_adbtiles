@@ -29,4 +29,5 @@
     <string name="main_battery_restricted">Baterai: dioptimalkan. Saat tidak aktif, Android memutus jaringan aplikasi ini, bahkan ke ponsel itu sendiri, sehingga kartu TCP/IP tidak dapat melihat statusnya.</string>
     <string name="main_battery_allow">Izinkan di latar belakang</string>
     <string name="subtitle_usb_off">USB nonaktif</string>
+    <string name="main_wifi_note">Membuka port TCP/IP memerlukan koneksi Wi-Fi: Android tidak akan memulai “Proses debug nirkabel” tanpanya. Setelah terbuka, port tetap dapat dijangkau tanpa Wi-Fi, melalui data seluler atau VPN, hingga ponsel dimulai ulang.</string>
 </resources>

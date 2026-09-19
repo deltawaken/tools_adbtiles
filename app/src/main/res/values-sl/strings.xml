@@ -29,4 +29,5 @@
     <string name="main_battery_restricted">Baterija: optimizirano. V stanju mirovanja Android tej aplikaciji prekine omrežje, celo do samega telefona, in ploščica TCP/IP oslepi.</string>
     <string name="main_battery_allow">Dovoli v ozadju</string>
     <string name="subtitle_usb_off">USB izklopljen</string>
+    <string name="main_wifi_note">Za odpiranje vrat TCP/IP je potrebna povezava Wi-Fi: brez nje Android ne zažene funkcije »Brezžično odpravljanje napak«. Ko so vrata odprta, ostanejo dosegljiva brez Wi-Fi-ja, prek mobilnih podatkov ali VPN-ja, do vnovičnega zagona telefona.</string>
 </resources>

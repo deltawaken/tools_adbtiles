@@ -29,4 +29,5 @@
     <string name="main_battery_restricted">Bateria: zoptymalizowana. W stanie bezczynności Android odcina tej aplikacji sieć, nawet do samego telefonu, i kafelek TCP/IP przestaje cokolwiek widzieć.</string>
     <string name="main_battery_allow">Zezwól w tle</string>
     <string name="subtitle_usb_off">USB wył.</string>
+    <string name="main_wifi_note">Otwarcie portu TCP/IP wymaga połączenia Wi-Fi: bez niego Android nie uruchomi funkcji „Debugowanie bezprzewodowe”. Po otwarciu port pozostaje dostępny bez Wi-Fi, przez dane mobilne lub VPN, aż do ponownego uruchomienia telefonu.</string>
 </resources>

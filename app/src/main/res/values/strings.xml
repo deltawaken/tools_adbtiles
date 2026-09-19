@@ -32,4 +32,5 @@
     <string name="main_battery_restricted">Battery: optimized. When idle, Android cuts this app\'s network, even to the phone itself, and the TCP/IP tile goes blind.</string>
     <string name="main_battery_allow">Allow in background</string>
     <string name="subtitle_usb_off">USB off</string>
+    <string name="main_wifi_note">Opening the TCP/IP port needs a Wi-Fi connection: Android won\'t start wireless debugging without one. Once open, the port stays reachable without Wi-Fi, over mobile data or a VPN, until the phone restarts.</string>
 </resources>

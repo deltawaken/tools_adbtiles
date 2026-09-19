@@ -29,4 +29,5 @@
     <string name="main_battery_restricted">Bateria: otimizada. Em repouso, o Android corta a rede deste app, até para o próprio smartphone, e o bloco TCP/IP fica cego.</string>
     <string name="main_battery_allow">Permitir em segundo plano</string>
     <string name="subtitle_usb_off">USB desativado</string>
+    <string name="main_wifi_note">Abrir a porta TCP/IP requer uma conexão Wi-Fi: o Android não inicia a “Depuração por Wi-Fi” sem ela. Depois de aberta, a porta continua acessível sem Wi-Fi, por dados móveis ou VPN, até o smartphone ser reiniciado.</string>
 </resources>

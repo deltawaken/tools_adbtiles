@@ -29,4 +29,5 @@
     <string name="main_battery_restricted">バッテリー: 最適化。アイドル状態になると Android がこのアプリのネットワークを（スマートフォン自身への接続も含めて）遮断するため、TCP/IP タイルは状態を取得できなくなります。</string>
     <string name="main_battery_allow">バックグラウンドでの実行を許可</string>
     <string name="subtitle_usb_off">USB OFF</string>
+    <string name="main_wifi_note">TCP/IP ポートを開くには Wi-Fi 接続が必要です。Wi-Fi がないと Android は「ワイヤレス デバッグ」を開始しません。開いたポートは、スマートフォンを再起動するまで、Wi-Fi がなくてもモバイルデータや VPN 経由でアクセスできます。</string>
 </resources>

@@ -29,4 +29,5 @@
     <string name="main_battery_restricted">ব্যাটারি: অপ্টিমাইজ করা। নিষ্ক্রিয় থাকলে Android এই অ্যাপের নেটওয়ার্ক বন্ধ করে দেয়, এমনকি ফোনের নিজের কাছেও, আর TCP/IP টাইল অন্ধ হয়ে যায়।</string>
     <string name="main_battery_allow">ব্যাকগ্রাউন্ডে অনুমতি দিন</string>
     <string name="subtitle_usb_off">USB বন্ধ</string>
+    <string name="main_wifi_note">TCP/IP পোর্ট খুলতে Wi-Fi সংযোগ লাগে: এটি ছাড়া Android “ওয়্যারলেস ডিবাগিং” চালু করে না। একবার খোলা হলে, ফোন রিস্টার্ট না হওয়া পর্যন্ত পোর্টটি Wi-Fi ছাড়াই মোবাইল ডেটা বা VPN-এর মাধ্যমে অ্যাক্সেসযোগ্য থাকে।</string>
 </resources>

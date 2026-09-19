@@ -28,4 +28,5 @@
     <string name="main_battery_restricted">Batterie : optimisée. En veille, Android coupe le réseau de l\'app, même vers le téléphone lui-même, et le bloc TCP/IP devient aveugle.</string>
     <string name="main_battery_allow">Autoriser en arrière-plan</string>
     <string name="subtitle_usb_off">USB désactivé</string>
+    <string name="main_wifi_note">Ouvrir le port TCP/IP demande une connexion Wi-Fi : Android refuse de lancer le débogage sans fil sans elle. Une fois ouvert, le port reste joignable sans Wi-Fi, en données mobiles ou par VPN, jusqu\'au redémarrage du téléphone.</string>
 </resources>
