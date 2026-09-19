@@ -1,0 +1,36 @@
+Two Quick Settings tiles to control adb from your phone itself — no root, no Shizuku, no computer needed once set up.
+
+<b>USB debugging</b>
+Turn adb on or off in one tap, straight from the notification shade. Turning it off stops adb completely.
+
+<b>TCP/IP debugging</b>
+Open or close adb's network port, like <i>adb tcpip 5555</i> and <i>adb usb</i>, without plugging in a cable. The port is configurable (5555 by default).
+
+<b>Why?</b>
+Reach your phone with adb over your own VPN (WireGuard, Tailscale…) while you are away, then close the port with one tap when you are done. Or simply stop digging through Developer options every time you plug in a cable.
+
+<b>How it works</b>
+• The USB tile flips Android's own "USB debugging" setting.
+• The TCP/IP tile ships a tiny built-in adb client that only ever talks to your own phone. To reopen the port after a reboot, it briefly turns on Wireless debugging, finds its port and switches adb to TCP/IP.
+• Tiles grey out, with the reason, when they can't work: Developer options off, permission missing, no Wi-Fi to reopen the port…
+
+<b>One-time setup (needs a computer with adb)</b>
+1. Grant the settings permission:
+adb shell pm grant com.deltawaken.adbtiles android.permission.WRITE_SECURE_SETTINGS
+2. Open the port once (adb tcpip 5555), open ADB Tiles, tap "Authorize this app" and allow debugging from this device.
+3. Let the app run in the background, then add both tiles with the pencil icon of your Quick Settings.
+
+<b>Good to know</b>
+• Opening the TCP/IP port needs a Wi-Fi connection: Android refuses to start Wireless debugging without one. Once open, the port stays reachable over mobile data and VPN.
+• A reboot closes the TCP/IP port; one tap on the tile reopens it (on Wi-Fi, after unlocking).
+• While TCP/IP debugging is on, adb listens on every network. Only computers you authorized can connect — still, close the port when you don't need it.
+• TCP/IP debugging needs Android 11 or later.
+
+<b>Privacy</b>
+No ads, no analytics, no account. The app collects nothing and sends nothing: its only network traffic is to your own phone.
+
+<b>Open source</b>
+Free software under the GPL-3.0 licence. Source code, issues and build instructions:
+https://github.com/deltawaken/tools_adbtiles
+
+Tile labels use Android's own wording, in 50 languages.

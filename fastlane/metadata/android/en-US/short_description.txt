@@ -1,0 +1,1 @@
+Quick Settings tiles to toggle USB debugging and adb over TCP/IP. No root.
