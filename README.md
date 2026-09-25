@@ -24,14 +24,29 @@ and closing the port with one tap when you no longer need it.
   also accepts it over TLS, so no pairing code is needed.
 - Turning USB debugging off stops adbd and closes the port. Turning it back on restarts adbd, which
   reopens the port by itself — until the phone reboots.
+- **After a reboot, the app puts things back the way you left them** — without waiting for a
+  system broadcast, which some ROMs (Honor/Huawei with iAware) never deliver to an app in its
+  install state. SystemUI binds every tile that sits in the Quick Settings panel a few seconds after
+  boot; that binding starts the app, and the app then:
+  - turns **USB debugging back on** if you had it on and the ROM dropped it (measured on an
+    EMUI 10 phone whose persisted USB config had lost `adb`: back on the cable 6 s after the tile
+    was bound), checking that adb is really back on the cable and retrying up to three times;
+  - reopens the **TCP/IP port** if you had it open (Android 11+, needs Wi-Fi), the same way the
+    tile does.
+  It only restores what you had: a port you closed stays closed, debugging you turned off stays off.
+  A `BOOT_COMPLETED` receiver does the same where ROMs deliver it. Every decision is written to
+  `Android/data/com.deltawaken.adbtiles/files/restore.log` (readable with `adb shell cat`), with the
+  uptime and which path woke the app — logcat's boot buffer is too small on some ROMs to be trusted.
 
 ## Limits
 
 - **Opening the port needs a Wi-Fi connection.** Android refuses to start wireless debugging without
   one, even with a hotspot on. Once open, the port stays reachable without Wi-Fi (mobile data + VPN).
   Closing it never needs Wi-Fi.
-- **A reboot closes the port.** Reopen it with the tile, on any Wi-Fi, after unlocking.
-- The tiles do nothing before the first unlock after a reboot.
+- **A reboot closes the port.** The app reopens it by itself a minute or so after boot **if at least
+  one of its tiles is in the Quick Settings panel** and the phone is on Wi-Fi; otherwise reopen it
+  with the tile. No tile in the panel means no wake-up, on any ROM.
+- The tiles do nothing before the first unlock after a reboot (on phones with a lock credential).
 - **Battery optimization cuts the app's network when idle**, even to `127.0.0.1`, and the TCP/IP tile
   can no longer see adbd. The app shows this and offers to exempt itself.
 - The TCP/IP tile needs Android 11 or later (wireless debugging). The USB tile works from Android 10.

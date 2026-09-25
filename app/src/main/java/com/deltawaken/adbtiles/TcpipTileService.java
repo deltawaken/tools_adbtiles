@@ -19,6 +19,21 @@ public class TcpipTileService extends TileService {
 
     private final Runnable refresher = this::refresh;
 
+    /**
+     * ⭐ Le chemin de restauration qui compte. SystemUI lie cette tuile au démarrage — sans passer
+     * par une diffusion système, donc hors de portée des ROM qui les filtrent. Et comme SystemUI
+     * relie les tuiles toutes les cinq secondes environ, cette méthode fournit la boucle de
+     * reprise : il suffit que le Wi-Fi finisse par monter. Voir {@link Restore}.
+     */
+    @Override
+    public void onCreate() {
+        super.onCreate();
+        // Écrit AVANT maybeRestore : la liaison par SystemUI est le fait à dater, quoi que
+        // Restore en fasse ensuite.
+        Journal.log(this, "TUILE:tcpip : onCreate — SystemUI a lié la tuile (build " + BuildConfig.BUILD_TYPE + ")");
+        Restore.maybeRestore(this, Restore.ORIGIN_TILE_TCPIP);
+    }
+
     @Override
     public void onStartListening() {
         super.onStartListening();
@@ -61,7 +76,14 @@ public class TcpipTileService extends TileService {
                 Log.w(TAG, "Bascule TCP/IP échouée", e);
                 ok = false;
             } finally {
-                Tcpip.portOpen = Tcpip.isPortOpen();
+                boolean nowOpen = Tcpip.isPortOpen();
+                Tcpip.portOpen = nowOpen;
+                // L'intention suit ce qui a été OBTENU, relu sur le port, et seulement si la
+                // bascule a abouti : sinon un échec écrirait une intention que l'utilisateur n'a
+                // jamais vue se réaliser, et le redémarrage la rejouerait.
+                if (ok) {
+                    Tcpip.setDesiredOpen(this, nowOpen);
+                }
                 Tcpip.tcpipFailed = !ok;
                 Tcpip.tcpipBusy = false;
                 Tcpip.notifyChanged();

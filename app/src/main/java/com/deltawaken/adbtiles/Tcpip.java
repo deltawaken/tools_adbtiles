@@ -39,6 +39,15 @@ final class Tcpip {
     private static final String PREFS = "adbtiles";
     private static final String PREF_AUTHORIZED = "authorized";
     private static final String PREF_PORT = "port";
+    /**
+     * L'état que l'utilisateur a voulu la dernière fois, écrit à chaque bascule réussie.
+     *
+     * <p>C'est la seule mémoire du réglage : {@code service.adb.tcp.port} ne survit pas au
+     * redémarrage, et {@code persist.adb.tcp.port} n'est pas écrivable par une app.
+     * {@link Restore} s'en sert pour rendre le port à l'état d'avant — et pour ne <b>rien</b>
+     * rouvrir si l'utilisateur l'avait fermé.
+     */
+    private static final String PREF_DESIRED_OPEN = "desiredOpen";
 
     // État partagé par les deux tuiles et l'écran. Il vit au niveau du processus parce que SystemUI
     // détache et recrée les tuiles toutes les cinq secondes environ sur cette ROM (mesuré le
@@ -169,6 +178,23 @@ final class Tcpip {
             }
         }
         return false;
+    }
+
+    /**
+     * L'utilisateur veut-il le port ouvert ? Faux par défaut : une installation neuve ne rouvre
+     * rien, et une app qui n'a jamais servi à ouvrir le port ne le fera pas au premier démarrage.
+     */
+    static boolean isDesiredOpen(Context context) {
+        return prefs(context).getBoolean(PREF_DESIRED_OPEN, false);
+    }
+
+    /**
+     * Enregistre l'intention de l'utilisateur. À n'appeler qu'après une bascule <b>vérifiée</b>
+     * par une relecture du port : écrire l'intention sur une bascule échouée ferait rouvrir au
+     * redémarrage un port que l'utilisateur n'a jamais vu s'ouvrir.
+     */
+    static void setDesiredOpen(Context context, boolean desired) {
+        prefs(context).edit().putBoolean(PREF_DESIRED_OPEN, desired).apply();
     }
 
     static boolean isAuthorized(Context context) {

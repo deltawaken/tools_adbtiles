@@ -22,6 +22,21 @@ public class UsbDebuggingTileService extends TileService {
 
     private final Runnable refresher = this::refresh;
 
+    /**
+     * Deuxième chance pour {@link Restore} : cette tuile est liée par SystemUI au démarrage comme
+     * l'autre, et l'utilisateur peut n'avoir gardé que celle-ci dans son volet. La restauration
+     * est protégée par un verrou et un délai de garde, donc deux points d'entrée ne font pas deux
+     * tentatives.
+     */
+    @Override
+    public void onCreate() {
+        super.onCreate();
+        // Écrit AVANT maybeRestore : la liaison par SystemUI est le fait à dater, quoi que
+        // Restore en fasse ensuite.
+        Journal.log(this, "TUILE:usb : onCreate — SystemUI a lié la tuile (build " + BuildConfig.BUILD_TYPE + ")");
+        Restore.maybeRestore(this, Restore.ORIGIN_TILE_USB);
+    }
+
     /** Vrai tant que le système a refusé la dernière écriture, malgré la permission. */
     private boolean writeRefused;
 
@@ -48,6 +63,8 @@ public class UsbDebuggingTileService extends TileService {
         boolean target = !isAdbEnabled();
         try {
             Settings.Global.putInt(getContentResolver(), ADB_ENABLED, target ? 1 : 0);
+            // L'appui est l'intention de l'utilisateur : c'est ce que UsbDebug rendra au démarrage.
+            UsbDebug.setDesired(this, target);
         } catch (SecurityException | IllegalArgumentException e) {
             // Politique d'entreprise (DISALLOW_DEBUGGING_FEATURES) ou restriction de la ROM.
             writeRefused = true;

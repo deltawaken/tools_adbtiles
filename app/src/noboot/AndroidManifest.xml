@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Variante de banc « noboot » : retire le chemin de secours pour isoler celui de la tuile.
+     Voir build.gradle.kts. -->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission
+        android:name="android.permission.RECEIVE_BOOT_COMPLETED"
+        tools:node="remove" />
+
+    <application>
+        <receiver
+            android:name=".BootReceiver"
+            tools:node="remove" />
+    </application>
+</manifest>

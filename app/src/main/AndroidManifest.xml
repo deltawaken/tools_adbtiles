@@ -14,6 +14,11 @@
     <!-- Demander l'exemption d'optimisation de batterie : en veille, Android coupe le réseau de
          l'app, y compris vers 127.0.0.1, et la tuile TCP/IP ne voit plus adbd. -->
     <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" />
+    <!-- Rendre le port TCP à l'état d'avant le redémarrage : adbd ne le fait pas
+         (`service.adb.tcp.port` est du runtime, `persist.adb.tcp.port` n'est pas écrivable par une
+         app). Chemin de SECOURS seulement — voir Restore : les ROM qui filtrent les diffusions ne
+         le livrent pas, et c'est la liaison des tuiles par SystemUI qui fait le travail. -->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
 
     <application
         android:label="@string/app_name"
@@ -41,6 +46,19 @@
                 <action android:name="android.service.quicksettings.action.QS_TILE" />
             </intent-filter>
         </service>
+
+        <!-- Non exporté : seul le système émet ces diffusions protégées. -->
+        <receiver
+            android:name=".BootReceiver"
+            android:exported="false">
+            <!-- ⛔ PAS de LOCKED_BOOT_COMPLETED : il n'est livré qu'aux composants
+                 directBootAware, et nos préférences sont en stockage chiffré par identifiant —
+                 avant déverrouillage, isDesiredOpen() lirait « faux » et on ne restaurerait rien.
+                 Le déclarer donnerait une ligne qui ne peut pas fonctionner. -->
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
 
         <activity
             android:name=".MainActivity"

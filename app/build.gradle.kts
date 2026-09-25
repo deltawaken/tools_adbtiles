@@ -22,6 +22,19 @@ android {
             // Signé avec la clé de debug : cette app est distribuée à la main, pas sur Play.
             signingConfig = signingConfigs.getByName("debug")
         }
+        // Variante de BANC : identique à release, SANS BootReceiver ni RECEIVE_BOOT_COMPLETED
+        // (src/noboot/AndroidManifest.xml). Sert à isoler le chemin de la tuile : si le port se
+        // rouvre après un redémarrage avec cette build, c'est la liaison de SystemUI qui l'a fait,
+        // et rien d'autre. Même applicationId, même signature : s'installe par-dessus.
+        create("noboot") {
+            initWith(getByName("release"))
+            matchingFallbacks += listOf("release")
+            signingConfig = signingConfigs.getByName("debug")
+        }
+    }
+
+    buildFeatures {
+        buildConfig = true
     }
 
     compileOptions {

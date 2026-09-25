@@ -152,6 +152,10 @@ public class MainActivity extends Activity {
                 Settings.Global.getUriFor(Settings.Global.DEVELOPMENT_SETTINGS_ENABLED), false, observer);
         updateStatus();
         handler.post(portPoll);
+        // Ouvrir l'écran vaut observation : si le port est ouvert, on retient que c'est l'état
+        // voulu, pour le rendre après un redémarrage. Et si l'on revient d'un redémarrage avec le
+        // port fermé alors qu'il était ouvert, c'est l'occasion de le rouvrir. Voir Restore.
+        Restore.maybeRestore(this, Restore.ORIGIN_SCREEN);
     }
 
     @Override
