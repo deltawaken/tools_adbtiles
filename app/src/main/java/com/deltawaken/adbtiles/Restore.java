@@ -70,6 +70,10 @@ final class Restore {
      */
     private static final long COOLDOWN_MS = 30_000;
 
+    /** Essais d'ouverture par réveil, et pas entre deux essais (20 s, 40 s, 60 s, 80 s, 100 s ≈ 5 min). */
+    private static final int RETRY_MAX = 6;
+    private static final long RETRY_BASE_MS = 20_000;
+
     private static final AtomicBoolean RUNNING = new AtomicBoolean(false);
     private static volatile long lastAttempt;
 
@@ -187,12 +191,34 @@ final class Restore {
         Tcpip.tcpipBusy = true;
         Tcpip.notifyChanged();
         try {
-            Tcpip.open(context);
-            boolean ok = Tcpip.waitForPort(true, 8000);
+            // ⚠️ RÉESSAYER, ici même. Mesuré sur vivo Y19s le 2026-09-25 23:38 : à +51 s l'ouverture
+            // a échoué (« Port du débogage sans fil introuvable » — le Wi-Fi venait de monter, mDNS
+            // pas encore prêt), BOOT_COMPLETED arrivé entre-temps a été jeté par le délai de garde,
+            // et PERSONNE n'a réessayé : SystemUI n'a relié la tuile qu'une heure plus tard (00:38),
+            // où l'ouverture a réussi en 2 s. Compter sur une nouvelle liaison est un pari perdu ;
+            // le processus, lui, vit — on boucle donc tant qu'il vit, avec un pas qui s'allonge.
+            boolean ok = false;
+            for (int attempt = 1; attempt <= RETRY_MAX && !ok; attempt++) {
+                try {
+                    Tcpip.open(context);
+                    ok = Tcpip.waitForPort(true, 8000);
+                } catch (Exception e) {
+                    Journal.log(context, "Restore[" + origin + "] essai " + attempt + " échoué — " + e);
+                }
+                if (!ok && attempt < RETRY_MAX) {
+                    long pause = RETRY_BASE_MS * attempt;
+                    Journal.log(context, "Restore[" + origin + "] port toujours fermé après l'essai "
+                            + attempt + " — nouvel essai dans " + pause / 1000 + " s");
+                    Thread.sleep(pause);
+                    if (Tcpip.probe() == Tcpip.Probe.OPEN) {
+                        ok = true;   // quelqu'un d'autre (la diffusion, l'utilisateur) l'a ouvert entre-temps
+                    }
+                }
+            }
             Tcpip.tcpipFailed = !ok;
             Journal.log(context, "Restore[" + origin + "] " + (ok
                     ? "⭐ PORT " + Tcpip.port + " RESTAURÉ — c'est " + origin + " qui a fait le travail"
-                    : "restauration tentée, port toujours fermé"));
+                    : "abandon après " + RETRY_MAX + " essais, port toujours fermé"));
         } finally {
             Tcpip.portOpen = Tcpip.isPortOpen();
             Tcpip.tcpipBusy = false;
